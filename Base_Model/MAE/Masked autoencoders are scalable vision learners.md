@@ -1,7 +1,7 @@
 **Masked Autoencoders Are Scalable Vision Learners**. Kaiming He et.al. **arxiv**, **2021**, ([pdf](assets/pdfs/Masked_Autoencoders_Are_Scalable_Vision_Learners.pdf))([link](http://arxiv.org/abs/2111.06377v3)).
 
 - **背景**
-  - NLP本身语义非常密集，一句话中的每一个词都有独特且不可替代的语义价值，而图像具有强空间冗余性，例如一个天空区域的多个 patch 看起来几乎一样，遮掉其中某一 patch，只需周围 patch 就能“无脑”恢复，无需高层语义理解
+  - 随着大模型兴起，CV方向迫切需要自监督模型
 - **现有问题**
   - 分析为什么NLP存在BERT而视觉方面没有这种工作？
     - CNN不适合直接使用MASK，而CV在ViT后才开始将图像分patch进行处理
@@ -72,3 +72,6 @@
     - 使用均方误差（MSE）
   
 
+
+
+==将BERT的MASK思想迁移到CV方向中，通过不对称的编解码器与高遮挡率，让模型能在自监督的情况下学习图像的全局语义（高遮挡率强迫模型学习全局语义）==

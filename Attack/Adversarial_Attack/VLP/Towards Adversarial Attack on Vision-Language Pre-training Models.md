@@ -7,7 +7,7 @@
 
   - **目前仅存在针对单个模态攻击基于分类的攻击方法，但是VLP是涉及多模态，且大部分任务并不是分类问题**
   - **不建立模态之间的联系，图像与文本扰动独立优化可能会互相抵消**，==下图展示了不协同的分别攻击图像和文本不成功的例子==
-  - ![image-20250515170052504](/Users/sitianyi/Paper/VLP_Adv_Attack/assets/pics/Towards Adversarial Attack on Vision-Language Pre-training Models/image-20250515170052504.png)
+  - ![image-20250515170052504](assets/pics/Towards Adversarial Attack on Vision-Language Pre-training Models/image-20250515170052504.png)
 
   - 仅对图像攻击：成功
   - 不协同的分别攻击图像和文本：失败
@@ -30,7 +30,7 @@
   - **Fused VLP**：让扰动后的**图文融合embedding**远离原始embedding。
   - **Aligned VLP**：让扰动后的**图像embedding与文本embedding之间的对齐关系被打破**。
 
-![image-20250515170103100](/Users/sitianyi/Paper/VLP_Adv_Attack/assets/pics/Towards Adversarial Attack on Vision-Language Pre-training Models/image-20250515170103100.png)
+![image-20250515170103100](assets/pics/Towards Adversarial Attack on Vision-Language Pre-training Models/image-20250515170103100.png)
 
 
 

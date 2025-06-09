@@ -15,7 +15,7 @@ __Vision-Language_Pre-training_Models.pdf))([link](http://arxiv.org/abs/2307.140
 
     
 
-  - ![image-20250515170126659](/Users/sitianyi/Paper/VLP_Adv_Attack/assets/pics/Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models/image-20250515170126659.png)
+  - ![image-20250515170126659](assets/pics/Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models/image-20250515170126659.png)
 
   - PGD:仅对图像进行扰动
 
@@ -44,7 +44,7 @@ __Vision-Language_Pre-training_Models.pdf))([link](http://arxiv.org/abs/2307.140
   - 跨模态指导
     - 现有方法缺乏跨模态交互优化，导致对抗样本仅对源模型有效，跨模型迁移时效果大幅下降。
     - 利用**另一模态的配对信息作为监督信号**，通过成组的跨模态交互（图像推离文本、文本推离图像）引导扰动方向，迭代打破对齐关系，生成具有更强迁移性的对抗样本
-  - ![image-20250515170139240](/Users/sitianyi/Paper/VLP_Adv_Attack/assets/pics/Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models/image-20250515170139240.png)
+  - ![image-20250515170139240](assets/pics/Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models/image-20250515170139240.png)
 
 - **具体解决方法**
 

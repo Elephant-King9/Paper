@@ -30,6 +30,6 @@
 - **Cite:32**
 - **现有问题**：现有对抗攻击方法迁移性较差，且现有对抗攻击方法没有充分关注图像语文本之间的相关特征（一致性与差异性）
 - **创新点:** **==在VLP对抗迁移性的基础上更进一步研究，从模态一致性和模态差异性出发，分别设计ADFP与OGFH来提高VLP对抗攻击在黑盒模型上的迁移性==**
-- ![image-20250515170018414](/Users/sitianyi/Paper/VLP_Adv_Attack/assets/pics/review/image-20250515170018414.png)
+- ![image-20250515170018414](assets/pics/review/image-20250515170018414.png)
 - [详细信息](./Transferable Multimodal Attack on Vision-Language Pre-training Models.md)
 

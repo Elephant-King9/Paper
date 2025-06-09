@@ -9,7 +9,7 @@
 - **解决思路**
   - 对于模态一致性特征，使用ADFP，提高对抗攻击的迁移性
   - 对于模态差异性特征，使用OGFH，提高对抗攻击的攻击强度
-  - ![image-20250515170043025](/Users/sitianyi/Paper/VLP_Adv_Attack/assets/pics/Transferable Multimodal Attack on Vision-Language Pre-training Models/image-20250515170043025.png)
+  - ![image-20250515170043025](assets/pics/Transferable Multimodal Attack on Vision-Language Pre-training Models/image-20250515170043025.png)
 - **具体解决方法**
   - 对于模态一致性特征，ADFP
     - 对文本与图像模态一致的部分额外增加扰动

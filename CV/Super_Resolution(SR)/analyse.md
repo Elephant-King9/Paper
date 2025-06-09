@@ -6,36 +6,36 @@
 timeline
     title Image_Restoration
     2018: Jul
-    		: RCAN(ECCV2018)
+    		: RCAN<br>ECCV2018
     2021: Aug
-    		: SwinIR(ICCV2021)
+    		: SwinIR<br>ICCV2021
     		:	Nov
-    		: Uformer(CVPR2022)
+    		: Uformer<br>CVPR2022
     2022: Mar
-    		: Restormer(CVPR2022)
+    		: Restormer<br>CVPR2022
     		: Apr
-    		: ESRT(CVPRW2022)
+    		: ESRT<br>CVPRW2022
     		: May
-    		: Cat(NIPS2022)
+    		: Cat<br>NIPS2022
     2023: Feb
-    		: ART(ICLR2023)
+    		: ART<br>ICLR2023
     		: Mar
-    		: HAT(CVPR2023)
+    		: HAT<br>CVPR2023
   			: Aug
-    		: DAT(ICCV2023)
+    		: DAT<br>ICCV2023
   			: Oct
-  			: SRFormer(ICCV2023)
-  			: SPIN(ICCV2023)
+  			: SRFormer<br>ICCV2023
+  			: SPIN<br>ICCV2023
     2024: Apr
-    		: MAN(CVPRW2024)
+    		: MAN<br>CVPRW2024
     		: May
-    		: SPAN（CVPRW2024）
+    		: SPAN<br>CVPRW2024
     		: Jun
-    		: AST(CVPR2024)
+    		: AST<br>CVPR2024
     		: Aug
-    		: ASID(AAAI2025)
+    		: ASID<br>AAAI2025
     		: Nov
-    		: CATANet(CVPR2025)
+    		: CATANet<br>CVPR2025
     
 ```
 

@@ -44,13 +44,13 @@
 
   - MAE 的重建依赖于语义关系，所以对抗扰动造成的破坏可以通过语义关系的偏移检测到
 
-  - ![image-20250608203136947](/Users/sitianyi/Paper/Review/assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250608203136947.png)
+  - ![image-20250609154934871](./assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250609154934871.png)
 
   - 弥补对抗净化中未考虑语义结构的破坏的空白
 
   - 对抗扰动虽然在视觉上微弱，却会破坏图像中 patch 之间的语义关系，而这种关系在 MAE 重建过程中至关重要
 
-  - ![image-20250608203821836](/Users/sitianyi/Paper/Review/assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250608203821836.png)
+  - ![image-20250609154948585](./assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250609154948585.png)
 
   - 作者提出一种全新的净化视角：并非直接依赖强生成能力，而是通过保持图像 patch 之间的语义关系来进行净化
 
@@ -79,7 +79,7 @@
   - **AMV（注意力矩阵变化）**
     - 对抗样本和清晰样本的注意力矩阵差值
   - **核心目标**
-    - ![image-20250609114241088](/Users/sitianyi/Paper/Review/assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250609114241088.png)
+    - ![image-20250609154957227](./assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250609154957227.png)
     - 降低对抗图像加扰动和原始图像的距离
   - **问题**
     - 推理阶段拿不到干净图像
@@ -95,7 +95,7 @@
 
 
 
-![image-20250609121358769](/Users/sitianyi/Paper/Review/assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250609121358769.png)
+![image-20250609155005929](./assets/pics/MAE-Pure: Semantic-Preserving Adversarial Purification/image-20250609155005929.png)
 
 
 

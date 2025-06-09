@@ -1,0 +1,33 @@
+**The Graph Neural Network Model**
+
+- **背景**
+  - 在很多应用领域中，数据可以自然地用图结构来表示，包括蛋白质组学、图像分析、场景描述、软件工程和自然语言处理
+  - 图结构数据的应用大致可以分为两类：以图为中心（graph-focused）和以节点为中心（node-focused）的应用
+    - **Graph-focused（图级任务）**：是对输入的整张图做出判断，例如预测一个分子是否有毒
+      - 看整张照片，判断是否是猫
+    - **Node-focused（节点级任务）**：是根据整张图得到某一个节点的信息，例如社交网络中判断某人兴趣爱好。
+      - 看整张照片，判断某个区域是不是猫的耳朵（目标检测）
+- **现有问题**
+  - 传统的机器学习方法在处理图结构数据时，通常会先进行预处理，将图数据转换为更简单的表示形式，比如实数向量。然而，在这个过程中可能会丢失关键信息，比如每个节点所依赖的拓扑结构关系。而且最终结果可能会不可预测地依赖于具体使用的预处理算法细节。
+- **现有工作**
+  - 在处理阶段前尽可能地保留图的结构信息
+  - **RNN**
+    - A general framework for adaptive processing of data structures（1998）
+    - Supervised neural networks for the classification of structures（1997）
+    - A self-organizing map for adaptive processing of structured data（2003）
+    - **局限性**
+      - 通常用于有向无环图DAG，并需要预处理
+  - **马尔科夫链**
+    - The anatomy of a large-scale hypertextual web search engine（1998）
+    - Authoritative sources in a hyperlinked environment（1999）
+    - Adaptive ranking of web pages（2003）
+    - 从 幻痛图模型过度到现代图学习方法的桥梁
+- **动机**
+  - 提出一种有监督神经网络模型，可同时运用于图级任务和节点级任务
+  - 拓展了RNN只处理有向无环图，可处理更广泛的图：有环图、无向图、有向图
+  - 拓展了随机游走模型（马尔科夫），引入了学习算法，可建模更复杂的图
+- **解决思路**
+  - **信息扩散（Diffusion）**
+    - 图中的每个节点对应一个“单元”，这些单元之间通过图中的边连接。节点之间**反复传递信息和更新状态**，直到达到**稳定平衡**（通常指收敛或固定点）。GNN 的最终输出是：**每个节点在其收敛状态下计算的局部结果**。
+    - 扩散机制受到约束，以保证一定**存在唯一的稳定平衡状态**（重要的数学性质，防止发散）
+- **具体解决方法**
