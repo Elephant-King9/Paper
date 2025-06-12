@@ -1,0 +1,33 @@
+### **1. (SR)Transformer for Single Image Super-Resolution**. Zhisheng Lu et.al. **arxiv**, **2021**, ([pdf](assets/pdfs/Transformer_for_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2108.11084v3)).
+
+- **ESRT**
+- **CVPRW:2022**
+- **终版提交:2022.4.22**
+- **Cite:566**
+- **Transformer**
+- **现有问题:现有SR工作的网路轻量化不足**
+- **创新点:==线性结构，提出了新型的网络架构，使用卷积+共享+通道Att，降低通道数，以及注意力图拆分的方式来降低计算量==**
+- ![image-20250611182917108](./assets/pics/review/image-20250611182917108.png)
+- [详细信息](Transformer for Single Image Super-Resolution.md)
+
+### 2. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
+
+- **ASID**
+
+- **AAAI:2025**
+
+- **终版提交:2024.8.19**
+
+- **Cite:2**
+
+- **现有问题:Transformer不够轻量化**
+
+- **创新点:==线性结构，使用了通道注意力+窗口注意力==**
+
+- **==1.使用通道划分蒸馏(区别对待不同重要性的通道)，每次处理后一半通道直接输出，另一半继续处理==**
+
+- **==2.Attention中Q@K后的矩阵权重共享来解决Transformer轻量化的问题==**
+
+- ![image-20250611184332380](./assets/pics/review/image-20250611184332380.png)
+
+- [详细信息](./Efficient Attention-Sharing Information Distillation Transformer for Lightweight Single Image Super-Resolution.md)

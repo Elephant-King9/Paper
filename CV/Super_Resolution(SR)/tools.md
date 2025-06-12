@@ -9,5 +9,9 @@
 
 
 
+FD-Conv
 
+- t-SNE对卷积核进行降维可视化
+
+![image-20250611205001544](./assets/pics/tools/image-20250611205001544.png)
 
