@@ -7,6 +7,7 @@ timeline
     title Lightweight_Image_Restoration
     2022: Apr
     		: ESRT<br>CVPRW2022
+    2023: LatticeNets<br>TPAMI2023
     2024: Aug
     		: ASID<br>AAAI2025 
 ```
@@ -21,6 +22,7 @@ timeline
 pie title 期刊类型
     "CVPRW 1": 1
     "AAAI 1" : 1
+    "TPAMI 1" : 1
 ```
 
 # 3. 关联
@@ -52,6 +54,7 @@ flowchart BT
 		SwinIR-->|提供W-MSA|ASID
 		SwinIR-->|提供W-MSA|ESRT
 		RCAN-->|提供CA|ESRT
+		LatticeNet-->|1.引入模块泛化<br>2.引入对比损失优化性能<br>3.细节与可视化分析拓展<br>4.更全面的实验验证|LatticeNets
 		
 		SwinIR@{ shape: circle, label: "SwinIR（2021.8）<br>首个滑动窗口工作<br>W-MSA+SW-MSA" }
 				style SwinIR fill:#EF7A6D
@@ -68,6 +71,10 @@ flowchart BT
 			
 		SPIN[SPIN（2024.5）<br>CNN+非线性<br>非线性指导特征图更新]
 			style SPIN fill:#F3D266
+			
+		LatticeNet[LatticeNet<br>ECCV2020]
+		LatticeNets[LatticeNets<br>TPAMI2023]
+			style LatticeNets fill:#EF7A6D
 ```
 
 **==1. 所有Transformer SR工作都在RIR结构上进行（SPIN）==**
@@ -79,10 +86,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [ESRT,ASID]
+    x-axis [ESRT,ASID,LatticeNets]
     y-axis "Cite" 
-    bar [556,2]
-    line [556,2]
+    bar [556,2,67]
+    line [556,2,67]
 ```
 
 
@@ -93,4 +100,12 @@ flowchart BT
 
 DF2K:DIV2K+Filckr2K
 
-[实验结果](./SR_result.xlsx)
+BSD-gray:BSDS500的会不版本
+
+噪声图像通过在干净图像上添加 **加性白高斯噪声（AWGN）** 
+
+## 5.1 Mult-Add和FLOPs的关系
+
+![image-20250615173102624](./assets/pics/analyse/image-20250615173102624.png)
+
+[实验结果](/assests/IR_SR_Lightweight_Result.xlsx)

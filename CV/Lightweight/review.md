@@ -10,7 +10,37 @@
 - ![image-20250611182917108](./assets/pics/review/image-20250611182917108.png)
 - [详细信息](Transformer for Single Image Super-Resolution.md)
 
-### 2. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
+### 2. (IR/SR)Lattice Network for Lightweight  Image Restoration
+
+- **LatticeNets**
+
+- **TPAMI:2023**
+
+- **终版提交:2023.4.4**
+
+- **Cite:67**
+
+- **现有问题:**现有工作残差链接没有考虑到动态性
+
+- **创新点:**
+
+  **==优化CNN中的残差链接，从单个动态调整（c = x₁ + w₂·x₂）变为双向动态调整(c = w₁·x₁ + w₂·x₂)==**
+
+  ==**为SR和IR工作设计了不同的网络**==
+
+  **==使用对比学习作为后期微调，选取初步训练的恢复版本作为负样本，GT作为正样本==**
+
+- **对SR网络**
+
+- ![image-20250615165634196](./assets/pics/review/image-20250615165634196.png)
+
+- **对IR网络**
+
+- ![image-20250615165914901](./assets/pics/review/image-20250615165914901.png)
+
+- [详细信息](./Lattice Network for Lightweight  Image Restoration.md)
+
+### 3. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
 
 - **ASID**
 
@@ -31,3 +61,4 @@
 - ![image-20250611184332380](./assets/pics/review/image-20250611184332380.png)
 
 - [详细信息](./Efficient Attention-Sharing Information Distillation Transformer for Lightweight Single Image Super-Resolution.md)
+
