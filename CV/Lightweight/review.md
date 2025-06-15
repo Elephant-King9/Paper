@@ -24,11 +24,11 @@
 
 - **创新点:**
 
-  **==优化CNN中的残差链接，从单个动态调整（c = x₁ + w₂·x₂）变为双向动态调整(c = w₁·x₁ + w₂·x₂)==**
+  **==1. 优化CNN中的残差链接，从单个动态调整（c = x₁ + w₂·x₂）变为双向动态调整(c = w₁·x₁ + w₂·x₂)==**
 
-  ==**为SR和IR工作设计了不同的网络**==
+  ==**2. 为SR和IR工作设计了不同的网络**==
 
-  **==使用对比学习作为后期微调，选取初步训练的恢复版本作为负样本，GT作为正样本==**
+  **==3. 使用对比学习作为后期微调，选取初步训练的恢复版本作为负样本，GT作为正样本==**
 
 - **对SR网络**
 
@@ -40,7 +40,27 @@
 
 - [详细信息](./Lattice Network for Lightweight  Image Restoration.md)
 
-### 3. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
+### 3. (IR/SR)Compacter: A Lightweight Transformer for Image Restoration
+
+- **Compacter**
+- **ACMMM:2024**
+- **终版提交:2024.4.12**
+- **Cite:0**
+- **现有问题:现有工作轻量化不足**
+- **创新点:==定义了通道+窗口结合且QKV在两种Attention中共享的Attention与全新的MLP，使用频域损失+L1损失==**
+- ![image-20250615205722841](./assets/pics/review/image-20250615205722841.png)
+- [详细信息](./Compacter: A Lightweight Transformer for Image Restoration.md)
+
+- {{2305.11474}}
+- RAMiT
+- CVPRW:2024
+- 终版提交:2024.4.18
+- Cite:16
+- 现有问题:
+- 创新点:
+- []()
+
+### 4. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
 
 - **ASID**
 
