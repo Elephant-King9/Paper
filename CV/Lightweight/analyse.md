@@ -8,8 +8,11 @@ timeline
     2022: Apr
     		: ESRT<br>CVPRW2022
     2023: LatticeNets<br>TPAMI2023
+    		: Apr
+    		: STSN<br>CVPRW2023
     2024: Apr
     		: Compacter<br>ACMMM2024
+    		: RAMiT<br>CVPRW2024
     		: Aug
     		: ASID<br>AAAI2025 
 ```
@@ -22,7 +25,7 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-    "CVPRW 1": 1
+    "CVPRW 3": 3
     "AAAI 1" : 1
     "TPAMI 1" : 1
     "ACMMM 1" : 1
@@ -55,6 +58,8 @@ flowchart BT
 		
 		Restormer-->|提供C-MSA|ASID
 		Restormer-->|提供C-MSA|Compacter
+		Restormer-->|提供C-MSA|RAMiT
+		SwinIR-->|提供W-MSA|RAMiT
 		SwinIR-->|提供W-MSA|Compacter
 		SwinIR-->|提供W-MSA|ASID
 		SwinIR-->|提供W-MSA|ESRT
@@ -82,6 +87,8 @@ flowchart BT
 			style LatticeNets fill:#EF7A6D
 		Compacter[Compacter（2024.4）<br>C-MSA+W-MSA+共享QKV<br>L1损失+频域损失]
 			style Compacter fill:#EF7A6D
+		RAMiT[RAMiT（2024.4）<br>C-MSA+W-MSA，每个C-MSA与前一个W-MSA融合，反之亦然<br>加入MobiVari]
+			style RAMiT fill:#EF7A6D
 ```
 
 **==1. 所有Transformer SR工作都在RIR结构上进行（SPIN）==**
@@ -93,10 +100,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [ESRT,ASID,LatticeNets,Compacter]
+    x-axis [ESRT,ASID,LatticeNets,STSN,RAMiT,Compacter]
     y-axis "Cite" 
-    bar [556,2,67,0]
-    line [556,2,67,0]
+    bar [556,2,67,26,16,0]
+    line [556,2,67,26,16,0]
 ```
 
 
