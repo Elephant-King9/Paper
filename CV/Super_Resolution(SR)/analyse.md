@@ -116,6 +116,7 @@ flowchart BT
 ```mermaid
 flowchart BT
 		Transformer[Transformer]
+		Transformer-->LocalViT首次引入
 		SSN-->|提供soft k-means超像素算法|SPIN
 		Transformer-->窗口注意力
 		Transformer-->通道注意力

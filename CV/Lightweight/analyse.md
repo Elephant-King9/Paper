@@ -7,12 +7,16 @@ timeline
     title Lightweight_Image_Restoration
     2022: Apr
     		: ESRT<br>CVPRW2022
+    		: Jun
+    		: HNCT<br>CVPRW2022
     2023: LatticeNets<br>TPAMI2023
-    		: Apr
+    		: Jun
     		: STSN<br>CVPRW2023
     2024: Apr
     		: Compacter<br>ACMMM2024
     		: RAMiT<br>CVPRW2024
+    		: Jul
+    		: SRConvNet<br>IJCV2025
     		: Aug
     		: ASID<br>AAAI2025 
 ```
@@ -25,10 +29,11 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-    "CVPRW 3": 3
+    "CVPRW 4": 4
     "AAAI 1" : 1
     "TPAMI 1" : 1
     "ACMMM 1" : 1
+    "IJCV 1" : 1
 ```
 
 # 3. 关联
@@ -65,6 +70,8 @@ flowchart BT
 		SwinIR-->|提供W-MSA|ASID
 		SwinIR-->|提供W-MSA|ESRT
 		RCAN-->|提供CA|ESRT
+		SwinIR-->|提供W-MSA|HNCT
+		RFA-->|提供模块ESA|HNCT
 		RFA-->|提供模块ESA|STSN
 		LatticeNet-->|1.引入模块泛化<br>2.引入对比损失优化性能<br>3.细节与可视化分析拓展<br>4.更全面的实验验证|LatticeNets
 		
@@ -93,8 +100,10 @@ flowchart BT
 			style RAMiT fill:#EF7A6D
 		MobileNetV2[MobileNetV2（CVPR2018）]
 		RFA[RFA（CVPR2020）]
-		STSN[STSN（2023.4.18）]
+		STSN[STSN（2023.6）<br>CNN+ESA]
 			style STSN fill:#F3D266
+		HNCT[HNCT（2022.6）<br>S-MSA+ESA]
+			style HNCT fill:#F3D266
 ```
 
 **==1. 所有Transformer SR工作都在RIR结构上进行（SPIN）==**
@@ -106,10 +115,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [ESRT,ASID,LatticeNets,STSN,RAMiT,Compacter]
+    x-axis [ESRT,HNCT,ASID,LatticeNets,STSN,RAMiT,SRConvNet,Compacter]
     y-axis "Cite" 
-    bar [556,2,67,26,16,0]
-    line [556,2,67,26,16,0]
+    bar [556,196,2,67,26,16,11,0]
+    line [556,196,2,67,26,16,11,0]
 ```
 
 
@@ -127,5 +136,7 @@ BSD-gray:BSDS500的会不版本
 ## 5.1 Mult-Add和FLOPs的关系
 
 ![image-20250615173102624](./assets/pics/analyse/image-20250615173102624.png)
+
+![image-20250616203115446](./assets/pics/analyse/image-20250616203115446.png)
 
 [实验结果](/assests/IR_SR_Lightweight_Result.xlsx)

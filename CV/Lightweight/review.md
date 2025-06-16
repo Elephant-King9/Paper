@@ -10,7 +10,18 @@
 - ![image-20250611182917108](./assets/pics/review/image-20250611182917108.png)
 - [详细信息](Transformer for Single Image Super-Resolution.md)
 
-### 2. (IR/SR)Lattice Network for Lightweight  Image Restoration
+### 2. (SR)A hybrid network of CNN and transformer for lightweight image super-resolution
+
+- **HNCT**
+- **CVPRW:2022**
+- **终版提交：2022.6**
+- **Cite:196**
+- **现有问题:**
+- **创新点:==SwinTransformer+ESA==**
+- ![image-20250616162531711](./assets/pics/review/image-20250616162531711.png)
+- [详细信息](./A hybrid network of CNN and transformer for lightweight image super-resolution.md)
+
+### 3. (IR/SR)Lattice Network for Lightweight  Image Restoration
 
 - **LatticeNets**
 
@@ -40,18 +51,27 @@
 
 - [详细信息](./Lattice Network for Lightweight  Image Restoration.md)
 
-### 3. (SR)A Simple Transformer-style Network for Lightweight Image Super-resolution
+### 4. (SR)A Simple Transformer-style Network for Lightweight Image Super-resolution
 
 - **STSN**
+
 - **CVPRW:2023**
-- **终版提交：2023.4.18**
+
+- **终版提交：2023.6**
+
 - **Cite:26**
+
 - **现有问题:**
+
 - **创新点:==1.没有使用Attention，而是用CNN模拟Transformer的网络结构(Att+MLP)==**
+
+  **==2.引入ESA模块==**
+
 - ![image-20250616155804697](./assets/pics/review/image-20250616155804697.png)
+
 - [详细信息](./A Simple Transformer-style Network for Lightweight Image Super-resolution.md)
 
-### 4. (IR/SR)Compacter: A Lightweight Transformer for Image Restoration
+### 5. (IR/SR)Compacter: A Lightweight Transformer for Image Restoration
 
 - **Compacter**
 - **ACMMM:2024**
@@ -62,7 +82,7 @@
 - ![image-20250615205722841](./assets/pics/review/image-20250615205722841.png)
 - [详细信息](./Compacter: A Lightweight Transformer for Image Restoration.md)
 
-### **5. (SR/IR)Reciprocal Attention Mixing Transformer for Lightweight Image Restoration**. Haram Choi et.al. **arxiv**, **2023**, ([pdf](assets/pdfs/Reciprocal_Attention_Mixing_Transformer_for_Lightweight_Image__Restoration.pdf))([link](http://arxiv.org/abs/2305.11474v4)).
+### **6. (SR/IR)Reciprocal Attention Mixing Transformer for Lightweight Image Restoration**. Haram Choi et.al. **arxiv**, **2023**, ([pdf](assets/pdfs/Reciprocal_Attention_Mixing_Transformer_for_Lightweight_Image__Restoration.pdf))([link](http://arxiv.org/abs/2305.11474v4)).
 - **RAMiT**
 - **CVPRW:2024**
 - **终版提交:2024.4.18**
@@ -78,7 +98,20 @@
 - ![image-20250615215734545](./assets/pics/review/image-20250615215734545.png)
 - [详细信息](Reciprocal Attention Mixing Transformer for Lightweight Image Restoration.md)
 
-### 6. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
+### 7.(IR/SR)SRConvNet: A Transformer-Style ConvNet for Lightweight Image Super-Resolution
+
+- **SRConvNet**
+- **IJCV:2025**
+- **终版提交:2024.7.24**
+- **Cite:11**
+- **现有问题:**
+- **创新点:==1.上采样部分使用了conv+双线性差值融合==**
+- **==2.Attention采用频域作为A矩阵，空间域作为V矩阵==**
+- **==3.MLP引入了组+动态卷积==**
+- ![image-20250616201851923](./assets/pics/review/image-20250616201851923.png)
+- [详细信息](./SRConvNet: A Transformer-Style ConvNet for Lightweight Image Super-Resolution)
+
+### 8. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
 
 - **ASID**
 
