@@ -59,11 +59,13 @@ flowchart BT
 		Restormer-->|提供C-MSA|ASID
 		Restormer-->|提供C-MSA|Compacter
 		Restormer-->|提供C-MSA|RAMiT
+		MobileNetV2-->|改进模块MobiVari|RAMiT
 		SwinIR-->|提供W-MSA|RAMiT
 		SwinIR-->|提供W-MSA|Compacter
 		SwinIR-->|提供W-MSA|ASID
 		SwinIR-->|提供W-MSA|ESRT
 		RCAN-->|提供CA|ESRT
+		RFA-->|提供模块ESA|STSN
 		LatticeNet-->|1.引入模块泛化<br>2.引入对比损失优化性能<br>3.细节与可视化分析拓展<br>4.更全面的实验验证|LatticeNets
 		
 		SwinIR@{ shape: circle, label: "SwinIR（2021.8）<br>首个滑动窗口工作<br>W-MSA+SW-MSA" }
@@ -89,6 +91,10 @@ flowchart BT
 			style Compacter fill:#EF7A6D
 		RAMiT[RAMiT（2024.4）<br>C-MSA+W-MSA，每个C-MSA与前一个W-MSA融合，反之亦然<br>加入MobiVari]
 			style RAMiT fill:#EF7A6D
+		MobileNetV2[MobileNetV2（CVPR2018）]
+		RFA[RFA（CVPR2020）]
+		STSN[STSN（2023.4.18）]
+			style STSN fill:#F3D266
 ```
 
 **==1. 所有Transformer SR工作都在RIR结构上进行（SPIN）==**

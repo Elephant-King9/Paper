@@ -40,13 +40,16 @@
 
 - [详细信息](./Lattice Network for Lightweight  Image Restoration.md)
 
-### 3. A Simple Transformer-style Network for Lightweight Image Super-resolution
+### 3. (SR)A Simple Transformer-style Network for Lightweight Image Super-resolution
 
-- STSN
-- CVPRW:2023
-- 终版提交：2023.4.18
-- Cite:26
-- 
+- **STSN**
+- **CVPRW:2023**
+- **终版提交：2023.4.18**
+- **Cite:26**
+- **现有问题:**
+- **创新点:==1.没有使用Attention，而是用CNN模拟Transformer的网络结构(Att+MLP)==**
+- ![image-20250616155804697](./assets/pics/review/image-20250616155804697.png)
+- [详细信息](./A Simple Transformer-style Network for Lightweight Image Super-resolution.md)
 
 ### 4. (IR/SR)Compacter: A Lightweight Transformer for Image Restoration
 
@@ -69,7 +72,7 @@
   
   **==1. 窗口注意力的融合了上一层的通道注意力，反之也是==**
   
-  **==2. 融入了MobiVar模块==**
+  **==2. 融入了MobiVar模块（CVPR2018上的一个模块改进）==**
   
   **==3. 可以学习一下他下采样怎么融合不同尺寸的特征的==**
 - ![image-20250615215734545](./assets/pics/review/image-20250615215734545.png)
