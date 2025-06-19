@@ -19,8 +19,12 @@ timeline
     		 : InstructGPT<br>OpenAI
     2023 : Feb
     		 : Llama-1<br>MetaAI
+    		 : Jul
+    		 : Llama-2<br>Llama-2-Chat<br>MetaAI
     2024 : Mar
     		 : GPT-4<br>OpenAI
+    		 : Nov
+    		 : Llama-3<br>MetaAI
 ```
 
 
@@ -34,7 +38,7 @@ pie title 期刊类型
 		"OpenAI 4" : 4
 		"NIPS 2" : 2
 		"NAACL 1" : 1
-		"Meta 1" : 1 
+		"MetaAI 2" : 2
 ```
 
 # 3. 关联
@@ -47,17 +51,21 @@ pie title 期刊类型
 
 ```mermaid
 flowchart BT
+ELMo-->|双向学习思想|BERT
 Transformer-->|Encoder|BERT
 Transformer-->|Decoder|GPT-1
-ELMo-->|双向学习思想|BERT
 GPT-1-->|扩大数据规模|GPT-2
 GPT-2-->|更大的规模|GPT-3
 Sparse_Transformer-->|提供Attention改进|GPT-3
 GPT-3-->|人工标注优化|InstructGPT
+InstructGPT-->ChatGPT
 GPT-3-->|没有披露|GPT-4
-GPT-3-->Llama-1
+GPT-3-->|对标|Llama-1
+Llama-1-->|更大参数量+GQA提高性能|Llama-2
+ChatGPT-->|对标|Llama-2-Chat
+Llama-2-->|对话任务微调对标ChatGPT|Llama-2-Chat
 InstructGPT-->|RLHF思想<br>会降低性能<br>但让模型更理解人的意图|GPT-4
-Training_Compute-Optimal_Large_Language_Models-->|提供训练数据>参数量的思想|Llama-1
+Training_Compute-Optimal_Large_Language_Models-->|提供训练数据的重要性 > 参数量的重要性思想|Llama-1
 
 
 
@@ -80,6 +88,12 @@ GPT-4[GPT-4（2024.03）<br>首次融入多模态生成<br>没有很多实现细
 Training_Compute-Optimal_Large_Language_Models[Chinchilla 缩放法则（2022）]
 Llama-1[Llama-1（2023.02）<br>开源<br>全部采用公开可获取数据集<br>参数量更小效果更好]
 	style Llama-1 fill:#F3D266
+ChatGPT[ChatGPT]
+	style ChatGPT fill:#F3D266
+Llama-2[Llama-2（2023.07）<br>参数量更大<br>GQA提高性能]
+	style Llama-2 fill:#F3D266
+Llama-2-Chat[Llama-2-Chat（2023.07）<br>与Llama-2同一篇文章提出<br>对话任务微调<br>对标ChatGPT]
+	style Llama-2-Chat fill:#F3D266
 ```
 
 
@@ -89,10 +103,10 @@ Llama-1[Llama-1（2023.02）<br>开源<br>全部采用公开可获取数据集<b
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [Transformer,GPT-1,BERT,GPT-2,GPT-3,InstructGPT,Llama-1,GPT-4]
+    x-axis [Transformer,GPT-1,BERT,GPT-2,GPT-3,InstructGPT,Llama-1,Llama-2,GPT-4,Llama-3]
     y-axis "Cite" 
-    bar [185289,13424,133047,16676,48070,15295,16982,12771]
-    line [185289,13424,133047,16676,48070,15295,16982,12771]
+    bar [185289,13424,133047,16676,48070,15295,16982,15730,12771,5189]
+    line [185289,13424,133047,16676,48070,15295,16982,15730,12771,5189]
 ```
 
 

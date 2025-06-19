@@ -161,7 +161,35 @@
 - ![image-20250619214349007](./assets/pics/review/image-20250619214349007.png)
 - [详细信息](./LLaMA: Open and Efficient Foundation Language Models.md)
 
-### 7. (Decoder)GPT-4 Technical Report
+### 7. Llama 2: Open Foundation and Fine-Tuned Chat Models
+
+- **Llama-2/Llama-2-Chat**
+
+- **作者: Hugo Touvron、Louis Martin、Kevin Stone、Thomas Scialom**
+
+- **MetaAI**
+
+- **终版提交: 2023.07.19**
+
+- **Cite: 15730**
+
+- **现有问题:**
+
+- **贡献:**
+
+- **创新点:**
+
+  **==1.开源==**
+
+  **==2.参数量更多==**
+
+  **==3.引入GQA提高学习能力==**
+
+- ![image-20250619221903345](./assets/pics/review/image-20250619221903345.png)
+
+- [详细信息](Llama 2: Open Foundation and Fine-Tuned Chat Models.md)
+
+### 8. (Decoder)GPT-4 Technical Report
 
 - **GPT-4**
 
@@ -183,3 +211,13 @@
   **==1.借鉴了InstructGPT微调让GPT更像人==**
 
 - [详细信息](./GPT-4 Technical Report.md)
+
+### 9. The Llama 3 Herd of Models
+
+- Llama-3
+- 作者: MetaAI Llama Team
+- 终版提交: 2024.11.23
+- Cite:5189
+- 现有问题: 
+- 贡献:
+- 创新点
