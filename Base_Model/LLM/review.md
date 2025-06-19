@@ -46,7 +46,9 @@
   - **一个统一模型+微调可以适应不同任务,且效果很好**
   - **在11项自然语言处理任务上实现SOTA**
 
-- **创新点:==1.首次使用Transformer Encoder构建，当前单词可以看到前后文本的语义==**
+- **创新点:**
+
+  **==1.首次使用Transformer Encoder构建，当前单词可以看到前后文本的语义==**
 
   **==2.使用自监督预训练+监督微调==**
 
@@ -58,12 +60,41 @@
 
 ### 3. Language Models are Unsupervised Multitask Learners
 
-- GPT-2
-- 作者: Alec Radford、Jeffrey Wu、Rewon Child、David Luan、Dario Amodei、Ilya Sutskever 
-- OpenAI
-- 终版提交: 2019.02
-- Cite: 16676
-- 现有问题
-- 贡献
-- 创新点
-- [详细信息](./)
+- **GPT-2**
+
+- **作者: Alec Radford、Jeffrey Wu、Rewon Child、David Luan、Dario Amodei、Ilya Sutskever** 
+
+- **OpenAI**
+
+- **终版提交: 2019.02**
+
+- **Cite: 16676**
+
+- **现有问题:**
+
+- **贡献:**
+
+  - **在GPT-1的基础上扩大了模型规模与训练数据**
+
+  - **提出了Zero-Shot(微调不修改模型参数)**
+
+- **创新点:**
+
+  **==1. 发现随着模型增大，在Zero-Shot任务上还远没有触及上限==**
+
+- ![image-20250619164039286](./assets/pics/review/image-20250619164039286.png)
+
+- [详细信息](./Language Models are Unsupervised Multitask Learners.md)
+
+### 4. Language Models are Few-Shot Learners
+
+- **GPT-3**
+- **作者:Tom B. Brown、Benjamin Mann、Nick Ryder、Melanie Subbiah、 Jared Kaplan、Prafulla Dhariwal、Arvind Neelakantan、Pranav Shyam、Girish Sastry 、Amanda Askell、Sandhini Agarwal、Ariel Herbert-Voss、Gretchen Krueger、Tom Henighan 、Rewon Chil、 Aditya Ramesh、Daniel M. Ziegler、Jeffrey Wu、Clemens Winter 、Christopher Hesse、Mark Chen、Eric Sigler、Mateusz Litwin、Scott Gray 、Benjamin Chess、Jack Clark、Christopher Berner 、Sam McCandlish、Alec Radford、Ilya Sutskever、Dario Amodei**
+- **OpenAI**
+- **NIPS:2020**
+- **终版提交:2020.5**
+- **Cite:48070**
+- **现有问题:**
+- **贡献:**
+- **创新点:**
+- [详细信息](./Language Models are Few-Shot Learners.md)
