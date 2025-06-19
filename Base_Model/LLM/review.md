@@ -105,3 +105,31 @@
 - **==2.真正实现了预训练后的模型不经微调就可以适配下游任务==**
 - ![image-20250619174626716](./assets/pics/review/image-20250619174626716.png)
 - [详细信息](./Language Models are Few-Shot Learners.md)
+
+### 5. Training language models to follow instructionswith human feedback
+
+- **InstructGPT**
+
+- **作者:Long Ouyang、Jeff Wu、Xu Jiang、Diogo Almeida、Carroll L. Wainwright、 Pamela Mishkin、Chong Zhang、Sandhini Agarwal、Katarina Slama、Alex Ray、 John Schulman、Jacob Hilton、Fraser Kelton、Luke Miller、Maddie Simens 、Amanda Askell、Peter Welinder、Paul Christiano、Jan Leike、Ryan Lowe**
+
+- **OpenAI**
+
+- **终版提交:2022.03.04**
+
+- **Cite: 15295**
+
+- **现有问题:**
+
+- **贡献:** 
+
+- **创新点:** 
+
+  **==1.通过创建人工标注的数据集来优化GPT-3的生成能力，避免出现说瞎话种族歧视等问题==**
+
+  **==2.通过人工评分来创建了一个强化学习网络进一步指导GPT-3微调==**
+
+  **==3.详细列举了数据标注的相关工作，后续如果有数据标注的任务可以借鉴==**
+
+- ![image-20250619191237895](./assets/pics/review/image-20250619191237895.png)
+
+- [详细信息](./Training language models to follow instructionswith human feedback.md)
