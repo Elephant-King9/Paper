@@ -27,13 +27,43 @@
 ### 2. (Encoder)BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 - **BERT**
+
 - **作者: Jacob Devlin、Ming-Wei Chang、 KentonLee、Kristina Toutanova**
+
 - **Google**
+
 - **NAACL:2019**
+
 - **终版提交: 2018.10**
+
 - **Cite:133047**
-- **现有问题:**
+
+- **现有问题:**现在没有基于Transformer Encoder（双向）学习文本任务的工作
+
 - **贡献:**
-- **创新点:**
+
+  - **展示了双向预训练对语言表示的重要性**
+  - **一个统一模型+微调可以适应不同任务,且效果很好**
+  - **在11项自然语言处理任务上实现SOTA**
+
+- **创新点:==1.首次使用Transformer Encoder构建，当前单词可以看到前后文本的语义==**
+
+  **==2.使用自监督预训练+监督微调==**
+
+  **==3.自监督采用两个被[MASK]的句子同时输入，同时学习两个句子是否相邻+预测[MASK]的单词==**
+
+- ![image-20250619154910801](./assets/pics/review/image-20250619154910801.png)
+
 - [详细信息](./BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.md)
 
+### 3. Language Models are Unsupervised Multitask Learners
+
+- GPT-2
+- 作者: Alec Radford、Jeffrey Wu、Rewon Child、David Luan、Dario Amodei、Ilya Sutskever 
+- OpenAI
+- 终版提交: 2019.02
+- Cite: 16676
+- 现有问题
+- 贡献
+- 创新点
+- [详细信息](./)

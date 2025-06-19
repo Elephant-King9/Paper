@@ -8,11 +8,11 @@ timeline
     2017 : Jun
     		 : Transformer<br>NIPS 2017
     2018 : Jun
-    		 : GPT-1
+    		 : GPT-1<br>OpenAI
     		 : Oct
     		 : BERT<br>NAACL 2019
     2019 : Feb
-    		 : GPT-2
+    		 : GPT-2<br>OpenAI
     2020 : Feb
     		 : GPT-3
 ```
@@ -25,7 +25,7 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-		"OpenAI 1" : 1
+		"OpenAI 2" : 2
 		"NIPS 1" : 1
 		"NAACL 1" : 1
 ```
@@ -40,7 +40,8 @@ pie title 期刊类型
 
 ```mermaid
 flowchart BT
-Transformer-->GPT-1
+Transformer-->|Encoder|BERT
+Transformer-->|Decoder|GPT-1
 
 
 
@@ -48,8 +49,10 @@ Transformer-->GPT-1
 
 Transformer@{ shape: circle, label: "Transformer（2017.6）" }
 				style Transformer fill:#EF7A6D
-GPT-1[GPT-1（2018.6）<br>仅使用decoder<br>无监督训练+监督微调]
+GPT-1[GPT-1（2018.6）<br>仅使用Decoder<br>当前位置仅知道之前的信息<br>无监督训练+监督微调]
 	style GPT-1 fill:#F3D266
+BERT[BERT（2018.10）<br>仅使用Encoder<br>当前位置知道前后信息<br>两个句子同时输入<br>同时学习句子是否相邻+预测MASK单词]
+	style BERT fill:#63E398
 ```
 
 
@@ -61,8 +64,8 @@ GPT-1[GPT-1（2018.6）<br>仅使用decoder<br>无监督训练+监督微调]
     title "Cite Num"
     x-axis [Transformer,GPT-1,BERT,GPT-2,GPT-3]
     y-axis "Cite" 
-    bar [185289,13424, 133047]
-    line [185289,13424, 133047]
+    bar [185289,13424,133047,16676]
+    line [185289,13424,133047,16676]
 ```
 
 
