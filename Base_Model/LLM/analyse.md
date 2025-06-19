@@ -55,8 +55,9 @@ GPT-2-->|更大的规模|GPT-3
 Sparse_Transformer-->|提供Attention改进|GPT-3
 GPT-3-->|人工标注优化|InstructGPT
 GPT-3-->|没有披露|GPT-4
+GPT-3-->Llama-1
 InstructGPT-->|RLHF思想<br>会降低性能<br>但让模型更理解人的意图|GPT-4
-
+Training_Compute-Optimal_Large_Language_Models-->|提供训练数据>参数量的思想|Llama-1
 
 
 
@@ -76,6 +77,9 @@ InstructGPT[InstructGPT（2022.03）<br>通过人工标注的数据集+新训练
 	style InstructGPT fill:#F3D266
 GPT-4[GPT-4（2024.03）<br>首次融入多模态生成<br>没有很多实现细节]
 	style GPT-4 fill:#F3D266
+Training_Compute-Optimal_Large_Language_Models[Chinchilla 缩放法则（2022）]
+Llama-1[Llama-1（2023.02）<br>开源<br>全部采用公开可获取数据集<br>参数量更小效果更好]
+	style Llama-1 fill:#F3D266
 ```
 
 

@@ -138,13 +138,27 @@
 
 ### 6. (Decoder)LLaMA: Open and Efficient Foundation Language Models
 
-- Llama-1
-- 作者:Hugo Touvron、Thibaut Lavril、Gautier Izacard、Xavier Martinet、Marie-Anne Lachaux、Timothee Lacroix、Baptiste Rozière、Naman Goyal、Eric Hambro、Faisal Azhar、Aurelien Rodriguez、Armand Joulin、Edouard Grave、Guillaume Lample
-- MetaAI
-- 终版提交: 2023.02.27
-- 现有问题
-- 贡献
-- 创新点
+- **Llama-1**
+- **作者:Hugo Touvron、Thibaut Lavril、Gautier Izacard、Xavier Martinet、Marie-Anne Lachaux、Timothee Lacroix、Baptiste Rozière、Naman Goyal、Eric Hambro、Faisal Azhar、Aurelien Rodriguez、Armand Joulin、Edouard Grave、Guillaume Lample**
+- **MetaAI**
+- **终版提交: 2023.02.27**
+- **现有问题:** 
+- **贡献:** 
+  - **证明仅使用公开可获取的数，不依赖私有或者无法访问的语料也能训练出最先进的语言模型**
+  - **提出模型不一定要大，但训练数据量要足够多，相比GPT-3参数量更小，但是在任务表现更好**
+  - **推动大语言模型民主化，可以在单块GPU上运行**
+  - **“高性能+可开源”，开源大模型，LLaMA 的数据完全可复现，增强了模型的透明度与学术价值，首个开源且能与最强闭源模型抗衡的模型系列**
+  
+- **创新点:** 
+  **==1.优化训练过程，让训练更民主化==**
+
+  **==2.开源==**
+  
+  **==3.全部采用公开可获取的数据集==**
+  
+  **==4.相比于GPT-3，参数量更小，效果更好==**
+  
+- ![image-20250619214349007](./assets/pics/review/image-20250619214349007.png)
 - [详细信息](./LLaMA: Open and Efficient Foundation Language Models.md)
 
 ### 7. (Decoder)GPT-4 Technical Report
