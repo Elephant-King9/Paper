@@ -17,6 +17,10 @@ timeline
     		 : GPT-3
     2022 : Mar
     		 : InstructGPT<br>OpenAI
+    2023 : Feb
+    		 : Llama-1<br>MetaAI
+    2024 : Mar
+    		 : GPT-4<br>OpenAI
 ```
 
 
@@ -27,9 +31,10 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-		"OpenAI 3" : 3
+		"OpenAI 4" : 4
 		"NIPS 2" : 2
 		"NAACL 1" : 1
+		"Meta 1" : 1 
 ```
 
 # 3. 关联
@@ -49,6 +54,8 @@ GPT-1-->|扩大数据规模|GPT-2
 GPT-2-->|更大的规模|GPT-3
 Sparse_Transformer-->|提供Attention改进|GPT-3
 GPT-3-->|人工标注优化|InstructGPT
+GPT-3-->|没有披露|GPT-4
+InstructGPT-->|RLHF思想<br>会降低性能<br>但让模型更理解人的意图|GPT-4
 
 
 
@@ -67,6 +74,8 @@ GPT-3[GPT-3（2020.05）<br>更大的无监督预训练<br>完全不需要下游
 	style GPT-3 fill:#F3D266
 InstructGPT[InstructGPT（2022.03）<br>通过人工标注的数据集+新训练的强化训练网络来微调GPT-3]
 	style InstructGPT fill:#F3D266
+GPT-4[GPT-4（2024.03）<br>首次融入多模态生成<br>没有很多实现细节]
+	style GPT-4 fill:#F3D266
 ```
 
 
@@ -76,10 +85,10 @@ InstructGPT[InstructGPT（2022.03）<br>通过人工标注的数据集+新训练
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [Transformer,GPT-1,BERT,GPT-2,GPT-3,InstructGPT]
+    x-axis [Transformer,GPT-1,BERT,GPT-2,GPT-3,InstructGPT,Llama-1,GPT-4]
     y-axis "Cite" 
-    bar [185289,13424,133047,16676,48070,15295]
-    line [185289,13424,133047,16676,48070,15295]
+    bar [185289,13424,133047,16676,48070,15295,16982,12771]
+    line [185289,13424,133047,16676,48070,15295,16982,12771]
 ```
 
 

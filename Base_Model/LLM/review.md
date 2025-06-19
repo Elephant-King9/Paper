@@ -58,7 +58,7 @@
 
 - [详细信息](./BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.md)
 
-### 3. Language Models are Unsupervised Multitask Learners
+### 3. (Decoder)Language Models are Unsupervised Multitask Learners
 
 - **GPT-2**
 
@@ -90,7 +90,7 @@
 
 - [详细信息](./Language Models are Unsupervised Multitask Learners.md)
 
-### 4. Language Models are Few-Shot Learners
+### 4. (Decoder)Language Models are Few-Shot Learners
 
 - **GPT-3**
 - **作者:Tom B. Brown、Benjamin Mann、Nick Ryder、Melanie Subbiah、 Jared Kaplan、Prafulla Dhariwal、Arvind Neelakantan、Pranav Shyam、Girish Sastry 、Amanda Askell、Sandhini Agarwal、Ariel Herbert-Voss、Gretchen Krueger、Tom Henighan 、Rewon Chil、 Aditya Ramesh、Daniel M. Ziegler、Jeffrey Wu、Clemens Winter 、Christopher Hesse、Mark Chen、Eric Sigler、Mateusz Litwin、Scott Gray 、Benjamin Chess、Jack Clark、Christopher Berner 、Sam McCandlish、Alec Radford、Ilya Sutskever、Dario Amodei**
@@ -106,7 +106,7 @@
 - ![image-20250619174626716](./assets/pics/review/image-20250619174626716.png)
 - [详细信息](./Language Models are Few-Shot Learners.md)
 
-### 5. Training language models to follow instructionswith human feedback
+### 5. (Decoder)Training language models to follow instructionswith human feedback
 
 - **InstructGPT**
 
@@ -130,6 +130,42 @@
 
   **==3.详细列举了数据标注的相关工作，后续如果有数据标注的任务可以借鉴==**
 
+  **==整个流程被称为RLHF(Reinforcement Learning with Human Feedback)，可以理解为让模型更像人？==**
+
 - ![image-20250619191237895](./assets/pics/review/image-20250619191237895.png)
 
 - [详细信息](./Training language models to follow instructionswith human feedback.md)
+
+### 6. (Decoder)LLaMA: Open and Efficient Foundation Language Models
+
+- Llama-1
+- 作者:Hugo Touvron、Thibaut Lavril、Gautier Izacard、Xavier Martinet、Marie-Anne Lachaux、Timothee Lacroix、Baptiste Rozière、Naman Goyal、Eric Hambro、Faisal Azhar、Aurelien Rodriguez、Armand Joulin、Edouard Grave、Guillaume Lample
+- MetaAI
+- 终版提交: 2023.02.27
+- 现有问题
+- 贡献
+- 创新点
+- [详细信息](./LLaMA: Open and Efficient Foundation Language Models.md)
+
+### 7. (Decoder)GPT-4 Technical Report
+
+- **GPT-4**
+
+- **作者: OpenAI**
+
+- **终版提交: 2024.03.04**
+
+- **Cite: 12771**
+
+- **现有问题:**
+
+- **贡献:**
+
+  - **GPT首次多模态模型，可以接受图像输入了**
+  - **可以控制GPT的语气和态度** 
+
+- **创新点:**
+
+  **==1.借鉴了InstructGPT微调让GPT更像人==**
+
+- [详细信息](./GPT-4 Technical Report.md)
