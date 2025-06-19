@@ -44,6 +44,8 @@ Transformer-->|Encoder|BERT
 Transformer-->|Decoder|GPT-1
 ELMo-->|双向学习思想|BERT
 GPT-1-->|扩大数据规模|GPT-2
+GPT-2-->|更大的规模|GPT-3
+Sparse_Transformer-->|提供Attention改进|GPT-3
 
 
 
@@ -55,8 +57,10 @@ GPT-1[GPT-1（2018.6）<br>仅使用Decoder<br>当前位置仅知道之前的信
 BERT[BERT（2018.10）<br>仅使用Encoder<br>当前位置知道前后信息<br>两个句子同时输入<br>同时学习句子是否相邻+预测MASK单词]
 	style BERT fill:#63E398
 ELMo[ELMo（2018）<br>RNN+双向思想]
-GPT-2[GPT-2（2019.2）<br>随着模型和训练数据扩大<br>模型还远未达到上限]
+GPT-2[GPT-2（2019.2）<br>无监督预训练+Zero-Shot<br>适配下游任务不动模型参数<br>随着模型和训练数据扩大<br>模型还远未达到上限]
 	style GPT-2 fill:#F3D266
+Sparse_Transformer[Sparse Transformer（2019.4）]
+GPT-3[GPT-3（2020.5）<br>]
 ```
 
 

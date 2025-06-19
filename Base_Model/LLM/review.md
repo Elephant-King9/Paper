@@ -80,9 +80,13 @@
 
 - **创新点:**
 
-  **==1. 发现随着模型增大，在Zero-Shot任务上还远没有触及上限==**
+  **==1.首次尝试预训练+Zero-Shot，在适配下游任务时不对模型参数进行调整==**
 
-- ![image-20250619164039286](./assets/pics/review/image-20250619164039286.png)
+  **==2.发现随着模型增大，在Zero-Shot任务上还远没有触及上限==**
+
+  **==3.引入了prompt的思想==**
+
+- ![image-20250619170947665](./assets/pics/review/image-20250619170947665.png)
 
 - [详细信息](./Language Models are Unsupervised Multitask Learners.md)
 
@@ -97,4 +101,7 @@
 - **现有问题:**
 - **贡献:**
 - **创新点:**
+- **==1.更大的参数量与数据集==**
+- **==2.真正实现了预训练后的模型不经微调就可以适配下游任务==**
+- ![image-20250619174626716](./assets/pics/review/image-20250619174626716.png)
 - [详细信息](./Language Models are Few-Shot Learners.md)
