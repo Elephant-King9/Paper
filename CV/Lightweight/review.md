@@ -78,7 +78,8 @@
 - **终版提交:2024.4.12**
 - **Cite:0**
 - **现有问题:现有工作轻量化不足**
-- **创新点:==定义了通道+窗口结合且QKV在两种Attention中共享的Attention与全新的MLP，使用频域损失+L1损失==**
+- **创新点:==1.定义了通道+窗口结合且QKV在两种Attention中共享的Attention与全新的MLP==**
+- **==2.使用频域损失+L1损失==**
 - ![image-20250615205722841](./assets/pics/review/image-20250615205722841.png)
 - [详细信息](./Compacter: A Lightweight Transformer for Image Restoration.md)
 
@@ -98,7 +99,17 @@
 - ![image-20250615215734545](./assets/pics/review/image-20250615215734545.png)
 - [详细信息](Reciprocal Attention Mixing Transformer for Lightweight Image Restoration.md)
 
-### 7.(IR/SR)SRConvNet: A Transformer-Style ConvNet for Lightweight Image Super-Resolution
+### 7. (IR)Efficient lightweight image denoising with triple attention transformer
+
+- **LIDFormer**
+- **AAAI:2024**
+- **终版提交:2024.3.24**
+- **Cite:8**
+- **现有问题:==只对比了早些年的工作==**
+- **创新点:**
+- [详细信息](./Efficient lightweight image denoising with triple attention transformer.md)
+
+### 8.(IR/SR)SRConvNet: A Transformer-Style ConvNet for Lightweight Image Super-Resolution
 
 - **SRConvNet**
 - **IJCV:2025**
@@ -111,7 +122,7 @@
 - ![image-20250616201851923](./assets/pics/review/image-20250616201851923.png)
 - [详细信息](./SRConvNet: A Transformer-Style ConvNet for Lightweight Image Super-Resolution)
 
-### 8. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
+### 9. (SR)**Efficient Attention-Sharing Information Distillation Transformer forLightweight Single Image Super-Resolution**. Karam Park et.al. **arxiv**, **2025**, ([pdf](assets/pdfs/Efficient_Attention-Sharing_Information_Distillation_Transformer_for__Lightweight_Single_Image_Super-Resolution.pdf))([link](http://arxiv.org/abs/2501.15774v2)).
 
 - **ASID**
 

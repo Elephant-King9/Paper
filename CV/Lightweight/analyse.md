@@ -15,6 +15,8 @@ timeline
     2024: Apr
     		: Compacter<br>ACMMM2024
     		: RAMiT<br>CVPRW2024
+    		: Mar
+    		: LIDFormer<br>AAAI2024
     		: Jul
     		: SRConvNet<br>IJCV2025
     		: Aug
@@ -30,7 +32,7 @@ timeline
 ```mermaid
 pie title 期刊类型
     "CVPRW 4": 4
-    "AAAI 1" : 1
+    "AAAI 2" : 2
     "TPAMI 1" : 1
     "ACMMM 1" : 1
     "IJCV 1" : 1
@@ -69,6 +71,8 @@ flowchart BT
 		SwinIR-->|提供W-MSA|Compacter
 		SwinIR-->|提供W-MSA|ASID
 		SwinIR-->|提供W-MSA|ESRT
+		SwinIR-->|提供W-MSA|SRConvNet
+		频域-->SRConvNet
 		RCAN-->|提供CA|ESRT
 		SwinIR-->|提供W-MSA|HNCT
 		RFA-->|提供模块ESA|HNCT
@@ -81,6 +85,8 @@ flowchart BT
 				style Restormer fill:#63E398
     
     RCAN@{ shape: circle, label: "RCAN（2018.7）<br>首个RIR+CA" }
+				style RCAN fill:#F3D266
+		频域@{ shape: circle, label: "频域" }
 				style RCAN fill:#F3D266
     		
     ESRT[ESRT（2022.4）<br>通道减半+共享参数+CA+局部窗口]
@@ -104,21 +110,19 @@ flowchart BT
 			style STSN fill:#F3D266
 		HNCT[HNCT（2022.6）<br>S-MSA+ESA]
 			style HNCT fill:#F3D266
+		SRConvNet[SRConvNet（2024.7）<br>S-MSA+频域+组动态卷积]
+			style SRConvNet fill:#EF7A6D
 ```
-
-**==1. 所有Transformer SR工作都在RIR结构上进行（SPIN）==**
-
-**==2. 所有Transformer IR工作全在U-Net上进行==**
 
 # 4. 引用量
 
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [ESRT,HNCT,ASID,LatticeNets,STSN,RAMiT,SRConvNet,Compacter]
+    x-axis [ESRT,HNCT,ASID,LatticeNets,STSN,RAMiT,LIDFormer,SRConvNet,Compacter]
     y-axis "Cite" 
-    bar [556,196,2,67,26,16,11,0]
-    line [556,196,2,67,26,16,11,0]
+    bar [556,196,2,67,26,16,8,11,0]
+    line [556,196,2,67,26,16,8,11,0]
 ```
 
 
