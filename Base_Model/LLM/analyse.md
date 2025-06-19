@@ -62,9 +62,11 @@ InstructGPT-->ChatGPT
 GPT-3-->|没有披露|GPT-4
 GPT-3-->|对标|Llama-1
 Llama-1-->|更大参数量+GQA提高性能|Llama-2
-ChatGPT-->|对标|Llama-2-Chat
+Llama-2-Chat-->|对标|ChatGPT
 Llama-2-->|对话任务微调对标ChatGPT|Llama-2-Chat
+Llama-2-->Llama-3
 InstructGPT-->|RLHF思想<br>会降低性能<br>但让模型更理解人的意图|GPT-4
+Llama-3-->|对标|GPT-4
 Training_Compute-Optimal_Large_Language_Models-->|提供训练数据的重要性 > 参数量的重要性思想|Llama-1
 
 
@@ -94,6 +96,8 @@ Llama-2[Llama-2（2023.07）<br>参数量更大<br>GQA提高性能]
 	style Llama-2 fill:#F3D266
 Llama-2-Chat[Llama-2-Chat（2023.07）<br>与Llama-2同一篇文章提出<br>对话任务微调<br>对标ChatGPT]
 	style Llama-2-Chat fill:#F3D266
+Llama-3[Llama-3（2024.11）<br>更大规模<br>更优训练数据<br>多模态扩展（实验中）]
+	style Llama-3 fill:#F3D266
 ```
 
 
