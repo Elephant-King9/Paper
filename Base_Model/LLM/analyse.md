@@ -10,11 +10,13 @@ timeline
     2018 : Jun
     		 : GPT-1<br>OpenAI
     		 : Oct
-    		 : BERT<br>NAACL 2019
+    		 : BERT<br>NAACL 2019<br>Google
     2019 : Feb
     		 : GPT-2<br>OpenAI
+    		 : Sep
+    		 : T5<br>JMLR 2020<br>Google
     2020 : May
-    		 : GPT-3
+    		 : GPT-3<br>OpenAI
     2022 : Mar
     		 : InstructGPT<br>OpenAI
     2023 : Feb
@@ -39,6 +41,7 @@ pie title 期刊类型
 		"NIPS 2" : 2
 		"NAACL 1" : 1
 		"MetaAI 2" : 2
+		"JMLR 1" : 1
 ```
 
 # 3. 关联
@@ -60,7 +63,7 @@ Sparse_Transformer-->|提供Attention改进|GPT-3
 GPT-3-->|人工标注优化|InstructGPT
 InstructGPT-->ChatGPT
 GPT-3-->|没有披露|GPT-4
-GPT-3-->|对标|Llama-1
+Llama-1-->|对标|GPT-3
 Llama-1-->|更大参数量+GQA提高性能|Llama-2
 Llama-2-Chat-->|对标|ChatGPT
 Llama-2-->|对话任务微调对标ChatGPT|Llama-2-Chat
@@ -107,10 +110,10 @@ Llama-3[Llama-3（2024.11）<br>更大规模<br>更优训练数据<br>多模态�
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [Transformer,GPT-1,BERT,GPT-2,GPT-3,InstructGPT,Llama-1,Llama-2,GPT-4,Llama-3]
+    x-axis [Transformer,GPT-1,BERT,GPT-2,T5,GPT-3,InstructGPT,Llama-1,Llama-2,GPT-4,Llama-3]
     y-axis "Cite" 
-    bar [185289,13424,133047,16676,48070,15295,16982,15730,12771,5189]
-    line [185289,13424,133047,16676,48070,15295,16982,15730,12771,5189]
+    bar [185289,13424,133047,16676,24245,48070,15295,16982,15730,12771,5189]
+    line [185289,13424,133047,16676,24245,48070,15295,16982,15730,12771,5189]
 ```
 
 

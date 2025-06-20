@@ -90,7 +90,9 @@
 
 - [详细信息](./Language Models are Unsupervised Multitask Learners.md)
 
-### 4. (Decoder)Language Models are Few-Shot Learners
+### 4. (Encoder/Decoder)Exploring the Limits of Transfer Learning with a Unified  Text-to-Text Transformer
+
+### 5. (Decoder)Language Models are Few-Shot Learners
 
 - **GPT-3**
 - **作者:Tom B. Brown、Benjamin Mann、Nick Ryder、Melanie Subbiah、 Jared Kaplan、Prafulla Dhariwal、Arvind Neelakantan、Pranav Shyam、Girish Sastry 、Amanda Askell、Sandhini Agarwal、Ariel Herbert-Voss、Gretchen Krueger、Tom Henighan 、Rewon Chil、 Aditya Ramesh、Daniel M. Ziegler、Jeffrey Wu、Clemens Winter 、Christopher Hesse、Mark Chen、Eric Sigler、Mateusz Litwin、Scott Gray 、Benjamin Chess、Jack Clark、Christopher Berner 、Sam McCandlish、Alec Radford、Ilya Sutskever、Dario Amodei**
@@ -106,7 +108,7 @@
 - ![image-20250619174626716](./assets/pics/review/image-20250619174626716.png)
 - [详细信息](./Language Models are Few-Shot Learners.md)
 
-### 5. (Decoder)Training language models to follow instructionswith human feedback
+### 6. (Decoder)Training language models to follow instructionswith human feedback
 
 - **InstructGPT**
 
@@ -136,7 +138,7 @@
 
 - [详细信息](./Training language models to follow instructionswith human feedback.md)
 
-### 6. (Decoder)LLaMA: Open and Efficient Foundation Language Models
+### 7. (Decoder)LLaMA: Open and Efficient Foundation Language Models
 
 - **Llama-1**
 - **作者:Hugo Touvron、Thibaut Lavril、Gautier Izacard、Xavier Martinet、Marie-Anne Lachaux、Timothee Lacroix、Baptiste Rozière、Naman Goyal、Eric Hambro、Faisal Azhar、Aurelien Rodriguez、Armand Joulin、Edouard Grave、Guillaume Lample**
@@ -161,7 +163,7 @@
 - ![image-20250619214349007](./assets/pics/review/image-20250619214349007.png)
 - [详细信息](./LLaMA: Open and Efficient Foundation Language Models.md)
 
-### 7. Llama 2: Open Foundation and Fine-Tuned Chat Models
+### 8. (Decoder)Llama 2: Open Foundation and Fine-Tuned Chat Models
 
 - **Llama-2/Llama-2-Chat**
 
@@ -189,7 +191,7 @@
 
 - [详细信息](Llama 2: Open Foundation and Fine-Tuned Chat Models.md)
 
-### 8. (Decoder)GPT-4 Technical Report
+### 9. (Decoder)GPT-4 Technical Report
 
 - **GPT-4**
 
@@ -212,7 +214,7 @@
 
 - [详细信息](./GPT-4 Technical Report.md)
 
-### 9. The Llama 3 Herd of Models
+### 10. (Decoder)The Llama 3 Herd of Models
 
 - **Llama-3**
 - **作者: MetaAI Llama Team**
