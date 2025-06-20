@@ -6,7 +6,9 @@
 
 - **OpenAI**
 
-- **终版提交: 2021.1**
+- **ICML:2021**
+
+- **终版提交: 2021.01**
 
 - **Cite: 36752**
 
@@ -24,6 +26,8 @@
 
 - **创新点:**
 
+  **==文本:Transformer 图像:ResNet or ViT==**
+
   **==1.首个使用文本指导图像学习且Zero-Shot效果很好的模型，让分类任务不局限于给定的分类，提高了迁移性==**
 
   **==2.引入对比学习来指导模型训练==**
@@ -37,4 +41,40 @@
 - ![image-20250620141739370](./assets/pics/review/image-20250620141739370.png)
 
 - [详细信息](./Learning Transferable Visual Models From Natural Language Supervision.md)
+
+### 2. ViLT: Vision-and-Language Transformer  Without Convolution or Region Supervision
+
+- **ViLT**
+
+- **作者: Wonjae Kim、Bokyung Son、Ildoo Kim**
+
+- **韩国Kakao公司**
+
+- **ICML:2021**
+
+- **终版提交:2021.01**
+
+- **Cite:2115**
+
+- **背景:**现有的VLP模型，在处理图文任务时通常采用预训练的图像编码器来提取图像中的目标(目标检测)，然后将图像特征和文本输入送入一个 Transformer 模块进行跨模态融合。
+
+- **现有问题:**模型不够轻量化，大部分对于图像的操作太冗余，或者是在特征融合部分效果不好
+
+- **创新点:**
+
+  **==1.对现有模型进行轻量化，首次尝试了图像ViT+文本Transformer(单流架构)==**
+
+  **==2.提出了图像增强和整词MASK的训练策略==**
+
+  **==3.对现有工作进行了总结==**
+
+  **==4.摒弃了目标检测模块，提高了模型效率==**
+
+  **==5.除了ITM+MLM+WPA损失==**
+
+- ![image-20250620161406285](./assets/pics/review/image-20250620161406285.png)
+
+- [详细信息](./ViLT: Vision-and-Language Transformer  Without Convolution or Region Supervision)
+
+  
 
