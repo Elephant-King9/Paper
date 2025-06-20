@@ -6,10 +6,10 @@
 timeline
     title VLM+MLLM
     2021 : Jan
-    		 : CLIP<br>ICML 2021
-    		 : ViLT<br>ICML 2021
+    		 : CLIP<br>ICML 2021<br>OpenAI
+    		 : ViLT<br>ICML 2021<br>Kakao
     		 : May
-    		 : ALBEF<br>NIPS 2021 
+    		 : ALBEF<br>NIPS 2021<br>Salesforce
     2022 : Jan
     		 : BLIP<br>ICML 2022
     		 : May
@@ -79,23 +79,27 @@ Image Text Matching Loss不错
 
 ```mermaid
 flowchart BT
-	Transformer-->CLIP
+	Transformer-->目标检测
+	subgraph 视觉使用目标检测_淘汰
+		direction BT
+		目标检测-->Region_Feature_1
+    Region_Feature_1-->UNITER
+    Region_Feature_1-->ViLBERT
+	end
+	Transformer-->Encoder-Only
+	Encoder-Only-->CLIP
 	Visual_N-Grams-->CLIP
 	VirTex-->CLIP
 	ICMLM-->CLIP
 	ConVIRT-->|简化+借鉴对比学习|CLIP
-	
-	Region_Feature-->|目标检测|ViLBERT
-	Region_Feature-->|目标检测|UNITER
+	Encoder-Only-->ViLT
 	Region_Feature-->|使用图像增强|ViLT
-	Transformer-->ViLT
-	Transformer-->ALBEF
-	Transformer-->VLMo
+	MoCo-->|提供图像对比学习思路|ALBEF
+	Knowledge_Distillation-->|知识蒸馏思想|ALBEF
+	CLIP-->|对比学习|ALBEF
+	ViLT-->|图像数据增强|ALBEF
 	
-	Transformer-->BLIP
-	Transformer-->CoCa
-	Transformer-->BEiT_v3
-	Transformer-->PaLI
+	
 	
 	
 	
@@ -103,14 +107,15 @@ flowchart BT
 	
 	Transformer[Transformer]
 		style Transformer fill:#EF7A6D
+	目标检测[目标检测<br>使用预训练好的目标检测模型来提取特征<br>视觉预训练模型无法学习]
 	ViLT[ViLT（2021.01）<br>单流架构,轻量化<br>整词遮蔽+图像增强<br>摒弃目标检测<br>ViT处理图像<br>ITM+MLM+WPA]
-		style ViLT fill:#F3D266
-	CLIP[CLIP（2021.01）<br>图像处理=文本处理<br>特征简单融合<br>首个将文本指导图像模型学习做到效果不错的<br>引入对比学习<br>实现Zero-Shot高性能]
-		style CLIP fill:#F3D266
-	ALBEF[ALBEF]
-		style ALBEF fill:#F3D266
+		style ViLT fill:#63E398
+	CLIP[CLIP（2021.01）<br>图像处理=文本处理<br>特征简单融合（点乘）<br>首个将文本指导图像模型学习做到效果不错的<br>引入对比学习<br>实现Zero-Shot高性能<br>ITC]
+		style CLIP fill:#63E398
+	ALBEF[ALBEF（2021.05）<br>双流架构<br>摒弃目标检测<br>ITM+MLM+ITC<br>引入蒸馏和MoCo图像对比学习]
+		style ALBEF fill:#63E398
 	VLMo[VLMo]
-		style VLMo fill:#F3D266
+		style VLMo fill:#63E398
 	BLIP[BLIP]
 		style BLIP fill:#EF7A6D
 	CoCa[CoCa]
@@ -123,9 +128,14 @@ flowchart BT
 	ICMLM[ICMLM（2020）<br>使用Masked Language Modeling（MLM）训练图文模型<br>模仿BERT]
 	ConVIRT[ConVIRT（2020）<br>医学图文<br>使用对比学习]
 	Visual_N-Grams[Visual N-Grams（2017）<br>首个尝试用图文对齐做零样本分类]
-	Region_Feature[Region Feature（2018）<br>首次提出Region Feature<br>在图像中提取主体区域]
+	Region_Feature[Region Feature（2018）<br>首次提出Region Feature<br>在图像中提取主体区域<br>图像数据增强]
+	Region_Feature_1[Region Feature（2018）<br>首次提出Region Feature<br>在图像中提取主体区域<br>图像数据增强]
 	UNITER[UNITER<br>单流架构]
 	ViLBERT[ViLBERT<br>双流架构]
+	MoCo[MoCo<br>通过动量+队列构造字典来对比学习<br>让数据集在没有标注的情况下还能让视觉模型学到较好的表征能力]
+	Encoder-Only[Encoder-Only]
+		style Encoder-Only fill:#63E398
+	Knowledge_Distillation[Knowledge_Distillation（2015）<br>知识蒸馏]
 ```
 
 

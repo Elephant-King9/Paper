@@ -15,3 +15,8 @@ FD-Conv
 
 ![image-20250611205001544](./assets/pics/tools/image-20250611205001544.png)
 
+# 2. Grad-CAM（注意力热力图）
+
+ALBEF
+
+![image-20250620212834529](./assets/pics/tools/image-20250620212834529.png)

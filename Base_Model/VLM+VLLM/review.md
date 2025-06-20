@@ -30,13 +30,15 @@
 
   **==1.首个使用文本指导图像学习且Zero-Shot效果很好的模型，让分类任务不局限于给定的分类，提高了迁移性==**
 
-  **==2.引入对比学习来指导模型训练==**
+  **==2.引入对比学习(ITC)来指导模型训练==**
 
   **==3.从头训练，不使用预训练权重==**
 
   **==4.只保留线性投影==**
 
   ==**5.简单的数据增强，随机缩放再裁剪**==
+
+  **==6.特征融合简单融合，仅使用点乘（双流架构）导致图文检索任务效果好，但是复杂交互VQA、NLVR2等推理任务上效果不佳==**
 
 - ![image-20250620141739370](./assets/pics/review/image-20250620141739370.png)
 
@@ -72,9 +74,44 @@
 
   **==5.除了ITM+MLM+WPA损失==**
 
+  ​	**==后续好像证明WPA耗费的资源过大==**
+
+  **==6.指出了双流架构（CLIP）因为仅通过点乘融合特征导致跨模态理解能力有限==**
+
 - ![image-20250620161406285](./assets/pics/review/image-20250620161406285.png)
 
 - [详细信息](./ViLT: Vision-and-Language Transformer  Without Convolution or Region Supervision)
 
-  
 
+### 3. Align before Fuse: Vision and Language Representation Learning with Momentum Distillation
+
+- **ALBEF**
+
+- **作者: Junnan Li、Ramprasaath R. Selvaraju、Akhilesh D. Gotmare、Shafiq Joty、Caiming Xiong、Steven C.H. Hoi**
+
+- **Salesforce**
+
+- **NIPS:2021**
+
+- **终版提交:2021.05**
+
+- **Cite: 2412**
+
+- **背景**
+
+- **现有问题**
+
+  - **现有模型使用预训练好的目标检测模型提取图像特征，耗时多且不能学习**
+  - **现有的数据集要么不够大要么噪声太多**
+
+- **创新点**
+
+  **==1.摒弃目标检测模块，使用预训练好的ViT和BERT初始化权重，Image Embeding>Text Embeding，使用注意力增强特征融合（单流），提高跨模态表征能力==**
+
+  ==**2.使用动量模型（MoCo）来生成对比学习正负样本，同时使用动量模型来对one-hot标签平滑（蒸馏思想）避免因为语义多样性误导学习(MoD)**==
+
+  **==3.使用ITC~MoD~+MLM~MoD~+ITM（softmax第二作为负样本避免崩）==**
+
+  ![image-20250620215345367](./assets/pics/review/image-20250620215345367.png)
+
+- [详细信息](./Align before Fuse: Vision and Language Representation Learning with Momentum Distillation.md)
