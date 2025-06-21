@@ -10,6 +10,10 @@ timeline
     		 : ViLT<br>ICML 2021<br>Kakao
     		 : May
     		 : ALBEF<br>NIPS 2021<br>Salesforce
+    		 : Jun
+    		 : BEiT<br>Microsoft
+    		 : Aug
+    		 : SimVLM<br>ICLR 2022<br>Google
     		 : Nov
     		 : VLMo<br>NIPS 2022<br>Microsoft
     2022 : Jan
@@ -18,6 +22,7 @@ timeline
     		 : Jun
     		 : CoCa<br>Google
     		 : Aug
+    		 : BEiT v2<br>
     		 : BEiT v3<br>CVPR 2023
     		 : Oct
     		 : PaLI<br>ICLR 2023
@@ -100,7 +105,9 @@ flowchart BT
 	VLMo-->|根据下游任务动态调整模块|BLIP
 	ALBEF-->|ITC+ITM训练逻辑<br>优化数据集过滤|BLIP
 	GPT-1-->|Deocder LM训练逻辑|BLIP
-	
+	SimVLM-->BLIP
+	ALBEF-->|网络结构|CoCa
+	BLIP-->|Decoder|CoCa
 	
 	
 	
@@ -117,7 +124,7 @@ flowchart BT
 		style VLMo fill:#63E398
 	BLIP[BLIP（2022.01）<br>Encoder+Decoder<br>根据下游任务不同切换不同模块<br>过滤加字幕生成过滤数据集]
 		style BLIP fill:#EF7A6D
-	CoCa[CoCa]
+	CoCa[CoCa（2022.06）<br>ALBEF网络架构<br>将Text Encoder替换为Decoder<br>图像模态引入Attention Pooling<br>ITC+LM]
 		style CoCa fill:#EF7A6D
 	BEiT_v3[BEiT v3]
 		style BEiT_v3 fill:#EF7A6D
@@ -134,7 +141,9 @@ flowchart BT
 	MoCo[MoCo<br>通过动量+队列构造字典来对比学习<br>让数据集在没有标注的情况下还能让视觉模型学到较好的表征能力]
 	Knowledge_Distillation[Knowledge_Distillation（2015）<br>知识蒸馏]
 	GPT-1[GPT-1（2018.06）<br>仅使用Decoder<br>当前位置仅知道之前的信息<br>无监督训练+监督微调]
-	style GPT-1 fill:#F3D266
+		style GPT-1 fill:#F3D266
+	SimVLM[SimVLM<br>首个Decoder生成模型]
+		style SimVLM fill:#EF7A6D
 ```
 
 

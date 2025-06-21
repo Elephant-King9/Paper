@@ -178,3 +178,31 @@
 - ![image-20250621155130599](./assets/pics/review/image-20250621155130599.png)
 
 - [详细信息](./BLIP: Bootstrapping Language-Image Pre-training for  Unified Vision-Language Understanding and Generation.md)
+
+### 6. CoCa: Contrastive Captioners are Image-Text Foundation Models
+
+- **CoCa**
+
+- **作者: Jiahui Yu、Zirui Wang**
+
+- **Google**
+
+- **终版提交: 2022.06**
+
+- **Cite: 1710**
+
+- **背景:** 
+
+- **现有问题:** 
+
+- **创新点:** 
+
+  **==1.利用了ALBEF的架构，将Text Encoder替换为了Decoder==**
+
+  **==2.仅使用ITC+LM训练==**
+
+  **==3.引入Attention Pooling提取图像特征==**
+
+- ![image-20250621171323510](./assets/pics/review/image-20250621171323510.png)
+
+- [详细信息](./CoCa: Contrastive Captioners are Image-Text Foundation Models.md)
