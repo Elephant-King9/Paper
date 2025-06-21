@@ -110,13 +110,13 @@
 
   ==**2.使用动量模型（MoCo）来生成对比学习正负样本，同时使用动量模型来对one-hot标签平滑（蒸馏思想）避免因为语义多样性误导学习(MoD)**==
 
-  **==3.使用ITC~MoD~+MLM~MoD~+ITM（softmax第二作为负样本避免崩）==**
+  **==3.使用ITC~MoD~+MLM~MoD~+ITM（softmax第二作为负样本避免崩，困难负样本挖掘）==**
 
   ![image-20250620215345367](./assets/pics/review/image-20250620215345367.png)
 
 - [详细信息](./Align before Fuse: Vision and Language Representation Learning with Momentum Distillation.md)
 
-### 5. VLMo: Unified vision-language pre-training with mixture-of-modality-experts
+### 4. VLMo: Unified vision-language pre-training with mixture-of-modality-experts
 
 - **VLMo**
 
@@ -130,7 +130,7 @@
 
 - **Cite: 623**
 
-- **背景:** 
+- **现有问题:** 
 
   - 双流架构在融合模态时只是简单融合，在一些要求模态交互较深的下游任务时效果较差(如VR)
   - 单流架构在融合模态使用Cross-Attention交互，所以图像和文本的特征是混合在一起的，在做图文检索的时候每判断一个分类就需要重新跑一遍模型，运行效率缓慢，而双流架构因为分别对图像和文本进行编码，可以提前离线存储编码特征，在图文检索时只需要提前调用保存好的特征做简单的内积就可以得到，效率较高
@@ -143,6 +143,38 @@
 
   **==3.对于ITC使用CLIP的方式，ITM使用ALBEF的方式，MLM使用BERT的方式==**
 
+  **==4.使用了大量的实验证明了Self-Attention是可以共享参数的，仅训练不同的FFN就可以了==**
+
 - ![image-20250621131400950](./assets/pics/review/image-20250621131400950.png)
 
 - [详细信息](./VLMo: Unified vision-language pre-training with mixture-of-modality-experts.md)
+
+### 5. BLIP: Bootstrapping Language-Image Pre-training for  Unified Vision-Language Understanding and Generation
+
+- **BLIP**
+
+- **作者: Junnan Li、Dongxu Li、Caiming Xiong、Steven Hoi**
+
+- **Salesforce**
+
+- **ICML: 2022**
+
+- **终版提交: 2022.01**
+
+- **Cite: 5442**
+
+- **背景:** 
+
+- **现有问题:** 
+  - 目前多模态任务只能适配理解类任务(VQA，图文检索)，没有办法很好的适配生成类任务(Caption)，也就是说只用Encoder而没用Decoder，但是现有的Encoder-Decoder模型又不够灵活
+  - 可用于训练的干净数据集太小，大数据集又噪声太多
+  
+- **创新点:** 
+
+  **==1.创建了MED，包含Encoder和Decoder，不光可以完成理解任务，也可以很好的完成生成任务(Caption)，与VLMo相同，可以根据不同的下游任务选取模型不同的部分，更加灵活==**
+
+  **==2.创建了CaptFilt，通过生成字幕和过滤不配对文本图像对来过滤数据集噪声==**
+
+- ![image-20250621155130599](./assets/pics/review/image-20250621155130599.png)
+
+- [详细信息](./BLIP: Bootstrapping Language-Image Pre-training for  Unified Vision-Language Understanding and Generation.md)

@@ -10,10 +10,11 @@ timeline
     		 : ViLT<br>ICML 2021<br>Kakao
     		 : May
     		 : ALBEF<br>NIPS 2021<br>Salesforce
+    		 : Nov
+    		 : VLMo<br>NIPS 2022<br>Microsoft
     2022 : Jan
-    		 : BLIP<br>ICML 2022
+    		 : BLIP<br>ICML 2022<br>Salesforce
     		 : May
-    		 : VLMo<br>NIPS 2022
     		 : Jun
     		 : CoCa<br>Google
     		 : Aug
@@ -95,15 +96,16 @@ flowchart BT
 	CLIP-->|ITC时利用CLIP|VLMo
 	CLIP-->|对比学习|ALBEF
 	ViLT-->|图像数据增强|ALBEF
-	ALBEF-->|softmax第二指导ITM|VLMo
+	ALBEF-->|ITM困难负样本挖掘|VLMo
+	VLMo-->|根据下游任务动态调整模块|BLIP
+	ALBEF-->|ITC+ITM训练逻辑<br>优化数据集过滤|BLIP
+	GPT-1-->|Deocder LM训练逻辑|BLIP
 	
 	
 	
 	
 	
-	
-	Transformer[Transformer]
-		style Transformer fill:#EF7A6D
+
 	目标检测[目标检测<br>使用预训练好的目标检测模型来提取特征<br>视觉预训练模型无法学习]
 	ViLT[ViLT（2021.01）<br>单流架构,轻量化<br>整词遮蔽+图像增强<br>摒弃目标检测<br>ViT处理图像<br>ITM+MLM+WPA]
 		style ViLT fill:#63E398
@@ -111,9 +113,9 @@ flowchart BT
 		style CLIP fill:#63E398
 	ALBEF[ALBEF（2021.05）<br>双流架构<br>摒弃目标检测<br>ITM+MLM+ITC<br>引入蒸馏和MoCo图像对比学习]
 		style ALBEF fill:#63E398
-	VLMo[VLMo（2022.05）<br>单双流融合<br>针对不同下游任务切换单双<br>图像+文本+混合分别训练<br>三个FFN<br>ITC:CLIP<br>MLM:BERT<br>ITM:ALBEF]
+	VLMo[VLMo（2021.11）<br>单双流融合<br>针对不同下游任务切换单双<br>图像+文本+混合分别训练<br>三个FFN<br>ITC:CLIP<br>MLM:BERT<br>ITM:ALBEF]
 		style VLMo fill:#63E398
-	BLIP[BLIP]
+	BLIP[BLIP（2022.01）<br>Encoder+Decoder<br>根据下游任务不同切换不同模块<br>过滤加字幕生成过滤数据集]
 		style BLIP fill:#EF7A6D
 	CoCa[CoCa]
 		style CoCa fill:#EF7A6D
@@ -130,9 +132,9 @@ flowchart BT
 	UNITER[UNITER<br>单流架构]
 	ViLBERT[ViLBERT<br>双流架构]
 	MoCo[MoCo<br>通过动量+队列构造字典来对比学习<br>让数据集在没有标注的情况下还能让视觉模型学到较好的表征能力]
-	Encoder-Only[Encoder-Only]
-		style Encoder-Only fill:#63E398
 	Knowledge_Distillation[Knowledge_Distillation（2015）<br>知识蒸馏]
+	GPT-1[GPT-1（2018.06）<br>仅使用Decoder<br>当前位置仅知道之前的信息<br>无监督训练+监督微调]
+	style GPT-1 fill:#F3D266
 ```
 
 
@@ -158,10 +160,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF, BLIP,VLMo,Coca,BEiT v3,PaLI]
+    x-axis [CLIP, ViLT, ALBEF, VLMo, BLIP,Coca,BEiT v3,PaLI]
     y-axis "Cite" 
-    bar [36752,2115,2412,5442,623,1710,660,794]
-    line [36752,2115,2412,5442,623,1710,660,794]
+    bar [36752,2115,2412,623,5442,1710,660,794]
+    line [36752,2115,2412,623,5442,1710,660,794]
 ```
 
 
