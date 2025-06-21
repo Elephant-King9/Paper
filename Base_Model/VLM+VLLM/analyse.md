@@ -10,8 +10,6 @@ timeline
     		 : ViLT<br>ICML 2021<br>Kakao
     		 : May
     		 : ALBEF<br>NIPS 2021<br>Salesforce
-    		 : Jun
-    		 : BEiT<br>Microsoft
     		 : Aug
     		 : SimVLM<br>ICLR 2022<br>Google
     		 : Nov
@@ -22,7 +20,6 @@ timeline
     		 : Jun
     		 : CoCa<br>Google
     		 : Aug
-    		 : BEiT v2<br>
     		 : BEiT v3<br>CVPR 2023
     		 : Oct
     		 : PaLI<br>ICLR 2023
@@ -96,20 +93,22 @@ flowchart BT
 	VirTex-->CLIP
 	ICMLM-->CLIP
 	ConVIRT-->|简化+借鉴对比学习|CLIP
-	MoCo-->|提供图像对比学习思路|ALBEF
-	Knowledge_Distillation-->|知识蒸馏思想|ALBEF
 	CLIP-->|ITC时利用CLIP|VLMo
 	CLIP-->|对比学习|ALBEF
+	MoCo-->|提供图像对比学习思路|ALBEF
+	Knowledge_Distillation-->|知识蒸馏思想|ALBEF
 	ViLT-->|图像数据增强|ALBEF
 	ALBEF-->|ITM困难负样本挖掘|VLMo
+	BEiT_v2-->|掩码策略|BEiT_v3
+	VLMo-->|三FFN分类头|BEiT_v3
 	VLMo-->|根据下游任务动态调整模块|BLIP
 	ALBEF-->|ITC+ITM训练逻辑<br>优化数据集过滤|BLIP
 	GPT-1-->|Deocder LM训练逻辑|BLIP
 	SimVLM-->BLIP
 	ALBEF-->|网络结构|CoCa
 	BLIP-->|Decoder|CoCa
-	
-	
+	BERT-->|MASK思想引入图像|BEiT
+	BEiT-->|改进|BEiT_v2
 	
 	
 
@@ -126,7 +125,7 @@ flowchart BT
 		style BLIP fill:#EF7A6D
 	CoCa[CoCa（2022.06）<br>ALBEF网络架构<br>将Text Encoder替换为Decoder<br>图像模态引入Attention Pooling<br>ITC+LM]
 		style CoCa fill:#EF7A6D
-	BEiT_v3[BEiT v3]
+	BEiT_v3[BEiT v3（2022.08）<br>三FFN适配不同下游任务<br>图像文本都采用掩码策略<br>仅优化MLM]
 		style BEiT_v3 fill:#EF7A6D
 	PaLI[PaLI]
 		style PaLI fill:#EF7A6D
@@ -144,6 +143,10 @@ flowchart BT
 		style GPT-1 fill:#F3D266
 	SimVLM[SimVLM<br>首个Decoder生成模型]
 		style SimVLM fill:#EF7A6D
+	BEiT[BEiT<br>将BERT的思想引入图像领域]
+	BEiT_v2[BEiT v2]
+	BERT[BERT（2018.10）<br>仅使用Encoder<br>当前位置知道前后信息<br>两个句子同时输入<br>同时学习句子是否相邻+预测MASK单词]
+		style BERT fill:#63E398
 ```
 
 
@@ -169,7 +172,7 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF, VLMo, BLIP,Coca,BEiT v3,PaLI]
+    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Coca,BEiT v3,PaLI]
     y-axis "Cite" 
     bar [36752,2115,2412,623,5442,1710,660,794]
     line [36752,2115,2412,623,5442,1710,660,794]

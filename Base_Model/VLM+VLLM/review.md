@@ -206,3 +206,31 @@
 - ![image-20250621171323510](./assets/pics/review/image-20250621171323510.png)
 
 - [详细信息](./CoCa: Contrastive Captioners are Image-Text Foundation Models.md)
+
+### 7. Image as a Foreign Language: BEIT Pretraining for All Vision and Vision-Language Tasks
+
+- **BEiT v3**
+
+- **作者:**
+
+- **Microsoft**
+
+- **终版提交:2022.08**
+
+- **Cite: 660**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.采用VLMo 3FFN的设计来适配不同下游任务==**
+
+  **==2.对图像和文本都采用掩码策略，仅优化MLM==**
+
+  **==3.没有采用Decoder，而是采用把当前位置之后的文本信息全MASK来实现Decoder-Like结构==**
+
+- ![image-20250621191348745](./assets/pics/review/image-20250621191348745.png)
+
+- [详细信息](./Image as a Foreign Language: BEIT Pretraining for All Vision and Vision-Language Tasks.md)
