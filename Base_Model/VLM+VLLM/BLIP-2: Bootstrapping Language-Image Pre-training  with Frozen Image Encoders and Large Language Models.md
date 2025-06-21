@@ -1,0 +1,42 @@
+**BLIP-2: Bootstrapping Language-Image Pre-training  with Frozen Image Encoders and Large Language Models**
+
+- **背景**
+  - 
+- **现有问题**
+  - VLP模型发展迅速但是计算开销巨大
+  - 将预训练好的单模态大模型迁移到多模态会面临跨模态对齐的困难，因为语言模型没见过图像
+    - Frozen模型、Flamingo模型通常采用图像喂给大语言模型，训练语言模型去做Caption，但是作者认为这种方式不足以弥补模态差距
+- **动机**
+- **贡献**
+
+  - **融合冻结的图像和语言模型，结构高效，性能强**
+  - **借助 LLM 实现零样本生成、视觉对话等新能力**
+  - **训练参数少，计算效率高，性能优于 SOTA 模型**
+- **解决思路**
+
+  - **不再端到端训练整个模型，而是冻结大模型，仅训练轻量模块**
+    - **冻结的图像编码器**
+      - 如ViT、CLIP等，已经预训练好
+    - **冻结的大语言模型**
+      - 如Flan-T5、LLAMA
+    - **轻量的查询变化器（Querying Transformer，Q-Former）**
+      - 唯一需要训练的部分，负责连接图像特征和语言模型
+  - **训练过程使用两阶段Bootstrapping**
+    - 阶段一
+      - Q-Former+图像编码器
+      - 从冻结的图像编码器中提取视觉表示，训练查询变化器学习视觉语言理解（图文检索、VQA）
+    - 阶段二
+      - Q-Former+LLM
+      - 在冻结语言模型的基础上，训练查询变化期图像到文本生成（Caption）
+- **具体解决方法**
+- **实验**
+  - 数据集
+    - BLIP数据集
+  - 模型初始化
+    - 冻结大模型
+      - 图像编码器
+        - CLIP(ViT-L/14)
+        - EVA-CLIP(ViT-G/14)
+      - 文本编码器
+        - OPT: Decoder-Only
+        - FlanT5: Encoder-Decoder

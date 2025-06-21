@@ -221,9 +221,14 @@
 
 - **背景**
 
+  - 随着Transformer、ViT和NLP的自监督发展，图像自监督也逐渐兴起，逐渐抹除模态之间的差距，实现大一统
+    - 通过构建大规模基础模型（foundation model），并在海量数据上进行预训练，从而一次训练、多任务适应
+
 - **现有问题**
 
 - **创新点**
+
+  ==**将图像视为语言（Imglish）**==
 
   **==1.采用VLMo 3FFN的设计来适配不同下游任务==**
 
@@ -234,3 +239,35 @@
 - ![image-20250621191348745](./assets/pics/review/image-20250621191348745.png)
 
 - [详细信息](./Image as a Foreign Language: BEIT Pretraining for All Vision and Vision-Language Tasks.md)
+
+### 8. BLIP-2: Bootstrapping Language-Image Pre-training  with Frozen Image Encoders and Large Language Models
+
+- **BLIP-2**
+
+- **作者:**
+
+- **Salesforce**
+
+- **ICML:2023**
+
+- **终版提交: 2023.01**
+
+- **Cite: 6562**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==引入Q-Former==**
+
+  **==1.创建了一个可以基于提前预训练好的视觉大模型和语言大模型，仅通过训练两个大模型之间的桥接模块来构成多模态大模型，大大降低了端到端的训练成本==**
+
+  **==2.因为缩小了参数规模，所以可以取消ALBEF(BLIP-1)中的动量模型==**
+
+  **==3.采用分步训练，第一步训练图像编码器相关的Q-Former，第二步训练LLM相关的Q-Former==**
+
+- ![image-20250621221955312](./assets/pics/review/image-20250621221955312.png)
+
+- [详细信息](./BLIP-2: Bootstrapping Language-Image Pre-training  with Frozen Image Encoders and Large Language Models.md)

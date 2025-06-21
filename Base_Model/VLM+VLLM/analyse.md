@@ -16,13 +16,16 @@ timeline
     		 : VLMo<br>NIPS 2022<br>Microsoft
     2022 : Jan
     		 : BLIP<br>ICML 2022<br>Salesforce
-    		 : May
+    		 : Apr
+    		 : Flamingo<br>NIPS 2022
     		 : Jun
     		 : CoCa<br>Google
     		 : Aug
-    		 : BEiT v3<br>CVPR 2023
+    		 : BEiT v3<br>CVPR 2023<br>Microsoft
     		 : Oct
     		 : PaLI<br>ICLR 2023
+    2023 : Jan
+    		 : BLIP-2<br>ICML 2023<br>Salesforce
 ```
 
 
@@ -34,10 +37,21 @@ timeline
 ```mermaid
 pie title 期刊类型
 		"NIPS 2" : 2
-		"ICML 3" : 3
+		"ICML 4" : 4
 		"CVPR 1" : 1
-		"ICLR 1" : 1
+		"ICLR 2" : 2
 ```
+
+```mermaid
+pie title 团队
+		"Google 2" : 2
+		"Salesforce 3" : 3
+		"Microsoft 2" : 2
+		"OpenAI 1" : 1
+		"KaKao 1" :1
+```
+
+
 
 # 3. 关联
 
@@ -46,8 +60,6 @@ pie title 期刊类型
 黄色代表Transformer-Decoder only
 
 红色代表Transformer-Encoder+Decoder
-
-
 
 - 单流架构
   - 图像和文本的嵌入 在输入阶段就拼接（concatenate）在一起，然后统一送入同一个 Transformer 中处理
@@ -80,6 +92,14 @@ Image Text Matching Loss不错
 
 所以好的Loss=ITC+ITM+MLM
 
+- 端到端训练
+  - 就算是使用BERT，ViT等预训练参数，只要是训练过程中更新所有模块的参数就叫端到端训练
+- 模块化训练
+  - 冻住大部分模型，只训练桥接模块
+- **Bootstrapping** 一般指的是：
+  - **利用已有的知识（通常是预训练好的模型）作为起点，以较少的训练资源逐步构建更强的模型或能力的过程。**
+  - 它的核心思想是 **“站在巨人的肩膀上”**，**从已有模型中“引导/激发”（bootstrap）出新的能力或表现**，而不是从零开始训练。
+
 ```mermaid
 flowchart BT
 	subgraph 视觉使用目标检测_淘汰
@@ -107,6 +127,8 @@ flowchart BT
 	SimVLM-->BLIP
 	ALBEF-->|网络结构|CoCa
 	BLIP-->|Decoder|CoCa
+	BLIP-->|数据清洗<br>舍弃动量模型|BLIP-2
+	Flamingo-->|冻结大模型|BLIP-2
 	BERT-->|MASK思想引入图像|BEiT
 	BEiT-->|改进|BEiT_v2
 	
@@ -147,6 +169,9 @@ flowchart BT
 	BEiT_v2[BEiT v2]
 	BERT[BERT（2018.10）<br>仅使用Encoder<br>当前位置知道前后信息<br>两个句子同时输入<br>同时学习句子是否相邻+预测MASK单词]
 		style BERT fill:#63E398
+	BLIP-2[BLIP-2（2023.01）<br>提出冻结大模型训练桥接器<br>提出Q-Former<br>分步训练Q-Former]
+		style BLIP-2 fill:#EF7A6D
+	Flamingo[Flamingo]
 ```
 
 
@@ -172,10 +197,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Coca,BEiT v3,PaLI]
+    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Coca,BEiT v3,PaLI,BLIP-2]
     y-axis "Cite" 
-    bar [36752,2115,2412,623,5442,1710,660,794]
-    line [36752,2115,2412,623,5442,1710,660,794]
+    bar [36752,2115,2412,623,5442,1710,660,794,6562]
+    line [36752,2115,2412,623,5442,1710,660,794,6562]
 ```
 
 
