@@ -1,0 +1,27 @@
+**VLMo: Unified vision-language pre-training with mixture-of-modality-experts**
+
+- **背景**
+- **现有问题**
+  - 双流架构在融合模态时只是简单融合，在一些要求模态交互较深的下游任务时效果较差(如VR)
+  - 单流架构在融合模态使用Cross-Attention交互，所以图像和文本的特征是混合在一起的，在做图文检索的时候每判断一个分类就需要重新跑一遍模型，运行效率缓慢，而双流架构因为分别对图像和文本进行编码，可以提前离线存储编码特征，在图文检索时只需要提前调用保存好的特征做简单的内积就可以得到，效率较高
+- **动机**
+  - 根据下游任务不同，想当单流当单流，想当双流当双流
+- **贡献**
+  - **提出VLMO：可以根据任务灵活切换单双架构**
+  - **提出MOME：用不同的专家模块代替FFN**
+  - **分解段预训练**
+- **解决思路**
+  - **MOME Transformer**
+    - 引入多个模态专家代替FFN
+    - 一组 模态专属专家模块（modality-specific experts）：处理视觉或文本的特定特征
+    - 一个 共享的自注意力层（shared self-attention layer）：用于统一建模多模态上下文
+  - 灵活地任务适配能力
+    - Fusion Encoder 模式：用于融合图像和文本
+    - Dual Encoder 模式：图文各自编码后再计算相似度
+  - 阶段式预训练
+    - 先使用图像但模态(BEIT的Masked Image Modeling)
+    - 再使用文本单模态（MLM）
+    - 最后融合模态（ITC+ITM+MLM）
+  - ITC+ITM+MLM
+- **具体解决办法**
+- **实验**

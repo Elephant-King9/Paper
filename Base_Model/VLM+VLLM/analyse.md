@@ -79,26 +79,23 @@ Image Text Matching Loss不错
 
 ```mermaid
 flowchart BT
-	Transformer-->目标检测
 	subgraph 视觉使用目标检测_淘汰
 		direction BT
 		目标检测-->Region_Feature_1
     Region_Feature_1-->UNITER
     Region_Feature_1-->ViLBERT
 	end
-	Transformer-->Encoder-Only
-	Encoder-Only-->CLIP
+	Region_Feature-->|使用图像增强|ViLT
 	Visual_N-Grams-->CLIP
 	VirTex-->CLIP
 	ICMLM-->CLIP
 	ConVIRT-->|简化+借鉴对比学习|CLIP
-	Encoder-Only-->ViLT
-	Region_Feature-->|使用图像增强|ViLT
 	MoCo-->|提供图像对比学习思路|ALBEF
 	Knowledge_Distillation-->|知识蒸馏思想|ALBEF
+	CLIP-->|ITC时利用CLIP|VLMo
 	CLIP-->|对比学习|ALBEF
 	ViLT-->|图像数据增强|ALBEF
-	
+	ALBEF-->|softmax第二指导ITM|VLMo
 	
 	
 	
@@ -114,7 +111,7 @@ flowchart BT
 		style CLIP fill:#63E398
 	ALBEF[ALBEF（2021.05）<br>双流架构<br>摒弃目标检测<br>ITM+MLM+ITC<br>引入蒸馏和MoCo图像对比学习]
 		style ALBEF fill:#63E398
-	VLMo[VLMo]
+	VLMo[VLMo（2022.05）<br>单双流融合<br>针对不同下游任务切换单双<br>图像+文本+混合分别训练<br>三个FFN<br>ITC:CLIP<br>MLM:BERT<br>ITM:ALBEF]
 		style VLMo fill:#63E398
 	BLIP[BLIP]
 		style BLIP fill:#EF7A6D

@@ -115,3 +115,34 @@
   ![image-20250620215345367](./assets/pics/review/image-20250620215345367.png)
 
 - [详细信息](./Align before Fuse: Vision and Language Representation Learning with Momentum Distillation.md)
+
+### 5. VLMo: Unified vision-language pre-training with mixture-of-modality-experts
+
+- **VLMo**
+
+- **作者: Hangbo Bao、Wenhui Wang、Li Dong、Qiang Liu、Owais Khan Mohammed、Kriti Aggarwal、Subhojit Som、Furu Wei**
+
+- **Microsoft**
+
+- **NIPS: 2022**
+
+- **终版提交: 2022.05**
+
+- **Cite: 623**
+
+- **背景:** 
+
+  - 双流架构在融合模态时只是简单融合，在一些要求模态交互较深的下游任务时效果较差(如VR)
+  - 单流架构在融合模态使用Cross-Attention交互，所以图像和文本的特征是混合在一起的，在做图文检索的时候每判断一个分类就需要重新跑一遍模型，运行效率缓慢，而双流架构因为分别对图像和文本进行编码，可以提前离线存储编码特征，在图文检索时只需要提前调用保存好的特征做简单的内积就可以得到，效率较高
+
+- **创新点**
+
+  **==1.提出了一种能根据不同下游任务自适应调整单双流架构的模型==**
+
+  **==2.使用图像单模态预训练+文本单模态预训练+图像文本混合模态训练的模型，分别训练三个FFN==**
+
+  **==3.对于ITC使用CLIP的方式，ITM使用ALBEF的方式，MLM使用BERT的方式==**
+
+- ![image-20250621131400950](./assets/pics/review/image-20250621131400950.png)
+
+- [详细信息](./VLMo: Unified vision-language pre-training with mixture-of-modality-experts.md)
