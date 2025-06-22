@@ -318,14 +318,43 @@
 
 ### 10.Visual Instruction Tuning
 
-- LLaVA
-- 作者: Haotian Liu1、Chunyuan Li2、Qingyang Wu3、Yong Jae Lee1
-- University of Wisconsin–Madison、Microsoft
-- NIPS:2023
-- 初版提交:2023.04
-- Cite:7915
-- 背景
-- 现有问题
-- 创新点
+- **LLaVA**
+
+- **作者: Haotian Liu1、Chunyuan Li2、Qingyang Wu3、Yong Jae Lee1**
+
+- **University of Wisconsin–Madison、Microsoft**
+
+- **NIPS:2023**
+
+- **初版提交:2023.04**
+
+- **Cite:7915**
+
+- **背景**
+
+- **现有问题**
+
+  - 现有的数据集无法满足模型对于跨模态之间学习的要求
+
+- **贡献**
+
+  - **多模态指令数据构建**
+  - **构建大型多模态模型**
+  - **提出多模态指令基准**
+  - **开源**
+    - **多模态训练数据（由 GPT-4 生成）**
+    - **模型代码与权重**
+    - **两个用于图文任务评估的 benchmark**
+
+- **创新点**
+
+  **==1. 使用LLM优化现有多模态数据集==**
+
+  **==2. 使用两段训练，第一段冻结视觉编码器和LLM，优化生成的Caption靠近原始数据集端到端训练线性投影层，第二阶段冻结视觉编码器，优化生成Caption靠近LLM优化后的数据集（多轮对话、细节描述、复杂推理三种任务）+ScienceQA数据集微调LLM+线性投影层==**
+
+  **==3.生成优化数据集使用GPT-4，构建模型的LLM是Vicuna==**
+
+- ![image-20250622200451723](./assets/pics/review/image-20250622200451723.png)
+
 - [详细信息](./Visual Instruction Tuning.md)
 

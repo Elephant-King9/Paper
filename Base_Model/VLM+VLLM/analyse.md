@@ -132,6 +132,8 @@ flowchart BT
 	ALBEF-->|网络结构|CoCa
 	BLIP-->|Decoder|CoCa
 	BLIP-->|数据清洗<br>舍弃动量模型|BLIP-2
+	BLIP-2-->|冻结模型|LLaVA
+	GPT-4-->|LLM微调|LLaVA
 	Flamingo-->|冻结大模型|BLIP-2
 	BERT-->|MASK思想引入图像|BEiT
 	BEiT-->|改进|BEiT_v2
@@ -177,6 +179,10 @@ flowchart BT
 		style BLIP-2 fill:#EF7A6D
 	Flamingo[Flamingo（2022.04）<br>冻结大模型训练桥接器<br>引入门控机制缓慢引入文本模态<br>通过LLM实现生成工作]
 		style Flamingo fill:#EF7A6D
+	LLaVA[LLaVA（2023.04）<br>使用GPT-4优化数据集<br>使用两段训练<br>只使用简单的线性投影+优化数据集]	
+		style LLaVA fill:#EF7A6D
+	GPT-4[GPT-4（2023.03）<br>首次融入多模态生成<br>没有很多实现细节]
+		style GPT-4 fill:#F3D266
 ```
 
 

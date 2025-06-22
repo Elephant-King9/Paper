@@ -13,11 +13,11 @@ timeline
     		 : BERT<br>NAACL 2019<br>Google
     2019 : Feb
     		 : GPT-2<br>OpenAI
-    		 : Sep
+    		 : Oct
     		 : T5<br>JMLR 2020<br>Google
     2020 : May
     		 : GPT-3<br>OpenAI
-    2022 : Mar
+    2022 : Oct
     		 : InstructGPT<br>OpenAI
     2023 : Feb
     		 : Llama-1<br>MetaAI

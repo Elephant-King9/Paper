@@ -95,17 +95,29 @@
 ### 5. (Decoder)Language Models are Few-Shot Learners
 
 - **GPT-3**
+
 - **作者:Tom B. Brown、Benjamin Mann、Nick Ryder、Melanie Subbiah、 Jared Kaplan、Prafulla Dhariwal、Arvind Neelakantan、Pranav Shyam、Girish Sastry 、Amanda Askell、Sandhini Agarwal、Ariel Herbert-Voss、Gretchen Krueger、Tom Henighan 、Rewon Chil、 Aditya Ramesh、Daniel M. Ziegler、Jeffrey Wu、Clemens Winter 、Christopher Hesse、Mark Chen、Eric Sigler、Mateusz Litwin、Scott Gray 、Benjamin Chess、Jack Clark、Christopher Berner 、Sam McCandlish、Alec Radford、Ilya Sutskever、Dario Amodei**
+
 - **OpenAI**
+
 - **NIPS:2020**
+
 - **终版提交:2020.5**
+
 - **Cite:48070**
+
 - **现有问题:**
+
 - **贡献:**
+
 - **创新点:**
-- **==1.更大的参数量与数据集==**
-- **==2.真正实现了预训练后的模型不经微调就可以适配下游任务==**
+
+  **==1.更大的参数量与数据集==**
+
+  **==2.真正实现了预训练后的模型不经微调就可以适配下游任务==**
+
 - ![image-20250619174626716](./assets/pics/review/image-20250619174626716.png)
+
 - [详细信息](./Language Models are Few-Shot Learners.md)
 
 ### 6. (Decoder)Training language models to follow instructionswith human feedback
@@ -217,14 +229,25 @@
 ### 10. (Decoder)The Llama 3 Herd of Models
 
 - **Llama-3**
+
 - **作者: MetaAI Llama Team**
+
 - **终版提交: 2024.11.23**
+
 - **Cite:5189**
+
 - **现有问题:** 
+
 - **贡献:**
+
 - **创新点:**
-- **==1.语言模型预训练+语言模型后训练==**
-- **==2.更大的参数量，并向多模态扩展==**
-- **==3.对标GPT-4==**
+
+  **==1.语言模型预训练+语言模型后训练==**
+
+  **==2.更大的参数量，并向多模态扩展==**
+
+  **==3.对标GPT-4==**
+
 - ![image-20250619223637229](./assets/pics/review/image-20250619223637229.png)
+
 - [详细信息](./The Llama 3 Herd of Models.md)
