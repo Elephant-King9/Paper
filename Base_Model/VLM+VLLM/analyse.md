@@ -17,7 +17,7 @@ timeline
     2022 : Jan
     		 : BLIP<br>ICML 2022<br>Salesforce
     		 : Apr
-    		 : Flamingo<br>NIPS 2022
+    		 : Flamingo<br>NIPS 2022<br>DeepMind
     		 : Jun
     		 : CoCa<br>Google
     		 : Aug
@@ -36,7 +36,7 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-		"NIPS 2" : 2
+		"NIPS 3" : 2
 		"ICML 4" : 4
 		"CVPR 1" : 1
 		"ICLR 2" : 2
@@ -48,7 +48,8 @@ pie title 团队
 		"Salesforce 3" : 3
 		"Microsoft 2" : 2
 		"OpenAI 1" : 1
-		"KaKao 1" :1
+		"DeepMind 1" : 1
+		"KaKao 1" : 1
 ```
 
 
@@ -171,7 +172,8 @@ flowchart BT
 		style BERT fill:#63E398
 	BLIP-2[BLIP-2（2023.01）<br>提出冻结大模型训练桥接器<br>提出Q-Former<br>分步训练Q-Former]
 		style BLIP-2 fill:#EF7A6D
-	Flamingo[Flamingo]
+	Flamingo[Flamingo（2022.04）<br>冻结大模型训练桥接器<br>引入门控机制缓慢引入文本模态<br>通过LLM实现生成工作]
+		style Flamingo fill:#EF7A6D
 ```
 
 
@@ -197,10 +199,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Coca,BEiT v3,PaLI,BLIP-2]
+    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2]
     y-axis "Cite" 
-    bar [36752,2115,2412,623,5442,1710,660,794,6562]
-    line [36752,2115,2412,623,5442,1710,660,794,6562]
+    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562]
+    line [36752,2115,2412,623,5442,4842,1710,660,794,6562]
 ```
 
 

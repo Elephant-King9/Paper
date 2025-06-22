@@ -179,7 +179,41 @@
 
 - [详细信息](./BLIP: Bootstrapping Language-Image Pre-training for  Unified Vision-Language Understanding and Generation.md)
 
-### 6. CoCa: Contrastive Captioners are Image-Text Foundation Models
+### 6. Flamingo: a Visual Language Model for Few-Shot Learning
+
+- **Flamingo**
+
+- **作者: Jean-Baptiste Alayrac、 Jeff Donahue、Pauline Lu、 Antoine Miech、 Iain Barr、Yana Hasson、Karel Lenc、Arthur Mensch、Katie Millican、Malcolm Reynolds、Roman Ring、Eliza Rutherford、Karen Simonyan**
+
+- **DeepMind**
+
+- **NIPS:2022**
+
+- **终版提交:2021.04**
+
+- **Cite: 4842**
+
+- **背景**
+
+- **贡献**
+
+  - **桥接强大的预训练视觉模型和大语言模型**
+  - **可以处理任意图片，文本，视频混杂的数据（\<image\>\<text\>\<image\>\<video\>混合排序输入）**
+  - **无缝接收图像或者视频作为输入**
+
+- **创新点**
+
+  **==输入多模态，输出仅有文字(因为是通过LLM输出)==**
+
+  **==1.分别使用预训练好的视觉编码器和LLM，并在训练中冻结==**
+
+  **==2.引入tanh gating，初始值为零，在模态融合初期先对LLM只输入文本特征，在训练中缓慢引入图像文本混合模态(CA)特征==**
+
+- ![image-20250622144757028](./assets/pics/review/image-20250622144757028.png)
+
+- [详细信息](./Flamingo: a Visual Language Model for Few-Shot Learning.md)
+
+### 7. CoCa: Contrastive Captioners are Image-Text Foundation Models
 
 - **CoCa**
 
@@ -207,7 +241,7 @@
 
 - [详细信息](./CoCa: Contrastive Captioners are Image-Text Foundation Models.md)
 
-### 7. Image as a Foreign Language: BEIT Pretraining for All Vision and Vision-Language Tasks
+### 8. Image as a Foreign Language: BEIT Pretraining for All Vision and Vision-Language Tasks
 
 - **BEiT v3**
 
@@ -240,7 +274,7 @@
 
 - [详细信息](./Image as a Foreign Language: BEIT Pretraining for All Vision and Vision-Language Tasks.md)
 
-### 8. BLIP-2: Bootstrapping Language-Image Pre-training  with Frozen Image Encoders and Large Language Models
+### 9. BLIP-2: Bootstrapping Language-Image Pre-training  with Frozen Image Encoders and Large Language Models
 
 - **BLIP-2**
 
@@ -257,6 +291,16 @@
 - **背景**
 
 - **现有问题**
+  - VLP模型发展迅速但是计算开销巨大
+
+  - 将预训练好的单模态大模型迁移到多模态会面临跨模态对齐的困难，因为语言模型没见过图像
+    - Frozen模型、Flamingo模型通常采用图像喂给大语言模型，训练语言模型去做Caption，但是作者认为这种方式不足以弥补模态差距
+
+- **贡献**
+  - **融合冻结的图像和语言模型，结构高效，性能强**
+  - **借助 LLM 实现零样本生成、视觉对话等新能力**
+  - **训练参数少，计算效率高，性能优于 SOTA 模型**
+
 
 - **创新点**
 
