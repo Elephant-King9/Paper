@@ -348,6 +348,8 @@
 
 - **创新点**
 
+  **==构建数据集LLaVA-Instruct-150K==**
+
   **==1. 使用LLM优化现有多模态数据集==**
 
   **==2. 使用两段训练，第一段冻结视觉编码器和LLM，优化生成的Caption靠近原始数据集端到端训练线性投影层，第二阶段冻结视觉编码器，优化生成Caption靠近LLM优化后的数据集（多轮对话、细节描述、复杂推理三种任务）+ScienceQA数据集微调LLM+线性投影层==**
@@ -383,3 +385,35 @@
 - ![image-20250622203553985](./assets/pics/review/image-20250622203553985.png)
 
 - [详细信息](./MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models.md)
+
+### 12.InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning
+
+- **InstructBLIP**
+
+- **作者: Wenliang Dai、 Junnan Li、Dongxu Li、Anthony Meng Huat Tiong、Steven Hoi**
+
+- **Salesforce**
+
+- **初版提交: 2023.05**
+
+- **Cite: 7915**
+
+- **背景**
+
+- **现有问题**
+
+- **贡献**
+
+- **创新点**
+
+  **==1.使用LLM优化现有数据集==**
+
+  **==2.基于BLIP2模型，引入指令部分来适配不同下游任务==**
+
+  **==3.为每个任务设计10~15个自然语言指令模板，转化原始数据通过LLM来优化数据集==**
+
+  **==4.对于原始数据中答案很短的任务，在模板中加入指令词，防止习惯性产出短句==**
+
+  ![image-20250622215238045](./assets/pics/review/image-20250622215238045.png)
+
+- [详细信息](./InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning.md)

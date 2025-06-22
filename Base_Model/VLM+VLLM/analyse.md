@@ -29,6 +29,8 @@ timeline
     		 : Apr
 				 : LLaVA<br>NIPS 2023<br>Microsoft<br>University of Wisconsin–Madison
 				 : Mini-GPT4<br>King Abdullah University of Science and Technology
+				 : May
+				 : InstructBLIP<br>Salesforce
 ```
 
 
@@ -48,7 +50,7 @@ pie title 期刊类型
 ```mermaid
 pie title 团队
 		"Google 2" : 2
-		"Salesforce 3" : 3
+		"Salesforce 4" : 4
 		"Microsoft 3" : 3
 		"OpenAI 1" : 1
 		"DeepMind 1" : 1
@@ -143,7 +145,8 @@ flowchart BT
 	Flamingo-->|冻结大模型|BLIP-2
 	BERT-->|MASK思想引入图像|BEiT
 	BEiT-->|改进|BEiT_v2
-	
+	BLIP-2-->|模型架构|InstructBLIP
+	LLaVA-->|LLM优化数据集|InstructBLIP
 	
 
 	目标检测[目标检测<br>使用预训练好的目标检测模型来提取特征<br>视觉预训练模型无法学习]
@@ -193,6 +196,8 @@ flowchart BT
 		style Vicuna fill:#F3D266
 	Mini-GPT4[Mini-GPT4（2023.04）<br>Vicuna+BLIP-2<br>冻结大模型学习投影层<br>目标媲美GPT-4]
 		style Mini-GPT4 fill:#EF7A6D
+	InstructBLIP[InstructBLIP（2023.05）<br>通过LLM优化现有数据集<br>优化BLIP2模型来不同下游任务]
+		style InstructBLIP fill:#EF7A6D
 ```
 
 
@@ -218,10 +223,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2,LLaVA,Mini-GPT4]
+    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2,LLaVA,Mini,I-BLIP]
     y-axis "Cite" 
-    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252]
-    line [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252]
+    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252,7915]
+    line [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252,7915]
 ```
 
 

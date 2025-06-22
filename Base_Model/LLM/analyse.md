@@ -23,6 +23,7 @@ timeline
     		 : Llama-1<br>MetaAI
     		 : Mar
     		 : GPT-4<br>OpenAI
+    		 : Vicuna
     		 : Jul
     		 : Llama-2<br>Llama-2-Chat<br>MetaAI
     2024 : Nov
@@ -110,10 +111,10 @@ Llama-3[Llama-3（2024.11）<br>更大规模<br>更优训练数据<br>多模态�
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [Transformer,GPT-1,BERT,GPT-2,T5,GPT-3,InstructGPT,Llama-1,Llama-2,GPT-4,Llama-3]
+    x-axis [Transformer,GPT-1,BERT,GPT-2,T5,GPT-3,InstructGPT,Llama-1,GPT-4,Llama-2,Llama-3]
     y-axis "Cite" 
-    bar [185289,13424,133047,16676,24245,48070,15295,16982,15730,12771,5189]
-    line [185289,13424,133047,16676,24245,48070,15295,16982,15730,12771,5189]
+    bar [185289,13424,133047,16676,24245,48070,15295,16982,12771,15730,5189]
+    line [185289,13424,133047,16676,24245,48070,15295,16982,12771,15730,5189]
 ```
 
 
