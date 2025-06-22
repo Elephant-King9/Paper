@@ -28,6 +28,7 @@ timeline
     		 : BLIP-2<br>ICML 2023<br>Salesforce
     		 : Apr
 				 : LLaVA<br>NIPS 2023<br>Microsoft<br>University of Wisconsin–Madison
+				 : Mini-GPT4<br>King Abdullah University of Science and Technology
 ```
 
 
@@ -53,6 +54,7 @@ pie title 团队
 		"DeepMind 1" : 1
 		"KaKao 1" : 1
 		"University of Wisconsin–Madison 1" : 1
+		"King Abdullah University of Science and Technology 1" : 1
 ```
 
 
@@ -131,8 +133,12 @@ flowchart BT
 	SimVLM-->BLIP
 	ALBEF-->|网络结构|CoCa
 	BLIP-->|Decoder|CoCa
+	Vicuna-->|提供LLM|Mini-GPT4
+	Vicuna-->|提供LLM|LLaVA
 	BLIP-->|数据清洗<br>舍弃动量模型|BLIP-2
+	BLIP-2-->|Q-Former|Mini-GPT4
 	BLIP-2-->|冻结模型|LLaVA
+	GPT-4-->|模拟GPT-4|Mini-GPT4
 	GPT-4-->|LLM微调|LLaVA
 	Flamingo-->|冻结大模型|BLIP-2
 	BERT-->|MASK思想引入图像|BEiT
@@ -183,6 +189,10 @@ flowchart BT
 		style LLaVA fill:#EF7A6D
 	GPT-4[GPT-4（2023.03）<br>首次融入多模态生成<br>没有很多实现细节]
 		style GPT-4 fill:#F3D266
+	Vicuna[Vicuna（2023.03）<br>基于LLaMA微调]
+		style Vicuna fill:#F3D266
+	Mini-GPT4[Mini-GPT4（2023.04）<br>Vicuna+BLIP-2<br>冻结大模型学习投影层<br>目标媲美GPT-4]
+		style Mini-GPT4 fill:#EF7A6D
 ```
 
 
@@ -208,10 +218,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2,LLaVA]
+    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2,LLaVA,Mini-GPT4]
     y-axis "Cite" 
-    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915]
-    line [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915]
+    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252]
+    line [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252]
 ```
 
 

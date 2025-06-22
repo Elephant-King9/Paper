@@ -358,3 +358,28 @@
 
 - [详细信息](./Visual Instruction Tuning.md)
 
+### 11.MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models
+
+- **Mini-GPT4**
+
+- **作者: Deyao Zhu、 Jun Chen、Xiaoqian Shen、Xiang Li、Mohamed Elhoseiny**
+
+- **King Abdullah University of Science and Technology**
+
+- **初版提交: 2023.04**
+
+- **Cite: 3252**
+
+- **背景**
+
+- **现有问题**
+
+- **贡献**
+
+- **创新点**
+
+  **==1.Vicuna+BLIP2，冻结大模型，训练Q-Former来达到媲美GPT-4的性能==**
+
+- ![image-20250622203553985](./assets/pics/review/image-20250622203553985.png)
+
+- [详细信息](./MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models.md)

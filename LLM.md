@@ -79,7 +79,7 @@ flowchart LR
 		style LLaVA fill:#EF7A6D
 	LLaVA_1[LLaVA<br>Microsoft<br>2023.04.17]
 		style LLaVA_1 fill:#EF7A6D
-	MiniGPT-4[MiniGPT-4<br>OpenAI<br>2023.4.20]
+	MiniGPT-4[MiniGPT-4<br>2023.4.20]
 		style MiniGPT-4 fill:#EF7A6D
 	InstructBLIP[InstructBLIP<br>Salesforce<br>2023.05.11]
 		style InstructBLIP fill:#EF7A6D
