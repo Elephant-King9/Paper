@@ -21,11 +21,11 @@ timeline
     		 : InstructGPT<br>OpenAI
     2023 : Feb
     		 : Llama-1<br>MetaAI
+    		 : Mar
+    		 : GPT-4<br>OpenAI
     		 : Jul
     		 : Llama-2<br>Llama-2-Chat<br>MetaAI
-    2024 : Mar
-    		 : GPT-4<br>OpenAI
-    		 : Nov
+    2024 : Nov
     		 : Llama-3<br>MetaAI
 ```
 
@@ -88,7 +88,7 @@ GPT-3[GPT-3（2020.05）<br>更大的无监督预训练<br>完全不需要下游
 	style GPT-3 fill:#F3D266
 InstructGPT[InstructGPT（2022.03）<br>通过人工标注的数据集+新训练的强化训练网络来微调GPT-3]
 	style InstructGPT fill:#F3D266
-GPT-4[GPT-4（2024.03）<br>首次融入多模态生成<br>没有很多实现细节]
+GPT-4[GPT-4（2023.03）<br>首次融入多模态生成<br>没有很多实现细节]
 	style GPT-4 fill:#F3D266
 Training_Compute-Optimal_Large_Language_Models[Chinchilla 缩放法则（2022）]
 Llama-1[Llama-1（2023.02）<br>开源<br>全部采用公开可获取数据集<br>参数量更小效果更好]

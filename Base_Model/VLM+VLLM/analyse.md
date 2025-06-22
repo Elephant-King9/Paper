@@ -26,6 +26,8 @@ timeline
     		 : PaLI<br>ICLR 2023
     2023 : Jan
     		 : BLIP-2<br>ICML 2023<br>Salesforce
+    		 : Apr
+				 : LLaVA<br>NIPS 2023<br>Microsoft<br>University of Wisconsin–Madison
 ```
 
 
@@ -36,7 +38,7 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-		"NIPS 3" : 2
+		"NIPS 4" : 4
 		"ICML 4" : 4
 		"CVPR 1" : 1
 		"ICLR 2" : 2
@@ -46,10 +48,11 @@ pie title 期刊类型
 pie title 团队
 		"Google 2" : 2
 		"Salesforce 3" : 3
-		"Microsoft 2" : 2
+		"Microsoft 3" : 3
 		"OpenAI 1" : 1
 		"DeepMind 1" : 1
 		"KaKao 1" : 1
+		"University of Wisconsin–Madison 1" : 1
 ```
 
 
@@ -199,10 +202,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2]
+    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2,LLaVA]
     y-axis "Cite" 
-    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562]
-    line [36752,2115,2412,623,5442,4842,1710,660,794,6562]
+    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915]
+    line [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915]
 ```
 
 

@@ -315,3 +315,17 @@
 - ![image-20250621221955312](./assets/pics/review/image-20250621221955312.png)
 
 - [详细信息](./BLIP-2: Bootstrapping Language-Image Pre-training  with Frozen Image Encoders and Large Language Models.md)
+
+### 10.Visual Instruction Tuning
+
+- LLaVA
+- 作者: Haotian Liu1、Chunyuan Li2、Qingyang Wu3、Yong Jae Lee1
+- University of Wisconsin–Madison、Microsoft
+- NIPS:2023
+- 初版提交:2023.04
+- Cite:7915
+- 背景
+- 现有问题
+- 创新点
+- [详细信息](./Visual Instruction Tuning.md)
+
