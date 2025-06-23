@@ -55,7 +55,7 @@ pie title 团队
 		"Salesforce 4" : 4
 		"Microsoft 3" : 3
 		"OpenAI 1" : 1
-		"DeepMind 1" : 1
+		"Google DeepMind 1" : 1
 		"KaKao 1" : 1
 		"University of Wisconsin–Madison 2" : 2
 		"King Abdullah University of Science and Technology 1" : 1
