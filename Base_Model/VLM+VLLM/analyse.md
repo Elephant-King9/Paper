@@ -27,10 +27,12 @@ timeline
     2023 : Jan
     		 : BLIP-2<br>ICML 2023<br>Salesforce
     		 : Apr
-				 : LLaVA<br>NIPS 2023<br>Microsoft<br>University of Wisconsin–Madison
+				 : LLaVA<br>NIPS 2023<br>Microsoft<br>University of Wisconsin–Madison<br>Microsoft
 				 : Mini-GPT4<br>King Abdullah University of Science and Technology
 				 : May
 				 : InstructBLIP<br>Salesforce
+				 : Oct
+				 : LLaVA-1.5<br>University of Wisconsin–Madison<br>CVPR 2024<br>Microsoft
 ```
 
 
@@ -43,7 +45,7 @@ timeline
 pie title 期刊类型
 		"NIPS 4" : 4
 		"ICML 4" : 4
-		"CVPR 1" : 1
+		"CVPR 2" : 2
 		"ICLR 2" : 2
 ```
 
@@ -55,7 +57,7 @@ pie title 团队
 		"OpenAI 1" : 1
 		"DeepMind 1" : 1
 		"KaKao 1" : 1
-		"University of Wisconsin–Madison 1" : 1
+		"University of Wisconsin–Madison 2" : 2
 		"King Abdullah University of Science and Technology 1" : 1
 ```
 
@@ -63,11 +65,17 @@ pie title 团队
 
 # 3. 关联
 
-绿色代表Transformer-Encoder only
+- **绿色**
+  - **Transformer-Encoder only，仅适用于图文检索**
 
-黄色代表Transformer-Decoder only
+- **黄色**
+  - **LLM**
 
-红色代表Transformer-Encoder+Decoder
+- **红色**
+  - **Transformer-Encoder+Decoder，适用于图文检索和生成任务**
+
+- **蓝色**
+  - **放弃端到端训练，使用冻结好的预训练大模型，仅训练桥接器**
 
 - 单流架构
   - 图像和文本的嵌入 在输入阶段就拼接（concatenate）在一起，然后统一送入同一个 Transformer 中处理
@@ -138,16 +146,17 @@ flowchart BT
 	Vicuna-->|提供LLM|Mini-GPT4
 	Vicuna-->|提供LLM|LLaVA
 	BLIP-->|数据清洗<br>舍弃动量模型|BLIP-2
-	BLIP-2-->|Q-Former|Mini-GPT4
 	BLIP-2-->|冻结模型|LLaVA
 	GPT-4-->|模拟GPT-4|Mini-GPT4
+	BLIP-2-->|Q-Former|Mini-GPT4
 	GPT-4-->|LLM微调|LLaVA
 	Flamingo-->|冻结大模型|BLIP-2
 	BERT-->|MASK思想引入图像|BEiT
 	BEiT-->|改进|BEiT_v2
-	BLIP-2-->|模型架构|InstructBLIP
 	LLaVA-->|LLM优化数据集|InstructBLIP
-	
+	BLIP-2-->|模型架构|InstructBLIP
+	LLaVA-->|模型优化|LLaVA-1.5
+	InstructBLIP-->|长短回答对比|LLaVA-1.5
 
 	目标检测[目标检测<br>使用预训练好的目标检测模型来提取特征<br>视觉预训练模型无法学习]
 	ViLT[ViLT（2021.01）<br>单流架构,轻量化<br>整词遮蔽+图像增强<br>摒弃目标检测<br>ViT处理图像<br>ITM+MLM+WPA]
@@ -185,19 +194,21 @@ flowchart BT
 	BERT[BERT（2018.10）<br>仅使用Encoder<br>当前位置知道前后信息<br>两个句子同时输入<br>同时学习句子是否相邻+预测MASK单词]
 		style BERT fill:#63E398
 	BLIP-2[BLIP-2（2023.01）<br>提出冻结大模型训练桥接器<br>提出Q-Former<br>分步训练Q-Former]
-		style BLIP-2 fill:#EF7A6D
+		style BLIP-2 fill:#98CCFF
 	Flamingo[Flamingo（2022.04）<br>冻结大模型训练桥接器<br>引入门控机制缓慢引入文本模态<br>通过LLM实现生成工作]
-		style Flamingo fill:#EF7A6D
+		style Flamingo fill:#98CCFF
 	LLaVA[LLaVA（2023.04）<br>使用GPT-4优化数据集<br>使用两段训练<br>只使用简单的线性投影+优化数据集]	
-		style LLaVA fill:#EF7A6D
+		style LLaVA fill:#98CCFF
 	GPT-4[GPT-4（2023.03）<br>首次融入多模态生成<br>没有很多实现细节]
 		style GPT-4 fill:#F3D266
 	Vicuna[Vicuna（2023.03）<br>基于LLaMA微调]
 		style Vicuna fill:#F3D266
 	Mini-GPT4[Mini-GPT4（2023.04）<br>Vicuna+BLIP-2<br>冻结大模型学习投影层<br>目标媲美GPT-4]
-		style Mini-GPT4 fill:#EF7A6D
+		style Mini-GPT4 fill:#98CCFF
 	InstructBLIP[InstructBLIP（2023.05）<br>通过LLM优化现有数据集<br>优化BLIP2模型来不同下游任务]
-		style InstructBLIP fill:#EF7A6D
+		style InstructBLIP fill:#98CCFF
+	LLaVA-1.5[LLaVA-1.5（2023.10）<br>引入新数据集+prompt工程在特定下游任务短回答<br>线性投影改为两层MLP<br>输入更大尺度图像]
+		style LLaVA-1.5 fill:#98CCFF
 ```
 
 
@@ -223,10 +234,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2,LLaVA,Mini,I-BLIP]
+    x-axis [CLIP, ViLT, ALBEF,VLMo, BLIP,Flamingo,Coca,BEiT v3,PaLI,BLIP-2,LLaVA,Mini,I-BLIP,La-1.5]
     y-axis "Cite" 
-    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252,7915]
-    line [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252,7915]
+    bar [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252,7915,2809]
+    line [36752,2115,2412,623,5442,4842,1710,660,794,6562,7915,3252,7915,2809]
 ```
 
 

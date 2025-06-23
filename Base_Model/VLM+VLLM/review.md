@@ -417,3 +417,41 @@
   ![image-20250622215238045](./assets/pics/review/image-20250622215238045.png)
 
 - [详细信息](./InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning.md)
+
+### 13.Improved Baselines with Visual Instruction Tuning
+
+- **LLaVA-1.5**
+
+- **作者: Haotian Liu、Chunyuan Li、Yuheng Li、Yong Jae Lee**
+
+- **University of Wisconsin–Madison、Microsoft**
+
+- **初版提交: 2023.10.05**
+
+- **Cite: 2809**
+
+- **背景**
+
+  - LLaVA
+    - 强在真是对话，弱在学术基准
+    - 偏向于回答长的答案
+  - InstructBLIP
+    - 强在学术评估，弱在真是对话
+    - 倾向于回答短答案
+
+- **现有问题**
+
+  - 容易出现幻觉（学习的桌子附近都有椅子，给一张没椅子的桌子模型也会判断有椅子）
+
+- **创新点**
+
+  **==1.解决LLaVA倾向于长对话的问题：引入科学VQA数据集+prompt工程在特定下游任务引导==**
+
+  **==2.增大图像输入+减少幻觉：通过输入更大尺寸的图像与局部+全局resize拼接的方法==**
+
+  **==3.将原本LLaVA中的线性投影层换成两层MLP==**
+
+- ![image-20250623125447514](./assets/pics/review/image-20250623125447514.png)
+
+- [详细信息](./Improved Baselines with Visual Instruction Tuning.md)
+
