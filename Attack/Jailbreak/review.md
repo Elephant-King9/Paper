@@ -1,4 +1,37 @@
-### 1. Universal and Transferable Adversarial Attacks  on Aligned Language Models
+### 1. AUTOPROMPT: Eliciting Knowledge from Language Models  with Automatically Generated Prompts
+
+- **AutoPrompt**
+
+- **作者: Taylor Shin、Yasaman Razeghi、Robert L. Logan IV、Eric Wallace、Sameer Singh**
+
+- **University of California**
+
+- **初版提交:2022.10.31**
+
+- **Cite: 2157**
+
+- **背景**
+
+- **现有问题**
+
+  - 预训练语言模型不清楚是预训练学到了知识还是微调学到的
+  - 使用人工prompt的方法可能无法让模型理解意图，导致有知识但是说不出来的问题
+
+- **贡献**
+
+  - **创建了一种自动生成prompt来评估预训练语言模型性能的模型**
+
+- **创新点**
+
+  **==1.创建了一种生成prompt的方法，能够更好的帮助预训练语言模型(BERT)模型理解问题，让BERT能把自己的知识更好的表示出来来帮助人们测试预训练模型的知识学习程度==**
+
+- ![image-20250624144837143](./assets/pics/review/image-20250624144837143.png)
+
+- [详细信息](./AUTOPROMPT: Eliciting Knowledge from Language Models  with Automatically Generated Prompts.md)
+
+
+
+### 2. Universal and Transferable Adversarial Attacks  on Aligned Language Models
 
 - **GCG**
 
