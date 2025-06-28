@@ -27,6 +27,15 @@ pie title 期刊类型
 
 # 3. 关联
 
+```mermaid
+flowchart BT
+VAE-->VQ-VAE
+straight-through_estimator-->|离散化梯度传播|VQ-VAE
+PixelCNN-->|作为Prior生成器|VQ-VAE
+```
+
+
+
 
 
 # 4. 引用量
