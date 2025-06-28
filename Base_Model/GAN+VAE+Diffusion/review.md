@@ -84,9 +84,11 @@
 
 - **现有问题**
 
+  - VAE生成图片因为强大的生成器导致只生成几类图片的问题，生成的图片随机性下降
+
 - **创新点**
 
-  **==1.将VAE中的隐空间离散化，避免了生成图片因为强大的生成器导致只生成一类图片的问题==**
+  **==1.将VAE中的隐空间离散化，避免了生成图片因为强大的生成器导致只生成几类图片的问题==**
 
   **==2.维护了一个codebook，让图像映射到连续的向量空间中时，对每个特征与codebook中的向量进行比对，然后用离散的codebook代替初始连续的特征==**
 
@@ -95,3 +97,29 @@
 - ![image-20250628175130172](./assets/pics/review/image-20250628175130172.png)
 
 - [详细信息](./Neural Discrete Representation Learning.md)
+
+### 4. Generating Diverse High-Fidelity Images with VQ-VAE-2
+
+- **VQ-VAE2**
+
+- **作者: Ali Razavi、Aäron van den Oord、Oriol Vinyals**
+
+- **Google DeepMind**
+
+- **NIPS: 2019**
+
+- **初版提交: 2019.06.02**
+
+- **Cite: 2329**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.在VQ-VAE的基础上分层生成字典，可以捕获更多的图像信息==**
+
+- ![image-20250628195940662](./assets/pics/review/image-20250628195940662.png)
+
+- [详细信息](./Generating Diverse High-Fidelity Images with VQ-VAE-2.md)
