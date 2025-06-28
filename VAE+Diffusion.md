@@ -23,7 +23,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-VAE-->Diffusion_Model-->VQ-VAE-->VQ-VAE2-->DDPM-->DDIM-->Imporved_DDPM-->DALL-E
+VAE-->Diffusion_Model-->VQ-VAE-->VQ-VAE2-->I-GPT-->DDPM-->DDIM-->Imporved_DDPM-->DALL-E
 DALL-E_2-->Diffusion_Beat_GANs-->CogView-->GLIDE-->LDM-->DALL-E2-->CogView2-->Imagen
 Imagen_1_1-->Stable_Diffusion2-->DiTs-->SDXL-->DALL-E3-->SDXL_Turbo-->Imagen_2-->SD3-->CogView3
 VAE[VAE<br>2013.12.20]
@@ -34,6 +34,7 @@ VQ-VAE[VQ-VAE<br>Google DeepMind<br>2017.11.02]
 style VQ-VAE fill:#63E398
 VQ-VAE2[VQ-VAE2<br>Google DeepMind<br>2019.06.02]
 style VQ-VAE2 fill:#63E398
+I-GPT[I-GPT<br>OpenAI<br>2020.01.31]
 DDPM[DDPM<br>UC Berkeley<br>2020.06.19]
 style DDPM fill:#F3D266
 DDIM[DDIM<br>Stanford University<br>2020.10.06]

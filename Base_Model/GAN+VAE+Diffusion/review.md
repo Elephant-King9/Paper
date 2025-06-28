@@ -62,6 +62,8 @@
 
   **==1. 提出了对抗生成网络，通过生成器生成以假乱真的图片，判别器辨别是真实图片还是生成图片，两个网络协同更新，最终达到生成器以假乱真的效果==**
 
+  **==2.首次提出两阶段训练流程，第一阶段训练图像和隐空间的对应部分，第二阶段训练隐空间变量自回归生成部分==**
+
 - ![image-20250628161311272](./assets/pics/review/image-20250628161311272.png)
 
 - [详细信息](./Generative Adversarial Nets.md)
@@ -123,3 +125,45 @@
 - ![image-20250628195940662](./assets/pics/review/image-20250628195940662.png)
 
 - [详细信息](./Generating Diverse High-Fidelity Images with VQ-VAE-2.md)
+
+### 5. Generative Pretraining from Pixels
+
+- **I-GPT**
+
+- **作者: Mark Chen、Alec Radford、Rewon Child、Jeff Wu、Heewoo Jun、Prafulla Dhariwal、David Luan、Ilya Sutskever**
+
+- **OpenAI**
+
+- **ICML:2020**
+
+- **初版提交: 2020.1.31**
+
+- **Cite: 2050**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.对图像构建了类似GPT的自回归生成模型，将大尺度图像转化为小尺度，并展平成一维向量，然后通过自回归Transformer模型学习==**
+
+  **==2.生成任务时根据自回归生成一个全新的一维序列，然后反向建模成图像==**
+
+- ![image-20250628213648798](./assets/pics/review/image-20250628213648798.png)
+
+- [详细信息](./Generative Pretraining from Pixels.md)
+
+### 6. Zero-Shot Text-to-Image Generation
+
+- **DALL·E**
+- **作者: Aditya Ramesh、Mikhail Pavlov、Gabriel Goh、Scott Gray、Chelsea Voss、Alec Radford、Mark Chen、Ilya Sutskever**
+- **OpenAI**
+- **ICML: 2021**
+- **初版提交: 2021.02.24**
+- **Cite: 6536**
+- **背景**
+- **现有问题**
+- **创新点**
+- 
+- [详细信息](./Zero-Shot Text-to-Image Generation.md)
