@@ -96,6 +96,8 @@
 
   **==3.在生成过程使用了自回归的方式(类似LLM)，首先从离散的Codebook上随机选择一个特征，其后选择的特征都根据前面已经选择的特征计算概率然后根据概率抽样，来完成随机选择的过程==**
 
+  ![image-20250628221920208](./assets/pics/review/image-20250628221920208.png)
+
 - ![image-20250628175130172](./assets/pics/review/image-20250628175130172.png)
 
 - [详细信息](./Neural Discrete Representation Learning.md)
@@ -157,13 +159,31 @@
 ### 6. Zero-Shot Text-to-Image Generation
 
 - **DALL·E**
+
 - **作者: Aditya Ramesh、Mikhail Pavlov、Gabriel Goh、Scott Gray、Chelsea Voss、Alec Radford、Mark Chen、Ilya Sutskever**
+
 - **OpenAI**
+
 - **ICML: 2021**
+
 - **初版提交: 2021.02.24**
+
 - **Cite: 6536**
+
 - **背景**
+
 - **现有问题**
+
 - **创新点**
-- 
+
+  **==1.首次提出文本指导图像生成的条件生成模型==**
+
+  **==2.首次引入Transformer Decoder来建模生成模型，将图像和文本拼接，自回归的预测Codebook顺序，具体策略是根据文本区选择第一个潜变量，后续根据文本和已选择的潜变量预测==**
+
+  **==3.两阶段训练，在训练prior采用了不同的掩码策略==**
+
+  **==4.提供了GPU上加速优化的优化策略==**
+
+- ![image-20250628223420140](./assets/pics/review/image-20250628223420140.png)
+
 - [详细信息](./Zero-Shot Text-to-Image Generation.md)
