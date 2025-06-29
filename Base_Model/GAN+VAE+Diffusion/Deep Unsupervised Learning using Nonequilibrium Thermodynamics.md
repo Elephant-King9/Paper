@@ -21,6 +21,16 @@
 
 - **具体解决方法**
 
+- **实验**
+
+  - 数据集
+    - MINIST
+    - CIFAR-10
+    - Dead Leaf Images
+    - Bark Texture Image
+  
+  
+  
   
 
 

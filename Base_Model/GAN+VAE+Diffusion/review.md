@@ -92,6 +92,8 @@
 
   **==2.每一步让神经网络拟合图像而不是噪声==**
 
+  **==3.训练的数据集较好，没有很强的泛化能力==**
+
 - ![image-20250629112808774](./assets/pics/review/image-20250629112808774.png)
 
 - [详细信息](./Deep Unsupervised Learning using Nonequilibrium Thermodynamics.md)
@@ -187,14 +189,27 @@
 ### 7. Denoising Diffusion Probabilistic Models
 
 - **DDPM**
+
 - **作者: Jonathan H、Ajay Jain、Pieter Abbeel**
+
 - **UC Berkeley**
+
 - **NIPS: 2020**
+
 - **初版提交: 2020.06.19**
+
 - **Cite: 23847**
+
 - **背景**
+
 - **现有问题**
+
 - **创新点**
+
+  **==1.使用预测噪声的均方误差的方式代替了Diffusion Model使用最大化ELBO的优化策略，可以轻易的得到任意时间步的噪声来计算均方误差，更加灵活，简化了损失==**
+
+- ![image-20250629135553468](./assets/pics/review/image-20250629135553468.png)
+
 - [详细信息](./Denoising Diffusion Probabilistic Models.md)
 
 ### 8. Zero-Shot Text-to-Image Generation

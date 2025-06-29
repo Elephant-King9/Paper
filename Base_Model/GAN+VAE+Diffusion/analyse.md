@@ -41,7 +41,7 @@ pie title 期刊类型
 
 黄色代表以VAE为基础的无条件生成模型
 
-绿色代表以Diffusion为基础
+绿色代表以Diffusion为基础无条件生成
 
 红色代表VAE基础文本指导的图像生成
 
@@ -49,17 +49,28 @@ pie title 期刊类型
 
 -----
 
-**GAN的训练稳定性不强，但是胜在生成的图像质量较高，在DDPM出现之前性能一直处在生成模型的前列，VAE虽说训练的方法简单但是稳定性较高，缺点是生成图像的质量不如GAN，但是DDPM出现后Diffusion模型又易于训练且恢复图像的质量也超越GAN，至今Diffusion取代了VAE和GAN成为了最好的生成模型**
+**GAN的训练稳定性不强，但是胜在生成的图像质量较高，在DDPM出现之前性能一直处在生成模型的前列，VAE虽说训练的方法简单但是稳定性较高，缺点是生成图像的质量不如GAN，但是DDPM出现后Diffusion模型又易于训练且恢复图像的质量能达到GAN的性能，知道Diffusion Beat GANs以后Diffusion从数学到性能就完全超越了GAN，至今Diffusion取代了VAE和GAN成为了最好的生成模型**
+
+----
+
+- **变分推断**
+  - **为用一个可学习的神经网络去拟合无法计算的数据后验分布**
 
 ```mermaid
 flowchart BT
 VAE-->VQ-VAE
 straight-through_estimator-->|离散化梯度传播|VQ-VAE
 PixelCNN-->|作为Prior生成器|VQ-VAE
+VAE-->|ELBO训练思想|Diffusion_Model
 VQ-VAE-->|分层提取<br>两阶段训练|VQ-VAE2
 VQ-VAE2-->|两阶段训练+CodeBook+ELBO|DALL-E
 I-GPT-->|Transformer引入|DALL-E
 Gumbel-softmax-->|解决离散梯度不可导|DALL-E
+Diffusion_Model-->|逐步优化策略|DDPM
+
+
+
+
 VAE[VAE（2013.12）<br>使用原图映射到隐空间<br>从隐空间随机抽样生成图像]
 	style VAE fill:#F3D266
 VQ-VAE[VQ-VAE（2017.11）<br>引入CodeBook离散化，来解决VAE生成聚类的问题<br>首次提出两阶段训练方式]
@@ -70,8 +81,10 @@ DALL-E[DALL·E（2021.02）<br>文本指导图像生成<br>引入Transformer Dec
 	style DALL-E fill:#EF7A6D
 I-GPT[iGPT（2020.01）<br>Transformer引入生成模型]
 Gumbel-softmax[Gumbel-softmax]
-
-style CLIP fill:#63E398
+Diffusion_Model[Diffusion Model（2015.03）<br>Diffusion模型理论基础<br>仅在小规模数据集上训练]
+	style Diffusion_Model fill:#63E398
+DDPM[DDPM（2020.06）<br>将预测图像转化为预测噪声<br>简化了损失公式<br>可以随时生成时间为T的噪声，不需要马尔科夫逐渐推导]
+	style DDPM fill:#63E398
 ```
 
 
