@@ -88,7 +88,8 @@ Gumbel-softmax-->|解决离散梯度不可导|DALL-E
 Diffusion_Model-->|逐步优化策略|DDPM
 DDPM-->|优化生成时间|DDIM
 DDPM-->|优化损失函数<br>优化生成时间|IDDPM
-
+DDIM-->|引入分类器指导训练和生成|DvsG
+DDPM-->|全方位微调，引入分类器指导训练和生成|DvsG
 
 
 
@@ -110,6 +111,8 @@ DDIM[DDIM（2020.10）<br>通过去除马尔科夫链来加快生成图像的时
 	style DDIM fill:#63E398
 IDDPM[I-DDPM（2021.02）<br>优化了损失函数，让训练更平滑，更能拟合对数似然<br>优化了生成步骤，跳步生成，速度更快]
 	style IDDPM fill:#63E398
+DvsG[DvsG（2021.05）<br>全方位微调DDPM<br>引入分类器指导图像生成，提高精度牺牲多样性<br>性能全面超越GANs]
+	style DvsG fill:#63E398
 ```
 
 

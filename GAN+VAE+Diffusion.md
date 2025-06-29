@@ -44,7 +44,7 @@ style Imporved_DDPM fill:#F3D266
 DALL-E[DALL·E<br>OpenAI<br>ICML 2021<br>2021.02.24]
 style DALL-E fill:#63E398
 DALL-E_2[DALL·E<br>OpenAI<br>2021.02.24]
-style DALL-E_2 fill:#F3D266
+style DALL-E_2 fill:#63E398
 Diffusion_Beat_GANs[Diffusion Beat GANs<br>OpenAI<br>NIPS 2021<br>2021.05.11]
 style Diffusion_Beat_GANs fill:#F3D266
 CogView[CogView<br>Tsinghua University<br>2021.05.26]
