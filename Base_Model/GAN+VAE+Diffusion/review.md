@@ -242,7 +242,39 @@
 
 - [详细信息](./Denoising Diffusion Implicit Models.md)
 
-### 8. Zero-Shot Text-to-Image Generation
+### 9.Improved Denoising Diffusion Probabilistic Models
+
+- **Improved DDPM**
+
+- **作者: Alex Nichol、Prafulla Dhariwal**
+
+- **OpenAI**
+
+- **ICML: 2021**
+
+- **初版提交: 2021.02.18**
+
+- **Cite: 4481**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==优化了损失函数和生成步骤，让训练更平滑，更能拟合对数似然，并且生成更快==**
+
+  **==1.对总损失中添加了一部分，专门用于优化方差这一系数，在DDPM中方差固定，且虽说生成的图像质量很高，但是对数似然拟合不好，但是本文发现优化方差可以提高对数似然的拟合，通过让模型输出向量转化成方差来平衡先验和后验的方差==**
+
+  **==2.优化了DDPM的线性噪声，本文发现随着时间线性增加的噪声最多有20%是冗余的，生成阶段跳过很多次迭代生成的也很好==**
+
+  **==3.优化损失函数，让其在训练过程中更稳定==**
+
+  **==4.生成图像使用跳步生成，降低生成图像时间，因为在训练阶段学习了每一步的方差，模型就能更准确地把控不同时刻下噪声和信号的比例变化规律，从而在推理阶段灵活重用训练中学到的不同时间步方差信息来适配较少采样步数==**
+
+- [详细信息](./Improved Denoising Diffusion Probabilistic Models.md)
+
+### 10. Zero-Shot Text-to-Image Generation
 
 - **DALL·E**
 
@@ -276,7 +308,7 @@
 
 - [详细信息](./Zero-Shot Text-to-Image Generation.md)
 
-### 9. Diffusion Models Beat GANs on Image Synthesis
+### 11. Diffusion Models Beat GANs on Image Synthesis
 
 - **Diffusion beats GANs**
 - **作者:Prafulla Dhariwal、Alex Nichol**

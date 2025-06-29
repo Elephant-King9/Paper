@@ -23,6 +23,7 @@ timeline
     		 : Oct
     		 : DDIM<br>ICLR 2021<br>Stanford University
     2021 : Feb
+    		 : Improved DDPM<br>ICML 2021<br>OpenAI
     		 : DALL·E<br>ICML 2021<br>OpenAI
     		 : May
     		 : D vs G<br>NIPS 2021<br>OpenAI
@@ -38,8 +39,20 @@ timeline
 pie title 期刊类型
     "ICLR 2" : 2
     "NIPS 5" : 5
-    "ICML 3" : 3
+    "ICML 4" : 4
 ```
+
+```mermaid
+pie title 单位
+    "Machine Learning Group Universiteit van Amsterdam 1" : 1
+    "Universite ́ de Montre ́al 1" : 1
+    "Stanford University 2" : 2
+    "Google DeepMind 2" : 2
+    "OpenAI 4" : 4
+    "UC Berkeley 1" : 1
+```
+
+
 
 # 3. 关联
 
@@ -74,6 +87,7 @@ I-GPT-->|Transformer引入|DALL-E
 Gumbel-softmax-->|解决离散梯度不可导|DALL-E
 Diffusion_Model-->|逐步优化策略|DDPM
 DDPM-->|优化生成时间|DDIM
+DDPM-->|优化损失函数<br>优化生成时间|IDDPM
 
 
 
@@ -94,6 +108,8 @@ DDPM[DDPM（2020.06）<br>将预测图像转化为预测噪声<br>简化了损�
 	style DDPM fill:#63E398
 DDIM[DDIM（2020.10）<br>通过去除马尔科夫链来加快生成图像的时间]
 	style DDIM fill:#63E398
+IDDPM[I-DDPM（2021.02）<br>优化了损失函数，让训练更平滑，更能拟合对数似然<br>优化了生成步骤，跳步生成，速度更快]
+	style IDDPM fill:#63E398
 ```
 
 
@@ -105,10 +121,10 @@ DDIM[DDIM（2020.10）<br>通过去除马尔科夫链来加快生成图像的时
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,VQ-VAE,VQ-VAE2,I-GPT,DDPM,DDIM,DALL-E,D vs G]
+    x-axis [VAE,GAN,DM,VQ-VAE,VQ-VAE2,I-GPT,DDPM,DDIM,I-DDPM,DALL-E,D vs G]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,6536, 9492]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,6536, 9492]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492]
 ```
 
 
