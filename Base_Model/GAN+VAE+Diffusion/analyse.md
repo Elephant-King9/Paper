@@ -20,8 +20,12 @@ timeline
     		 : I-GPT<br>ICML 2020<br>OpenAI
     		 : Jun
     		 : DDPM<br>NIPS 2020<br>UC Berkeley
+    		 : Oct
+    		 : DDIM<br>ICLR 2021<br>Stanford University
     2021 : Feb
     		 : DALL·E<br>ICML 2021<br>OpenAI
+    		 : May
+    		 : D vs G<br>NIPS 2021<br>OpenAI
 ```
 
 
@@ -32,8 +36,8 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-    "ICLR 1" : 1
-    "NIPS 4" : 4
+    "ICLR 2" : 2
+    "NIPS 5" : 5
     "ICML 3" : 3
 ```
 
@@ -49,7 +53,9 @@ pie title 期刊类型
 
 -----
 
-**GAN的训练稳定性不强，但是胜在生成的图像质量较高，在DDPM出现之前性能一直处在生成模型的前列，VAE虽说训练的方法简单但是稳定性较高，缺点是生成图像的质量不如GAN，但是DDPM出现后Diffusion模型又易于训练且恢复图像的质量能达到GAN的性能，知道Diffusion Beat GANs以后Diffusion从数学到性能就完全超越了GAN，至今Diffusion取代了VAE和GAN成为了最好的生成模型**
+**GAN的训练稳定性不强，可能无法覆盖数据分布中的所有模式，但是胜在生成的图像质量较高，在DDPM出现之前性能一直处在生成模型的前列，VAE虽说训练的方法简单但是稳定性较高，缺点是生成图像的质量不如GAN，但是DDPM出现后Diffusion模型又易于训练且恢复图像的质量能达到GAN的性能，知道Diffusion Beat GANs以后Diffusion从数学到性能就完全超越了GAN，至今Diffusion取代了VAE和GAN成为了最好的生成模型**
+
+DDPM 太慢，几十小时才能生成几万张小图，而 GAN 几分钟就搞定。图像越大，DDPM 越慢，要生成大图需要很多天，而 GAN 依然很快。
 
 ----
 
@@ -67,6 +73,7 @@ VQ-VAE2-->|两阶段训练+CodeBook+ELBO|DALL-E
 I-GPT-->|Transformer引入|DALL-E
 Gumbel-softmax-->|解决离散梯度不可导|DALL-E
 Diffusion_Model-->|逐步优化策略|DDPM
+DDPM-->|优化生成时间|DDIM
 
 
 
@@ -83,8 +90,10 @@ I-GPT[iGPT（2020.01）<br>Transformer引入生成模型]
 Gumbel-softmax[Gumbel-softmax]
 Diffusion_Model[Diffusion Model（2015.03）<br>Diffusion模型理论基础<br>仅在小规模数据集上训练]
 	style Diffusion_Model fill:#63E398
-DDPM[DDPM（2020.06）<br>将预测图像转化为预测噪声<br>简化了损失公式<br>可以随时生成时间为T的噪声，不需要马尔科夫逐渐推导]
+DDPM[DDPM（2020.06）<br>将预测图像转化为预测噪声<br>简化了损失公式<br>可以在训练加噪随时生成时间为T的噪声，不需要马尔科夫逐渐推导]
 	style DDPM fill:#63E398
+DDIM[DDIM（2020.10）<br>通过去除马尔科夫链来加快生成图像的时间]
+	style DDIM fill:#63E398
 ```
 
 
@@ -96,10 +105,10 @@ DDPM[DDPM（2020.06）<br>将预测图像转化为预测噪声<br>简化了损�
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,VQ-VAE,VQ-VAE2,I-GPT,DDPM,DALL-E]
+    x-axis [VAE,GAN,DM,VQ-VAE,VQ-VAE2,I-GPT,DDPM,DDIM,DALL-E,D vs G]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 6536]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 6536]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,6536, 9492]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,6536, 9492]
 ```
 
 

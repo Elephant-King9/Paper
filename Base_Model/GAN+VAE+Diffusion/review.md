@@ -208,9 +208,39 @@
 
   **==1.使用预测噪声的均方误差的方式代替了Diffusion Model使用最大化ELBO的优化策略，可以轻易的得到任意时间步的噪声来计算均方误差，更加灵活，简化了损失==**
 
+  **==2.引入了UNet==**
+
 - ![image-20250629135553468](./assets/pics/review/image-20250629135553468.png)
 
 - [详细信息](./Denoising Diffusion Probabilistic Models.md)
+
+### 8. Denoising Diffusion Implicit Models
+
+- **DDIM**
+
+- **作者: Jiaming Song、Chenlin Meng、Stefano Ermon**
+
+- **Stanford University**
+
+- **ICLR: 2021**
+
+- **初版提交: 2020.10.06**
+
+- **Cite: 8896**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.引入了非马尔科夫链，解决了DDPM在生成图像时不能跳步从而导致生成缓慢的问题==**
+
+  **==2.相当于原本DDPM需要1000步生成的图像，使用DDIM仅需要100步就能生成，并且生成的图像质量也很好==**
+
+  **==3.推理过程像是一个矩阵对角化的步骤，DDPM做1000个矩阵相乘只能一个一个的相乘，而DDIM可以使用矩阵对角化转化为常数相乘，大大的降低了运算时间==**
+
+- [详细信息](./Denoising Diffusion Implicit Models.md)
 
 ### 8. Zero-Shot Text-to-Image Generation
 
@@ -245,3 +275,16 @@
 - ![image-20250628223420140](./assets/pics/review/image-20250628223420140.png)
 
 - [详细信息](./Zero-Shot Text-to-Image Generation.md)
+
+### 9. Diffusion Models Beat GANs on Image Synthesis
+
+- **Diffusion beats GANs**
+- **作者:Prafulla Dhariwal、Alex Nichol**
+- **OpenAI**
+- **NIPS:2021**
+- **初版提交: 2021.05.11**
+- **Cite: 9492**
+- **背景**
+- **现有问题**
+- **创新点**
+- [详细信息](./Diffusion Models Beat GANs on Image Synthesis.md)

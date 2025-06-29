@@ -26,26 +26,26 @@ flowchart LR
 VAE-->Diffusion_Model-->VQ-VAE-->VQ-VAE2-->I-GPT-->DDPM-->DDIM-->Imporved_DDPM-->DALL-E
 DALL-E_2-->Diffusion_Beat_GANs-->CogView-->GLIDE-->LDM-->DALL-E2-->CogView2-->Imagen
 Imagen_1_1-->Stable_Diffusion2-->DiTs-->SDXL-->DALL-E3-->SDXL_Turbo-->Imagen_2-->SD3-->CogView3
-VAE[VAE<br>2013.12.20]
+VAE[VAE<br>2013.12.20<br>ICLR 2014]
 style VAE fill:#63E398
-Diffusion_Model[Diffusion_Model<br>]
+Diffusion_Model[Diffusion_Model<br>Stanford<br>ICML 2015<br>2015.03]
 style Diffusion_Model fill:#F3D266
-VQ-VAE[VQ-VAE<br>Google DeepMind<br>2017.11.02]
+VQ-VAE[VQ-VAE<br>Google DeepMind<br>NIPS 2017<br>2017.11.02]
 style VQ-VAE fill:#63E398
-VQ-VAE2[VQ-VAE2<br>Google DeepMind<br>2019.06.02]
+VQ-VAE2[VQ-VAE2<br>Google DeepMind<br>NIPS 2019<br>2019.06.02]
 style VQ-VAE2 fill:#63E398
-I-GPT[I-GPT<br>OpenAI<br>2020.01.31]
-DDPM[DDPM<br>UC Berkeley<br>2020.06.19]
+I-GPT[I-GPT<br>OpenAI<br>ICML 2020<br>2020.01.31]
+DDPM[DDPM<br>UC Berkeley<br>NIPS 2020<br>2020.06.19]
 style DDPM fill:#F3D266
-DDIM[DDIM<br>Stanford University<br>2020.10.06]
+DDIM[DDIM<br>Stanford University<br>ICLR 2021<br>2020.10.06]
 style DDIM fill:#F3D266
 Imporved_DDPM[Imporved DDPM<br>OpenAI<br>2021.02.18]
 style Imporved_DDPM fill:#F3D266
-DALL-E[DALL·E<br>OpenAI<br>2021.02.24]
+DALL-E[DALL·E<br>OpenAI<br>ICML 2021<br>2021.02.24]
 style DALL-E fill:#63E398
 DALL-E_2[DALL·E<br>OpenAI<br>2021.02.24]
 style DALL-E_2 fill:#F3D266
-Diffusion_Beat_GANs[Diffusion Beat GANs<br>OpenAI<br>2021.05.11]
+Diffusion_Beat_GANs[Diffusion Beat GANs<br>OpenAI<br>NIPS 2021<br>2021.05.11]
 style Diffusion_Beat_GANs fill:#F3D266
 CogView[CogView<br>Tsinghua University<br>2021.05.26]
 GLIDE[GLIDE<br>OpenAI<br>2021.12.20]
