@@ -361,7 +361,16 @@
 
 - **背景**
 
-- **现有问题**
+- **贡献**
+
+  - **相比DALL·E,有四方面进步**
+    -  **除了零样本生成，还可以微调做别的任务，比如风格学习、超分、生成图片描述、做图文排序等**
+
+    -  **微调后的 CogView 可以实现自我重排，不需要像DALL·E,用 CLIP 模型来选结果**
+
+    -  **还提出了新指标Caption Loss用来更精准评估生成图像好不好**
+
+    -  **提出 PB-relaxation 和 Sandwich-LN，用来稳定大规模 Transformer 在复杂数据集上的训练,些技巧非常简单，能消除前向计算中的溢出,让模型不崩掉，并且能用更快地半精度训练，这些技巧也可以用到其他模型**
 
 - **创新点**
 
@@ -383,3 +392,42 @@
 
 - [详细信息](./CogView: Mastering Text-to-Image Generation via Transformers.md)
 
+### 13. GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models
+
+- **GLIDE**
+- **作者: Alex Nichol、Prafulla Dhariwal、Aditya Ramesh、Pranav Shyam、Pamela Mishkin、Bob McGrew、Ilya Sutskever、Mark Chen**
+- **OpenAI**
+- **初版提交: 2021.12.20**
+- **Cite: 4128**
+- **背景**
+- **现有问题**
+- **创新点**
+- [详细信息](./GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models.md)
+
+### 14. Classifier-Free Diffusion Guidance
+
+- **Classifier-Free Diffusion**
+
+- **作者:Jonathan Ho、Tim Salimans**
+
+- **Google Brain**
+
+- **初版提交:2022.07.26**
+
+- **Cite: 4679**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.提出了无条件分类器==**
+
+  ​	**==相比于有条件分类器需要训练一个额外的模型来引入条件==**
+
+  ​	**==无条件分类器不需要训练额外的模型，在同一个Diffusion中通过屏蔽同时训练有条件和无条件模型==**
+
+- ![image-20250629230412060](./assets/pics/review/image-20250629230412060.png)
+
+- [详细信息](./Classifier-Free Diffusion Guidance.md)

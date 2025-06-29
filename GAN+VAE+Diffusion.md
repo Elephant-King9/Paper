@@ -48,6 +48,7 @@ style DALL-E_2 fill:#63E398
 Diffusion_Beat_GANs[Diffusion Beat GANs<br>OpenAI<br>NIPS 2021<br>2021.05.11]
 style Diffusion_Beat_GANs fill:#F3D266
 CogView[CogView<br>Tsinghua University<br>2021.05.26]
+style CogView fill:#63E398
 GLIDE[GLIDE<br>OpenAI<br>2021.12.20]
 style GLIDE fill:#F3D266
 LDM[LDM（Stable_Diffusion）<br>2021.12.20]

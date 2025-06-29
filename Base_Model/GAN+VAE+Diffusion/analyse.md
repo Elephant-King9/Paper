@@ -28,6 +28,10 @@ timeline
     		 : May
     		 : D vs G<br>NIPS 2021<br>OpenAI
     		 : CogView<br>NIPS 2021<br>Tsinghua University
+    		 : Dec
+    		 : GLIDE<br>OpenAI
+    2022 : Jul
+    		 : Classifier-Free Diffusion<br>Google Brain
 ```
 
 
@@ -49,9 +53,10 @@ pie title 单位
     "Universite ́ de Montre ́al 1" : 1
     "Stanford University 2" : 2
     "Google DeepMind 2" : 2
-    "OpenAI 4" : 4
+    "OpenAI 5" : 5
     "UC Berkeley 1" : 1
     "Tsinghua University 1" : 1
+    "Google Brain 1" : 1
 ```
 
 
@@ -64,7 +69,9 @@ pie title 单位
 
 红色代表VAE基础文本指导的图像生成
 
+蓝色代表以Diffusion为基础的条件生成
 
+紫色代表引入分类器，通过标签文本来指导图像
 
 -----
 
@@ -93,8 +100,8 @@ DDPM-->|优化生成时间|DDIM
 DDPM-->|优化损失函数<br>优化生成时间|IDDPM
 DDIM-->|引入分类器指导训练和生成|DvsG
 DDPM-->|全方位微调，引入分类器指导训练和生成|DvsG
-
-
+DvsG-->GLIDE
+Classifier-Free_Diffusion-->GLIDE
 
 VAE[VAE（2013.12）<br>使用原图映射到隐空间<br>从隐空间随机抽样生成图像]
 	style VAE fill:#F3D266
@@ -115,9 +122,11 @@ DDIM[DDIM（2020.10）<br>通过去除马尔科夫链来加快生成图像的时
 IDDPM[I-DDPM（2021.02）<br>优化了损失函数，让训练更平滑，更能拟合对数似然<br>优化了生成步骤，跳步生成，速度更快]
 	style IDDPM fill:#63E398
 DvsG[DvsG（2021.05）<br>全方位微调DDPM<br>引入分类器指导图像生成，提高精度牺牲多样性<br>性能全面超越GANs]
-	style DvsG fill:#63E398
+	style DvsG fill:#BA5EB3
 CogView[CogView（2021.05）<br>将文本和图像拼接送入潜空间词典一起映射<br>提出大参数Transformer优化训练的模块<br>针对不同下游任务进行微调]
 	style CogView fill:#EF7A6D
+Classifier-Free_Diffusion[Classifier-Free Diffusion（2022.07）<br>引入无条件分类器指导模型生成]
+	style Classifier-Free_Diffusion fill:#BA5EB3
 ```
 
 
@@ -129,10 +138,10 @@ CogView[CogView（2021.05）<br>将文本和图像拼接送入潜空间词典一
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,VQ-VAE,VQ-VAE2,I-GPT,DDPM,DDIM,I-DDPM,DALL-E,D vs G, CogView]
+    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,DALL-E,DvG, CV,GLIDE,CFD]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,4679]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,4679]
 ```
 
 
