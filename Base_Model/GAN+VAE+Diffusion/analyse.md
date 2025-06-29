@@ -27,6 +27,7 @@ timeline
     		 : DALL·E<br>ICML 2021<br>OpenAI
     		 : May
     		 : D vs G<br>NIPS 2021<br>OpenAI
+    		 : CogView<br>NIPS 2021<br>Tsinghua University
 ```
 
 
@@ -38,7 +39,7 @@ timeline
 ```mermaid
 pie title 期刊类型
     "ICLR 2" : 2
-    "NIPS 5" : 5
+    "NIPS 6" : 6
     "ICML 4" : 4
 ```
 
@@ -50,6 +51,7 @@ pie title 单位
     "Google DeepMind 2" : 2
     "OpenAI 4" : 4
     "UC Berkeley 1" : 1
+    "Tsinghua University 1" : 1
 ```
 
 
@@ -85,6 +87,7 @@ VQ-VAE-->|分层提取<br>两阶段训练|VQ-VAE2
 VQ-VAE2-->|两阶段训练+CodeBook+ELBO|DALL-E
 I-GPT-->|Transformer引入|DALL-E
 Gumbel-softmax-->|解决离散梯度不可导|DALL-E
+DALL-E-->|引入Transformer|CogView
 Diffusion_Model-->|逐步优化策略|DDPM
 DDPM-->|优化生成时间|DDIM
 DDPM-->|优化损失函数<br>优化生成时间|IDDPM
@@ -113,6 +116,8 @@ IDDPM[I-DDPM（2021.02）<br>优化了损失函数，让训练更平滑，更能
 	style IDDPM fill:#63E398
 DvsG[DvsG（2021.05）<br>全方位微调DDPM<br>引入分类器指导图像生成，提高精度牺牲多样性<br>性能全面超越GANs]
 	style DvsG fill:#63E398
+CogView[CogView（2021.05）<br>将文本和图像拼接送入潜空间词典一起映射<br>提出大参数Transformer优化训练的模块<br>针对不同下游任务进行微调]
+	style CogView fill:#EF7A6D
 ```
 
 
@@ -124,10 +129,10 @@ DvsG[DvsG（2021.05）<br>全方位微调DDPM<br>引入分类器指导图像生�
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,VQ-VAE,VQ-VAE2,I-GPT,DDPM,DDIM,I-DDPM,DALL-E,D vs G]
+    x-axis [VAE,GAN,DM,VQ-VAE,VQ-VAE2,I-GPT,DDPM,DDIM,I-DDPM,DALL-E,D vs G, CogView]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911]
 ```
 
 

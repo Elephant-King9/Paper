@@ -344,3 +344,42 @@
   ![image-20250629205846190](./assets/pics/review/image-20250629205846190.png)
 
 - [详细信息](./Diffusion Models Beat GANs on Image Synthesis.md)
+
+### 12. CogView: Mastering Text-to-Image Generation via Transformers
+
+- **CogView**
+
+- **作者: Ming Ding、Zhuoyi Yang、Wenyi Hong、Wendi Zheng、Chang Zhou、Da Yin、Junyang Lin、Xu Zou、Zhou Shao、Hongxia Yang、Jie Tang**
+
+- **Tsinghua University、DAMO Academy、Alibaba Group、BAAI**
+
+- **NIPS: 2021**
+
+- **初版提交: 2021.05.26**
+
+- **Cite: 911**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.CogView不同于VQVAE仅将图像离散化潜空间映射到字典，而是将文本+图像联合特征映射到词典==**
+
+  **==2.自回归适应Transformer-Decoder==**
+
+  **==3.文本token和图像token间引入分割符区分，分别优化==**
+
+  **==4.提出两个针对大参数Transformer优化梯度消失或爆炸问题的解决方法==**
+
+  ​	**==PB-Relax：对梯度进行归一化Attention Score来防止溢出，包含重排softmax计算顺序、减去最大值再缩放==**
+
+  ​	**==Sandwich-LN：在Attention和残差链接前都加LayerNorm，而不是DALL·E仅在Attention前加==**
+
+  **==5.针对不同下游任务做出不同微调，提高不同下游任务的性能==**
+
+- ![image-20250629215335632](./assets/pics/review/image-20250629215335632.png)
+
+- [详细信息](./CogView: Mastering Text-to-Image Generation via Transformers.md)
+
