@@ -68,7 +68,35 @@
 
 - [详细信息](./Generative Adversarial Nets.md)
 
-### 3. Neural Discrete Representation Learning
+### 3. Deep Unsupervised Learning using Nonequilibrium Thermodynamics
+
+- **Diffusion Model**
+
+- **作者: Jascha Sohl-Dickstein、Eric A. Weiss、Niru Maheswaranathan、Surya Ganguli**
+
+- **Stanford University、University of California, Berkeley**
+
+- **ICML: 2015**
+
+- **初版提交: 2015.03.12**
+
+- **Cite:8634**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.构建了Diffusion Model的理论基础==**
+
+  **==2.每一步让神经网络拟合图像而不是噪声==**
+
+- ![image-20250629112808774](./assets/pics/review/image-20250629112808774.png)
+
+- [详细信息](./Deep Unsupervised Learning using Nonequilibrium Thermodynamics.md)
+
+### 4. Neural Discrete Representation Learning
 
 - **VQ-VAE**
 
@@ -102,7 +130,7 @@
 
 - [详细信息](./Neural Discrete Representation Learning.md)
 
-### 4. Generating Diverse High-Fidelity Images with VQ-VAE-2
+### 5. Generating Diverse High-Fidelity Images with VQ-VAE-2
 
 - **VQ-VAE2**
 
@@ -128,7 +156,7 @@
 
 - [详细信息](./Generating Diverse High-Fidelity Images with VQ-VAE-2.md)
 
-### 5. Generative Pretraining from Pixels
+### 6. Generative Pretraining from Pixels
 
 - **I-GPT**
 
@@ -156,7 +184,20 @@
 
 - [详细信息](./Generative Pretraining from Pixels.md)
 
-### 6. Zero-Shot Text-to-Image Generation
+### 7. Denoising Diffusion Probabilistic Models
+
+- **DDPM**
+- **作者: Jonathan H、Ajay Jain、Pieter Abbeel**
+- **UC Berkeley**
+- **NIPS: 2020**
+- **初版提交: 2020.06.19**
+- **Cite: 23847**
+- **背景**
+- **现有问题**
+- **创新点**
+- [详细信息](./Denoising Diffusion Probabilistic Models.md)
+
+### 8. Zero-Shot Text-to-Image Generation
 
 - **DALL·E**
 
@@ -175,6 +216,8 @@
 - **现有问题**
 
 - **创新点**
+
+  ==**DALL·E 用 Transformer 代替了传统 PixelCNN / FFN prior，并引入文本来指导图像生成**==
 
   **==1.首次提出文本指导图像生成的条件生成模型==**
 
