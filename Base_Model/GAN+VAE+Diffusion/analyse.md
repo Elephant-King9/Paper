@@ -33,6 +33,8 @@ timeline
     		 : Stable Diffusion<br>CVPR 2022<br>Ludwig Maximilian University of Munich & Heidelberg University
     2022 : Apr
     		 : DALL·E2<br>OpenAI
+    		 : May
+    		 : Imagen<br>NIPS 2022<br>Google Brain
     		 : Jul
     		 : Classifier-Free Diffusion<br>Google Brain
 ```
@@ -46,7 +48,7 @@ timeline
 ```mermaid
 pie title 期刊类型
     "ICLR 2" : 2
-    "NIPS 6" : 6
+    "NIPS 7" : 7
     "ICML 4" : 4
     "CVPR 1" : 1
 ```
@@ -60,7 +62,7 @@ pie title 单位
     "OpenAI 6" : 6
     "UC Berkeley 1" : 1
     "Tsinghua University 1" : 1
-    "Google Brain 1" : 1
+    "Google Brain 2" : 2
     "Ludwig Maximilian University of Munich & Heidelberg University 1" : 1
 ```
 
@@ -108,7 +110,9 @@ DDPM-->|全方位微调，引入分类器指导训练和生成|ADM
 ADM-->|条件分类器改为CLIP|GLIDE
 CLIP-->|图文分类器|GLIDE
 Classifier-Free_Diffusion-->|无条件分类器工程化实现|GLIDE
-
+DALL-E-->|两阶段训练|DALL-E2
+DALL-E2-->|多层级联<br>对比效果|Imagen
+GLIDE-->|引入CLIP<br>对比结果|DALL-E2
 VAE[VAE（2013.12）<br>使用原图映射到隐空间<br>从隐空间随机抽样生成图像]
 	style VAE fill:#F3D266
 VQ-VAE[VQ-VAE（2017.11）<br>引入CodeBook离散化，来解决VAE生成聚类的问题<br>首次提出两阶段训练方式]
@@ -136,6 +140,10 @@ Classifier-Free_Diffusion[Classifier-Free Diffusion（2022.07）<br>引入无条
 CLIP[CLIP（2021.01）<br>首个将文本指导图像模型学习做到效果不错的]
 GLIDE[GLIDE（2021.12）<br>无条件分类器工程化实现<br>基于CLIP的条件分类器<br>BERT的思路实现图像修补]
 	style GLIDE fill:#BA5EB3
+DALL-E2[DALL·E2（2022.04）<br>引入CLIP将图像提取成embed指导生成过程]
+	style DALL-E2 fill:#BA5EB3
+Imagen[Imagen（2022.05）<br>使用LLM提取文本特征<br>优化生成溢出（-1,1）<br>优化Unet结构<br>多层级联告诉模型添加了多少噪声]
+	style Imagen fill:#BA5EB3
 ```
 
 
@@ -147,10 +155,10 @@ GLIDE[GLIDE（2021.12）<br>无条件分类器工程化实现<br>基于CLIP的�
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,DALL-E,ADM, CV,GLIDE,LDM,D2,CFD]
+    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,D-E1,ADM, CV,GLI,LDM,D-E2,Imag,CFD]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,4679]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,4679]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679]
 ```
 
 

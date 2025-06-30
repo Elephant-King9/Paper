@@ -464,6 +464,36 @@
 
 - [详细信息](./Hierarchical Text-Conditional Image Generation with CLIP Latents.md)
 
+### 16. Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding
+
+- **Imagen**
+
+- **作者: Chitwan Saharia、William Chan、Saurabh Saxena、Lala Li、Jay Whang、Emily Denton、Seyed Kamyar、Seyed Ghasemipour、Burcu Karagol Ayan、S. Sara Mahdavi、Rapha Gontijo Lopes、Tim Salimans、Jonathan Ho、David J Fleet、Mohammad Norouzi**
+
+- **Google Brain**
+
+- **初版提交: 2022.05.23**
+
+- **Cite: 6983**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.相比DALL·E2使用CLIP做文本图像特征对齐，Imagen直接使用大语言模型T5提取文本特征==**
+
+  **==2.使用无监督分类引导器==**
+
+  **==3.优化生成图像文本权重过大时出现溢出[-1,1]的问题，使用静态截断和动态截断两种方法==**
+
+  **==4.在多层级联生成高分辨率图像时，告诉模型我对小分辨率图像添加了多少噪声==**
+
+  **==5.优化Unet结构==**
+
+- [详细信息](./Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding.md)
+
 ### 15. Classifier-Free Diffusion Guidance
 
 - **Classifier-Free Diffusion**
