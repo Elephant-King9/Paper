@@ -41,10 +41,14 @@ timeline
     		 : SD-1.5<br>Stability AI
     		 : Nov
     		 : SD2.0<br>Stability AI
+    		 : Dec
+    		 : DiTs<br>ICCV 2023<br>UC Berkeley
     2023 : Jul
     		 : SD-XL<br>Stability AI
     		 : Nov
     		 : SD-Trubo（ADD）<br>ECCV 2024<br>Stability AI
+    2024 : Mar
+    		 : SD3<br>ICML 2024<br>Stability AI
 ```
 
 
@@ -57,9 +61,10 @@ timeline
 pie title 期刊类型
     "ICLR 2" : 2
     "NIPS 7" : 7
-    "ICML 4" : 4
+    "ICML 5" : 5
     "CVPR 1" : 1
     "ECCV 1" : 1
+    "ICCV 1" : 1
 ```
 
 ```mermaid
@@ -69,11 +74,11 @@ pie title 单位
     "Stanford University 2" : 2
     "Google DeepMind 2" : 2
     "OpenAI 6" : 6
-    "UC Berkeley 1" : 1
+    "UC Berkeley 2" : 2
     "Tsinghua University 1" : 1
     "Google Brain 2" : 2
     "Ludwig Maximilian University of Munich & Heidelberg University 1" : 1
-    "Stability AI 4" : 4
+    "Stability AI 5" : 5
 ```
 
 
@@ -126,6 +131,11 @@ GLIDE-->|引入CLIP<br>对比结果|DALL-E2
 VAE-->|低维隐空间|LDM
 DALL-E2-->|在低维空间加噪去噪|LDM
 DALL-E2-->DALL-E3
+LDM-->SD3
+RFs-->|提供加噪方法|SD3
+ViT-->|借鉴|DiTs
+DiTs-->|借鉴网络结构|SD3
+SD-Turbo-->SD3
 LDM-->|理论基础<br>工程实现<br>预训练好的CLIP来映射关系|Stable_Diffusion
 Stable_Diffusion-->|增强数据集清晰和图文理解能力<br>提高生成分辨率|SD1.5
 OpenCLIP-->|预训练|SD2.0
@@ -187,6 +197,10 @@ SD-Turbo[SD-Turbo（2023.11）<br>使用ADD加速生成过程]
 style SD-Turbo fill:#98CCFF
 DALL-E3[DALL-E3<br>阐述数据集中Caption的重要性并优化]
 style DALL-E3 fill:#98CCFF
+DiTs[DiTs（2022.12）<br>将Unet替换为Transformer]
+style DiTs fill:#98CCFF
+SD3[SD3（2024.03）<br>使用DiTs代替Unet<br>使用三个文本特征提取器<br>使用RFs加噪方法]
+style SD3 fill:#98CCFF
 ```
 
 
@@ -198,10 +212,10 @@ style DALL-E3 fill:#98CCFF
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,Q-V,Q-V2,I-GPT,DDPM,DDIM,I-DD,D-E1,ADM, CV,GLI,LDM,D-E2,Imag,CFD,SDXL,ADD]
+    x-axis [VAE,GAN,DM,Q-V,Q-V2,I-GPT,DDPM,DDIM,I-DD,D-E1,ADM, CV,GLI,LDM,D-E2,Imag,CFD,DiT,SDXL,ADD,SD3]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713,460]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713,460]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2874,2713,460,1485]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2874,2713,460,1485]
 ```
 
 

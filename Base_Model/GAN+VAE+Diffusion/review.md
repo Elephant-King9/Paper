@@ -540,7 +540,31 @@
 
 - [详细信息](./Classifier-Free Diffusion Guidance.md)
 
-### 16.SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis
+### 16.Scalable Diffusion Models with Transformers
+
+- **DiTs**
+
+- **作者:William Peebles、Saining Xie**
+
+- **UC Berkeley、New York University**
+
+- **初版提交: 2022.12.19**
+
+- **Cite: 2874**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.将Diffusion的Unet替换成了Transformer，效果很好，而且参数量越大效果越好==**
+
+- ![image-20250630213705113](./assets/pics/review/image-20250630213705113.png)
+
+- [详细信息](./Scalable Diffusion Models with Transformers.md)
+
+### 17.SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis
 
 - **SDXL**
 
@@ -576,13 +600,15 @@
 
 - [详细信息](./SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis.md)
 
-### 17.Adversarial Diffusion Distillation
+### 18.Adversarial Diffusion Distillation
 
 - **ADD、SD-XL Trubo**
 
 - **作者:Axel Sauer、Dominik Lorenz、Andreas Blattmann、Robin Rombach**
 
 - **Stability AI**
+
+- **ECCV:2024**
 
 - **初版提交: 2023.11.28**
 
@@ -601,3 +627,33 @@
 - ![image-20250630211047323](./assets/pics/review/image-20250630211047323.png)
 
 - [详细信息](./Adversarial Diffusion Distillation.md)
+
+### 19.Scaling Rectified Flow Transformers for High-Resolution Image Synthesis
+
+- **SD3**
+
+- **作者: Patrick Esser、Robin Rombach**
+
+- **ICML: 2024**
+
+- **Stability AI**
+
+- **初版提交: 2024.03.05**
+
+- **Cite: 1474**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.使用DiTs来代替Unet==**
+
+  **==2.使用了更多的文本特征提取器==**
+
+  **==3.使用RFs进行加噪，而不是DDPM的EDM加噪==**
+
+- ![image-20250630214937511](./assets/pics/review/image-20250630214937511.png)
+
+- [详细信息](./Scaling Rectified Flow Transformers for High-Resolution Image Synthesis.md)
