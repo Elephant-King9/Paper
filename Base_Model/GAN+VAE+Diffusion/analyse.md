@@ -37,6 +37,12 @@ timeline
     		 : Imagen<br>NIPS 2022<br>Google Brain
     		 : Jul
     		 : Classifier-Free Diffusion<br>Google Brain
+    		 : Oct
+    		 : SD-1.5<br>Stability AI
+    		 : Nov
+    		 : SD2.0<br>Stability AI
+    2023 : Jul
+    		 : SD-XL<br>Stability AI
 ```
 
 
@@ -64,6 +70,7 @@ pie title 单位
     "Tsinghua University 1" : 1
     "Google Brain 2" : 2
     "Ludwig Maximilian University of Munich & Heidelberg University 1" : 1
+    "Stability AI 3" : 3
 ```
 
 
@@ -115,8 +122,10 @@ DALL-E2-->|多层级联<br>对比效果<br>优化缺点|Imagen
 GLIDE-->|引入CLIP<br>对比结果|DALL-E2
 VAE-->|低维隐空间|LDM
 DALL-E2-->|在低维空间加噪去噪|LDM
-LDM-->|理论基础|Stable_Diffusion
-
+LDM-->|理论基础<br>工程实现<br>预训练好的CLIP来映射关系|Stable_Diffusion
+Stable_Diffusion-->|增强数据集清晰和图文理解能力<br>提高生成分辨率|SD1.5
+OpenCLIP-->|预训练|SD2.0
+SD1.5-->|更高分辨率生成<br>更强的文本语义理解能力|SD2.0
 
 
 
@@ -157,6 +166,11 @@ LDM[LDM（2021.12）<br>在低维空间优化以降低时间复杂度]
 	style LDM fill:#98CCFF
 Stable_Diffusion[Stable Diffusion（2022.08）]
 	style Stable_Diffusion fill:#98CCFF
+SD1.5[SD1.5（2022.10）<br>数据集清洗+高分辨率生成（512）]
+	style SD1.5 fill:#98CCFF
+SD2.0[SD2.0（2022.11）<br>更高分辨率生成（768）]
+	style SD2.0 fill:#98CCFF
+OpenCLIP[OpenCLIP<br>LAION]
 ```
 
 
@@ -168,10 +182,10 @@ Stable_Diffusion[Stable Diffusion（2022.08）]
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,D-E1,ADM, CV,GLI,LDM,D-E2,Imag,CFD]
+    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,D-E1,ADM, CV,GLI,LDM,D-E2,Imag,CFD,SDXL]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713]
 ```
 
 

@@ -539,3 +539,15 @@
 - ![image-20250629230412060](./assets/pics/review/image-20250629230412060.png)
 
 - [详细信息](./Classifier-Free Diffusion Guidance.md)
+
+### 16.SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis
+
+- **SDXL**
+- **作者: Dustin Podell、Zion English、Kyle Lacey、Andreas Blattmann、Tim Dockhorn 、Jonas Müller、Joe Penna、Robin Rombach**
+- **Stability AI**
+- **初版提交: 2023.07.04** 
+- **Cite: 2713** 
+- **背景**
+- **现有问题**
+- **创新点**
+- [详细信息](./SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis.md)
