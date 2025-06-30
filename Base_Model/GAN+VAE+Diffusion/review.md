@@ -128,7 +128,7 @@
 
   ![image-20250628221920208](./assets/pics/review/image-20250628221920208.png)
 
-- ![image-20250628175130172](./assets/pics/review/image-20250628175130172.png)
+- ![image-20250630133353018](./assets/pics/review/image-20250630133353018.png)
 
 - [详细信息](./Neural Discrete Representation Learning.md)
 
@@ -317,7 +317,7 @@
 
 ### 11. Diffusion Models Beat GANs on Image Synthesis
 
-- **Diffusion beats GANs**
+- **ADM**
 
 - **作者:Prafulla Dhariwal、Alex Nichol**
 
@@ -418,9 +418,53 @@
 
   **==3.将Diffusion Beats GANs这篇论文提出的条件分类器替换成CLIP==**
 
+  **==4.通过对比实验证明无条件分类器比有条件分类器效果更好，训练更方便==**
+
 - [详细信息](./GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models.md)
 
-### 14. Classifier-Free Diffusion Guidance
+### 14.High-Resolution Image Synthesis with Latent Diffusion Models
+
+- **LDM、Stable Diffusion**
+- **作者: Robin Rombach、Andreas Blattmann、Dominik Lorenz、Patrick Esser、Bj ̈orn Ommer**
+- **Ludwig Maximilian University of Munich、Heidelberg University、Germany Runway ML**
+- **初版提交: 2021.12.20**
+- **Cite: 20780**
+- **背景**
+- **现有问题**
+- **创新点**
+- [详细信息](./High-Resolution Image Synthesis with Latent Diffusion Models.md)
+
+### 15. Hierarchical Text-Conditional Image Generation with CLIP Latents
+
+- DALL·E2
+
+- 作者: Aditya Ramesh、Prafulla Dhariwal、Alex Nichol、Casey Chu、Mark Chen
+
+- OpenAi
+
+- 初版提交: 2022.04.13
+
+- Cite: 8235
+
+- 背景
+
+- 现有问题
+
+- 创新点
+
+  **==1.引入了CLIP模型，将原本只能文字标签作为引导条件转化为了可以通过CLIP生成图像Embeding来引导图片生成==**
+
+  **==2.多层级联的方式生成高分辨率图像，每层都使用上一层的加噪图像embed引导==**
+
+  **==3.对下游任务实现微调==**
+
+  **==4.和DALL·E相比，prior使用了扩散模型代替了自回归模型，使用prior生成的图像embed作为引导==**
+
+- ![image-20250630135714333](./assets/pics/review/image-20250630135714333.png)
+
+- [详细信息](./Hierarchical Text-Conditional Image Generation with CLIP Latents.md)
+
+### 15. Classifier-Free Diffusion Guidance
 
 - **Classifier-Free Diffusion**
 

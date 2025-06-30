@@ -26,11 +26,14 @@ timeline
     		 : Improved DDPM<br>ICML 2021<br>OpenAI
     		 : DALL·E<br>ICML 2021<br>OpenAI
     		 : May
-    		 : D vs G<br>NIPS 2021<br>OpenAI
+    		 : ADM<br>NIPS 2021<br>OpenAI
     		 : CogView<br>NIPS 2021<br>Tsinghua University
     		 : Dec
     		 : GLIDE<br>OpenAI
-    2022 : Jul
+    		 : Stable Diffusion<br>CVPR 2022<br>Ludwig Maximilian University of Munich & Heidelberg University
+    2022 : Apr
+    		 : DALL·E2<br>OpenAI
+    		 : Jul
     		 : Classifier-Free Diffusion<br>Google Brain
 ```
 
@@ -45,6 +48,7 @@ pie title 期刊类型
     "ICLR 2" : 2
     "NIPS 6" : 6
     "ICML 4" : 4
+    "CVPR 1" : 1
 ```
 
 ```mermaid
@@ -53,10 +57,11 @@ pie title 单位
     "Universite ́ de Montre ́al 1" : 1
     "Stanford University 2" : 2
     "Google DeepMind 2" : 2
-    "OpenAI 5" : 5
+    "OpenAI 6" : 6
     "UC Berkeley 1" : 1
     "Tsinghua University 1" : 1
     "Google Brain 1" : 1
+    "Ludwig Maximilian University of Munich & Heidelberg University 1" : 1
 ```
 
 
@@ -98,9 +103,9 @@ DALL-E-->|引入Transformer|CogView
 Diffusion_Model-->|逐步优化策略|DDPM
 DDPM-->|优化生成时间|DDIM
 DDPM-->|优化损失函数<br>优化生成时间|IDDPM
-DDIM-->|引入分类器指导训练和生成|DvsG
-DDPM-->|全方位微调，引入分类器指导训练和生成|DvsG
-DvsG-->|条件分类器改为CLIP|GLIDE
+DDIM-->|引入分类器指导训练和生成|ADM
+DDPM-->|全方位微调，引入分类器指导训练和生成|ADM
+ADM-->|条件分类器改为CLIP|GLIDE
 CLIP-->|图文分类器|GLIDE
 Classifier-Free_Diffusion-->|无条件分类器工程化实现|GLIDE
 
@@ -122,8 +127,8 @@ DDIM[DDIM（2020.10）<br>通过去除马尔科夫链来加快生成图像的时
 	style DDIM fill:#63E398
 IDDPM[I-DDPM（2021.02）<br>优化了损失函数，让训练更平滑，更能拟合对数似然<br>优化了生成步骤，跳步生成，速度更快]
 	style IDDPM fill:#63E398
-DvsG[DvsG（2021.05）<br>全方位微调DDPM<br>引入分类器指导图像生成，提高精度牺牲多样性<br>性能全面超越GANs]
-	style DvsG fill:#BA5EB3
+ADM[DvsG（2021.05）<br>全方位微调DDPM<br>引入分类器指导图像生成，提高精度牺牲多样性<br>性能全面超越GANs]
+	style ADM fill:#BA5EB3
 CogView[CogView（2021.05）<br>将文本和图像拼接送入潜空间词典一起映射<br>提出大参数Transformer优化训练的模块<br>针对不同下游任务进行微调]
 	style CogView fill:#EF7A6D
 Classifier-Free_Diffusion[Classifier-Free Diffusion（2022.07）<br>引入无条件分类器指导模型生成]
@@ -142,10 +147,10 @@ GLIDE[GLIDE（2021.12）<br>无条件分类器工程化实现<br>基于CLIP的�
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,DALL-E,DvG, CV,GLIDE,CFD]
+    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,DALL-E,ADM, CV,GLIDE,LDM,D2,CFD]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,4679]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,4679]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,4679]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,4679]
 ```
 
 
