@@ -425,13 +425,27 @@
 ### 14.High-Resolution Image Synthesis with Latent Diffusion Models
 
 - **LDM、Stable Diffusion**
+
 - **作者: Robin Rombach、Andreas Blattmann、Dominik Lorenz、Patrick Esser、Bj ̈orn Ommer**
+
 - **Ludwig Maximilian University of Munich、Heidelberg University、Germany Runway ML**
+
 - **初版提交: 2021.12.20**
+
 - **Cite: 20780**
+
 - **背景**
+
 - **现有问题**
+
 - **创新点**
+
+  **==1.将加噪去噪步骤在低维隐空间中完成，降低计算复杂度，其他方法是在高位像素空间优化，计算复杂度较高==**
+
+  **==2.引出除了文本的多模态特征指导图像生成==**
+
+- ![image-20250630172531103](./assets/pics/review/image-20250630172531103.png)
+
 - [详细信息](./High-Resolution Image Synthesis with Latent Diffusion Models.md)
 
 ### 15. Hierarchical Text-Conditional Image Generation with CLIP Latents
@@ -491,6 +505,10 @@
   **==4.在多层级联生成高分辨率图像时，告诉模型我对小分辨率图像添加了多少噪声==**
 
   **==5.优化Unet结构==**
+
+  **==6.优化了DALL·E出现的语义混乱和生成文本的问题==**
+
+- ![image-20250630160612488](./assets/pics/review/image-20250630160612488.png)
 
 - [详细信息](./Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding.md)
 

@@ -76,9 +76,9 @@ pie title 单位
 
 红色代表VAE基础文本指导的图像生成
 
-蓝色代表以Diffusion为基础的条件生成
+蓝色代表以Diffusion条件生成，可以根据外部信息引导图像生成
 
-紫色代表引入分类器，通过标签文本来指导图像
+紫色代表以Diffusion引入分类器来引导图像生成
 
 -----
 
@@ -111,8 +111,17 @@ ADM-->|条件分类器改为CLIP|GLIDE
 CLIP-->|图文分类器|GLIDE
 Classifier-Free_Diffusion-->|无条件分类器工程化实现|GLIDE
 DALL-E-->|两阶段训练|DALL-E2
-DALL-E2-->|多层级联<br>对比效果|Imagen
+DALL-E2-->|多层级联<br>对比效果<br>优化缺点|Imagen
 GLIDE-->|引入CLIP<br>对比结果|DALL-E2
+VAE-->|低维隐空间|LDM
+DALL-E2-->|在低维空间加噪去噪|LDM
+LDM-->|理论基础|Stable_Diffusion
+
+
+
+
+
+
 VAE[VAE（2013.12）<br>使用原图映射到隐空间<br>从隐空间随机抽样生成图像]
 	style VAE fill:#F3D266
 VQ-VAE[VQ-VAE（2017.11）<br>引入CodeBook离散化，来解决VAE生成聚类的问题<br>首次提出两阶段训练方式]
@@ -141,9 +150,13 @@ CLIP[CLIP（2021.01）<br>首个将文本指导图像模型学习做到效果不
 GLIDE[GLIDE（2021.12）<br>无条件分类器工程化实现<br>基于CLIP的条件分类器<br>BERT的思路实现图像修补]
 	style GLIDE fill:#BA5EB3
 DALL-E2[DALL·E2（2022.04）<br>引入CLIP将图像提取成embed指导生成过程]
-	style DALL-E2 fill:#BA5EB3
+	style DALL-E2 fill:#98CCFF
 Imagen[Imagen（2022.05）<br>使用LLM提取文本特征<br>优化生成溢出（-1,1）<br>优化Unet结构<br>多层级联告诉模型添加了多少噪声]
-	style Imagen fill:#BA5EB3
+	style Imagen fill:#98CCFF
+LDM[LDM（2021.12）<br>在低维空间优化以降低时间复杂度]
+	style LDM fill:#98CCFF
+Stable_Diffusion[Stable Diffusion（2022.08）]
+	style Stable_Diffusion fill:#98CCFF
 ```
 
 

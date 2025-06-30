@@ -26,6 +26,7 @@ flowchart LR
 VAE-->Diffusion_Model-->VQ-VAE-->VQ-VAE2-->I-GPT-->DDPM-->DDIM-->Imporved_DDPM-->DALL-E
 DALL-E_2-->Diffusion_Beat_GANs-->CogView-->GLIDE-->LDM-->DALL-E2-->CogView2-->Imagen
 Imagen_1_1-->Stable_Diffusion2-->DiTs-->SDXL-->DALL-E3-->SDXL_Turbo-->Imagen_2-->SD3-->CogView3
+LDM-->|理论基础|Stable_Diffusion
 VAE[VAE<br>2013.12.20<br>ICLR 2014]
 style VAE fill:#63E398
 Diffusion_Model[Diffusion_Model<br>Stanford<br>ICML 2015<br>2015.03]
@@ -76,6 +77,8 @@ style Imagen_2 fill:#F3D266
 SD3[SD3<br>Stability AI<br>]
 style SD3 fill:#F3D266
 CogView3[CogView3<br> Tsinghua University<br>2024.03.08]
+Stable_Diffusion[Stable Diffusion<br>2022.08]
+	style Stable_Diffusion fill:#F3D266
 ```
 
 
