@@ -43,6 +43,8 @@ timeline
     		 : SD2.0<br>Stability AI
     2023 : Jul
     		 : SD-XL<br>Stability AI
+    		 : Nov
+    		 : SD-Trubo（ADD）<br>Stability AI
 ```
 
 
@@ -70,7 +72,7 @@ pie title 单位
     "Tsinghua University 1" : 1
     "Google Brain 2" : 2
     "Ludwig Maximilian University of Munich & Heidelberg University 1" : 1
-    "Stability AI 3" : 3
+    "Stability AI 4" : 4
 ```
 
 
@@ -126,8 +128,11 @@ LDM-->|理论基础<br>工程实现<br>预训练好的CLIP来映射关系|Stable
 Stable_Diffusion-->|增强数据集清晰和图文理解能力<br>提高生成分辨率|SD1.5
 OpenCLIP-->|预训练|SD2.0
 SD1.5-->|更高分辨率生成<br>更强的文本语义理解能力|SD2.0
-
-
+SD2.0-->SDXL
+知识蒸馏-->ADD
+GAN-->ADD
+SDXL-->SD-Turbo
+ADD-->|理论基础|SD-Turbo
 
 
 
@@ -171,6 +176,13 @@ SD1.5[SD1.5（2022.10）<br>数据集清洗+高分辨率生成（512）]
 SD2.0[SD2.0（2022.11）<br>更高分辨率生成（768）]
 	style SD2.0 fill:#98CCFF
 OpenCLIP[OpenCLIP<br>LAION]
+SDXL[SDXL（2023.07）<br>模型更大<br>两个文本编码器<br>能生成更大尺度图像<br>优化训练策略]
+style SDXL fill:#98CCFF
+ADD[ADD（2023.11）<br>对抗扩散蒸馏，提高扩散模型生成速度]
+知识蒸馏[知识蒸馏（2015.03）]
+GAN[GAN（2014.06）]
+SD-Turbo[SD-Turbo（2023.11）<br>使用ADD加速生成过程]
+style SD-Turbo fill:#98CCFF
 ```
 
 

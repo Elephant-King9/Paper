@@ -543,11 +543,35 @@
 ### 16.SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis
 
 - **SDXL**
+
 - **作者: Dustin Podell、Zion English、Kyle Lacey、Andreas Blattmann、Tim Dockhorn 、Jonas Müller、Joe Penna、Robin Rombach**
+
 - **Stability AI**
+
 - **初版提交: 2023.07.04** 
+
 - **Cite: 2713** 
+
 - **背景**
+
 - **现有问题**
+
 - **创新点**
+
+  **==1.使用两个文本编码器提取特征==**
+
+  **==2.使用了更大的模型==**
+
+  **==3.使用同分辨率进行生成级联==**
+
+  **==4.使用告知模型图像初始分辨率+如果裁剪告诉模型左上角的像素位置+分阶段训练的训练策略==**
+
+  **==5.能够生成非正方形，同时优化自动编码器能生成局部细节更好的图片==**
+
+  **==6.能生成1024的图像==**
+
+  **==7.开源==**
+
+  ![image-20250630182056675](./assets/pics/review/image-20250630182056675.png)
+
 - [详细信息](./SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis.md)
