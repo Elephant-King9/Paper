@@ -309,6 +309,8 @@
 
   **==4.提供了GPU上加速优化的优化策略==**
 
+  **==5.在生成时生成多张图片，并使用CLIP进行打分，选得分高的进行输出==**
+
 - ![image-20250628223420140](./assets/pics/review/image-20250628223420140.png)
 
 - [详细信息](./Zero-Shot Text-to-Image Generation.md)
@@ -395,13 +397,27 @@
 ### 13. GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models
 
 - **GLIDE**
+
 - **作者: Alex Nichol、Prafulla Dhariwal、Aditya Ramesh、Pranav Shyam、Pamela Mishkin、Bob McGrew、Ilya Sutskever、Mark Chen**
+
 - **OpenAI**
+
 - **初版提交: 2021.12.20**
+
 - **Cite: 4128**
+
 - **背景**
+
 - **现有问题**
+
 - **创新点**
+
+  **==1.实现了Classifier-Free Diffusion Guidance这篇论文提出的无条件分类器的工程化实现==**
+
+  **==2. 利用BERT的方式遮挡图片在图像修补下游任务上进行微调==**
+
+  **==3.将Diffusion Beats GANs这篇论文提出的条件分类器替换成CLIP==**
+
 - [详细信息](./GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models.md)
 
 ### 14. Classifier-Free Diffusion Guidance

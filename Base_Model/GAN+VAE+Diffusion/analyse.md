@@ -100,8 +100,9 @@ DDPM-->|优化生成时间|DDIM
 DDPM-->|优化损失函数<br>优化生成时间|IDDPM
 DDIM-->|引入分类器指导训练和生成|DvsG
 DDPM-->|全方位微调，引入分类器指导训练和生成|DvsG
-DvsG-->GLIDE
-Classifier-Free_Diffusion-->GLIDE
+DvsG-->|条件分类器改为CLIP|GLIDE
+CLIP-->|图文分类器|GLIDE
+Classifier-Free_Diffusion-->|无条件分类器工程化实现|GLIDE
 
 VAE[VAE（2013.12）<br>使用原图映射到隐空间<br>从隐空间随机抽样生成图像]
 	style VAE fill:#F3D266
@@ -127,6 +128,9 @@ CogView[CogView（2021.05）<br>将文本和图像拼接送入潜空间词典一
 	style CogView fill:#EF7A6D
 Classifier-Free_Diffusion[Classifier-Free Diffusion（2022.07）<br>引入无条件分类器指导模型生成]
 	style Classifier-Free_Diffusion fill:#BA5EB3
+CLIP[CLIP（2021.01）<br>首个将文本指导图像模型学习做到效果不错的]
+GLIDE[GLIDE（2021.12）<br>无条件分类器工程化实现<br>基于CLIP的条件分类器<br>BERT的思路实现图像修补]
+	style GLIDE fill:#BA5EB3
 ```
 
 
