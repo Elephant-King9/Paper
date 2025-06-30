@@ -44,7 +44,7 @@ timeline
     2023 : Jul
     		 : SD-XL<br>Stability AI
     		 : Nov
-    		 : SD-Trubo（ADD）<br>Stability AI
+    		 : SD-Trubo（ADD）<br>ECCV 2024<br>Stability AI
 ```
 
 
@@ -59,6 +59,7 @@ pie title 期刊类型
     "NIPS 7" : 7
     "ICML 4" : 4
     "CVPR 1" : 1
+    "ECCV 1" : 1
 ```
 
 ```mermaid
@@ -124,6 +125,7 @@ DALL-E2-->|多层级联<br>对比效果<br>优化缺点|Imagen
 GLIDE-->|引入CLIP<br>对比结果|DALL-E2
 VAE-->|低维隐空间|LDM
 DALL-E2-->|在低维空间加噪去噪|LDM
+DALL-E2-->DALL-E3
 LDM-->|理论基础<br>工程实现<br>预训练好的CLIP来映射关系|Stable_Diffusion
 Stable_Diffusion-->|增强数据集清晰和图文理解能力<br>提高生成分辨率|SD1.5
 OpenCLIP-->|预训练|SD2.0
@@ -178,11 +180,13 @@ SD2.0[SD2.0（2022.11）<br>更高分辨率生成（768）]
 OpenCLIP[OpenCLIP<br>LAION]
 SDXL[SDXL（2023.07）<br>模型更大<br>两个文本编码器<br>能生成更大尺度图像<br>优化训练策略]
 style SDXL fill:#98CCFF
-ADD[ADD（2023.11）<br>对抗扩散蒸馏，提高扩散模型生成速度]
+ADD[ADD（2023.11）<br>GAN+蒸馏，提高扩散模型生成速度的同时保证生成质量]
 知识蒸馏[知识蒸馏（2015.03）]
 GAN[GAN（2014.06）]
 SD-Turbo[SD-Turbo（2023.11）<br>使用ADD加速生成过程]
 style SD-Turbo fill:#98CCFF
+DALL-E3[DALL-E3<br>阐述数据集中Caption的重要性并优化]
+style DALL-E3 fill:#98CCFF
 ```
 
 
@@ -194,10 +198,10 @@ style SD-Turbo fill:#98CCFF
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE,GAN,DM,V-V,V-V2,I-GPT,DDPM,DDIM,I-DD,D-E1,ADM, CV,GLI,LDM,D-E2,Imag,CFD,SDXL]
+    x-axis [VAE,GAN,DM,Q-V,Q-V2,I-GPT,DDPM,DDIM,I-DD,D-E1,ADM, CV,GLI,LDM,D-E2,Imag,CFD,SDXL,ADD]
     y-axis "Cite" 
-    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713]
-    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713]
+    bar [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713,460]
+    line [46034, 83283, 8634,6258, 2329, 2050, 23847, 8896,4481,6536, 9492, 911,4128,20780, 8252,6983,4679,2713,460]
 ```
 
 

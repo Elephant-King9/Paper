@@ -575,3 +575,29 @@
   ![image-20250630182056675](./assets/pics/review/image-20250630182056675.png)
 
 - [详细信息](./SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis.md)
+
+### 17.Adversarial Diffusion Distillation
+
+- **ADD、SD-XL Trubo**
+
+- **作者:Axel Sauer、Dominik Lorenz、Andreas Blattmann、Robin Rombach**
+
+- **Stability AI**
+
+- **初版提交: 2023.11.28**
+
+- **Cite: 460**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.引入知识蒸馏+GAN来提高生成图像的效率==**
+
+  **==2.知识蒸馏主要用于提高生成速度(1000步->4步)，GAN主要用于保证生成质量==**
+
+- ![image-20250630211047323](./assets/pics/review/image-20250630211047323.png)
+
+- [详细信息](./Adversarial Diffusion Distillation.md)
