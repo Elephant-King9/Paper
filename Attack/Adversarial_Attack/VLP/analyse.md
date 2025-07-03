@@ -3,14 +3,14 @@
 ```mermaid
 timeline
     title VLP_Adv_Attack
-    2022← : Sep_Attack
     2022 : Jun
     		 : Co-Attack<br>ACMMM 2022<br>Beijing Jiaotong University
     2023 : May
     		 : AttackVLM<br>NIPS 2023<br>Singapore University of Technology and Design
     		 : Jul
     		 : SGA<br>ICCV 2023<br>Southern University of Science and Technology
-    2024 : TMM
+    2024 : Sep
+    		 : TMM<br>S&P 2024<br>Southeast University
 ```
 
 
@@ -32,6 +32,7 @@ pie title 期刊类型
  "Beijing Jiaotong University 1" : 1
  "Singapore University of Technology and Design 1" : 1
  "Southern University of Science and Technology 1" : 1
+ "Southeast University 1" : 1
 ```
 
 
@@ -45,6 +46,7 @@ flowchart BT
     FGSM-->|图像攻击|Co-Attack
     BERT-Attack-->|文本攻击|Co-Attack
     Co-Attack-->|将单一图文对扩展到图文对集合|SGA
+    SGA-->TMM
 	  RGF-->|黑盒梯度优化方式|AttackVLM
 	  
 	  
@@ -53,6 +55,7 @@ flowchart BT
 	  FGSM[FGSM]
 	  RGF[RGF（2015.11）<br>研究了不用梯度信息怎么优化一个目标函数]
 	  SGA[SGA（2023.07）<br>将跨模态攻击由单一文本对扩展到集合提升鲁棒性<br>通过最大化余弦相似度优化<br>干净图像=>扰动文本1=>扰动图像=>扰动文本2]
+	  TMM[TMM（2024.09）<br>针对特征一致性和差异性进行攻击<br>针对一致性添加更多扰动权重<br>差异性让扰动和原图正交]
 ```
 
 # 4. 引用量

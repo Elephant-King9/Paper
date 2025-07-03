@@ -73,13 +73,13 @@
 ### **3. Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models**. Dong Lu et.al. **arxiv**, **2023**, ([pdf](assets/pdfs/Set-level_Guidance_Attack:_Boosting_Adversarial_Transferability_of__Vision-Language_Pre-training_Models.pdf))([link](http://arxiv.org/abs/2307.14061v1)).
 - **SGA**
 
-- 作者: Dong Lu、Zhiqiang Wang、Teng Wang、Weili Guan、Hongchang Gao、Feng Zheng
+- **作者: Dong Lu、Zhiqiang Wang、Teng Wang、Weili Guan、Hongchang Gao、Feng Zheng**
 
-- Southern University of Science and Technology、The University of Hong Kong、Monash University、Temple University、Peng Cheng Laboratory
+- **Southern University of Science and Technology、The University of Hong Kong、Monash University、Temple University、Peng Cheng Laboratory**
 
 - **ICCV:2023**
 
-- 初版提交: 2023.07.26
+- **初版提交: 2023.07.26**
 
 - **Cite:69**
 
@@ -101,13 +101,37 @@
 
 - [详细信息](./Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models.md)
 
-### **3. Transferable Multimodal Attack on Vision-Language Pre-training Models**
+### **4. Transferable Multimodal Attack on Vision-Language Pre-training Models**
 
 - **TMM**
-- **SP:2024**
+
+- **作者: Haodi Wang、Kai Dong、Zhilei Zhu、Haotong Qin、Aishan Liu、Xiaolin Fang、 Jiakai Wang、Xianglong Liu**
+
+- **Southeast University、Zhongguancun Laboratory、Data Space Research Institute of Hefei Comprehensive National Science Centre、Beihang University**
+
+- **S&P:2024**
+
+- **初版提交: 2024.09.05**
+
 - **Cite:32**
+
 - **现有问题**：现有对抗攻击方法迁移性较差，且现有对抗攻击方法没有充分关注图像语文本之间的相关特征（一致性与差异性）
-- **创新点:** **==在VLP对抗迁移性的基础上更进一步研究，从模态一致性和模态差异性出发，分别设计ADFP与OGFH来提高VLP对抗攻击在黑盒模型上的迁移性==**
-- ![image-20250515170018414](assets/pics/review/image-20250515170018414.png)
+
+- **创新点:**
+
+   **==从模态一致性和模态差异性出发，分别设计ADFP与OGFH来提高VLP对抗攻击在黑盒模型上的迁移性==**
+
+  **==1.针对模态一致性(ADFP)==**
+
+  ​	**==对文本：通过对高注意力文本使用BERT for MASKedLM来替换最高注意力的词==**
+
+  ​	**==对图像：对高注意力部分分配更多的扰动权重，并且引入SSIM破坏结构信息==**
+
+  **==2.针对模态差异性==**
+
+  ​	**==分别最大化扰动图像，扰动文本，扰动图像-文本和初始图像-文本之间的余弦相似度==**
+
+- ![image-20250703173149855](./assets/pics/review/image-20250703173149855.png)
+
 - [详细信息](./Transferable Multimodal Attack on Vision-Language Pre-training Models.md)
 
