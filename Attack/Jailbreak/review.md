@@ -29,7 +29,22 @@
 
 - [详细信息](./AUTOPROMPT: Eliciting Knowledge from Language Models  with Automatically Generated Prompts.md)
 
+### 2. On Evaluating Adversarial Robustness of Large Vision-Language Models
+
+- AttackVLM
+- 作者: Yunqing Zhao、Tianyu Pang、Chao Du、Xiao Yang、Chongxuan Li、Ngai-Man Cheung、Min Lin
+- Singapore University of Technology and Design
+- NIPS: 2023
+- 初版提交: 2023.05.26
+- Cite: 270
+- 背景
+- 现有问题
+- 创新点
+- [详细信息](./On Evaluating Adversarial Robustness of Large Vision-Language Models.md)
+
 ### 2. Visual Adversarial Examples Jailbreak Aligned Large Language Models
+
+- VAE-JLLM
 
 - **作者: Xiangyu Qi、Kaixuan Huang**
 
@@ -55,6 +70,8 @@
   - **实证发现一个图像对抗样本可以普遍越狱多个对齐的VLMs，首次将“对抗攻击”问题连接到“AI对齐”的核心挑战上**
 
 - **创新点**
+
+  **==具体流程是使用扰动图片来完成文本的越狱，输入扰动图片和危险文字，通过扰动图片的影响来让VLM输出危险言论==**
 
   **==1.首次尝试对于VLM进行攻击==**
 
