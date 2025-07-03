@@ -8,7 +8,8 @@ timeline
     		 : Co-Attack<br>ACMMM 2022<br>Beijing Jiaotong University
     2023 : May
     		 : AttackVLM<br>NIPS 2023<br>Singapore University of Technology and Design
-    		 : SGA
+    		 : Jul
+    		 : SGA<br>ICCV 2023<br>Southern University of Science and Technology
     2024 : TMM
 ```
 
@@ -30,6 +31,7 @@ pie title 期刊类型
 pie title 期刊类型
  "Beijing Jiaotong University 1" : 1
  "Singapore University of Technology and Design 1" : 1
+ "Southern University of Science and Technology 1" : 1
 ```
 
 
@@ -40,14 +42,17 @@ pie title 期刊类型
 
 ```mermaid
 flowchart BT
-    A[Sep-Attack]-->|首次多模态协同攻击|Co-Attack -->|首个探索VLP迁移性| C[SGA]-->D
-    B-->|对VLP迁移性进一步研究|D[TMM]
-	  RGFE-stimator-->|黑盒梯度优化方式|AttackVLM
+    FGSM-->|图像攻击|Co-Attack
+    BERT-Attack-->|文本攻击|Co-Attack
+    Co-Attack-->|将单一图文对扩展到图文对集合|SGA
+	  RGF-->|黑盒梯度优化方式|AttackVLM
 	  
 	  
-	  Co-Attack[Co-Attack（2022.06）<br>提出了模态混合攻击<br>分析了单模态下文本图像的攻击效果，以及单双流模型的鲁棒性]
-	  RGFE-stimator[RGFE-stimator]
+	  Co-Attack[Co-Attack（2022.06）<br>提出了模态混合攻击<br>图像使用FGSM优化混合模态<br>文本使用BERT-Attack优化混合模态<br>分析了单模态下文本图像的攻击效果，以及单双流模型的鲁棒性]
 	  AttackVLM[AttackVLM（2023.05）<br>提出了针对Caption任务的攻击方法，通过对图像添加扰动来让VLM生成不匹配图像的描述]
+	  FGSM[FGSM]
+	  RGF[RGF（2015.11）<br>研究了不用梯度信息怎么优化一个目标函数]
+	  SGA[SGA（2023.07）<br>将跨模态攻击由单一文本对扩展到集合提升鲁棒性<br>通过最大化余弦相似度优化<br>干净图像=>扰动文本1=>扰动图像=>扰动文本2]
 ```
 
 # 4. 引用量
@@ -56,7 +61,7 @@ flowchart BT
 
     xychart-beta
     title "Cite Num"
-    x-axis [Co-Attack_2022MM, AttackVLM,SGA_2023ICCV, TMM_2024S&P]
+    x-axis [Co-Attack, AttackVLM,SGA, TMM]
     y-axis "Cite" 
     bar [115, 270,69,32]
     line [115, 270,69,32]

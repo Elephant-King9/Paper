@@ -70,16 +70,34 @@
 
 - [详细信息](./On Evaluating Adversarial Robustness of Large Vision-Language Models.md)
 
-### **2. Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models**. Dong Lu et.al. **arxiv**, **2023**, ([pdf](assets/pdfs/Set-level_Guidance_Attack:_Boosting_Adversarial_Transferability_of__Vision-Language_Pre-training_Models.pdf))([link](http://arxiv.org/abs/2307.14061v1)).
+### **3. Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models**. Dong Lu et.al. **arxiv**, **2023**, ([pdf](assets/pdfs/Set-level_Guidance_Attack:_Boosting_Adversarial_Transferability_of__Vision-Language_Pre-training_Models.pdf))([link](http://arxiv.org/abs/2307.14061v1)).
 - **SGA**
 
+- 作者: Dong Lu、Zhiqiang Wang、Teng Wang、Weili Guan、Hongchang Gao、Feng Zheng
+
+- Southern University of Science and Technology、The University of Hong Kong、Monash University、Temple University、Peng Cheng Laboratory
+
 - **ICCV:2023**
+
+- 初版提交: 2023.07.26
 
 - **Cite:69**
 
 - **现有问题：**目前VLP对抗攻击仅针对白盒攻击，迁移性较差
 
-- **创新点：==单一图文对抗样本迁移性差，用单一文本对生成一组信息来丰富模态信息，用跨模态交互引导扰动优化，最终实现对抗样本跨模型也能有效攻击。==**
+- **创新点：**
+
+  **==单一图文对抗样本迁移性差(Co-Attack)，用单一文本对生成一组信息来丰富模态信息==**
+
+  **==1.使用对一张图片的多种描述生成干净文本集，将干净图像进行缩放加噪变化生成干净图像集==**
+
+  ​	**==第一步最大化扰动文本集和干净图像在特征空间的余弦相似度生成对抗文本1==**
+
+  ​	**==第二步最大化对抗样本1和干净图像集之间的余弦相似度生成扰动图像集==**
+
+  ​	**==第三步最大化扰动图像集和扰动文本2之间的余弦相似度生成扰动文本集2==**
+
+- ![image-20250703165221258](./assets/pics/review/image-20250703165221258.png)
 
 - [详细信息](./Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models.md)
 
