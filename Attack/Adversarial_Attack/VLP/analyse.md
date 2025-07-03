@@ -4,7 +4,8 @@
 timeline
     title VLP_Adv_Attack
     2022← : Sep_Attack
-    2022 : Co-Attack
+    2022 : Jun
+    		 : Co-Attack<br>ACMMM 2022<br>Beijing Jiaotong University
     2023 : May
     		 : AttackVLM<br>NIPS 2023<br>Singapore University of Technology and Design
     		 : SGA
@@ -25,16 +26,26 @@ pie title 期刊类型
     "NIPS 1" : 1
 ```
 
+```mermaid
+pie title 期刊类型
+ "Beijing Jiaotong University 1" : 1
+ "Singapore University of Technology and Design 1" : 1
+```
+
+
+
 # 3. 关联
 
 
 
 ```mermaid
 flowchart BT
-    A[Sep-Attack]-->|首次多模态协同攻击|B[Co-Attack] -->|首个探索VLP迁移性| C[SGA]-->D
+    A[Sep-Attack]-->|首次多模态协同攻击|Co-Attack -->|首个探索VLP迁移性| C[SGA]-->D
     B-->|对VLP迁移性进一步研究|D[TMM]
 	  RGFE-stimator-->|黑盒梯度优化方式|AttackVLM
 	  
+	  
+	  Co-Attack[Co-Attack（2022.06）<br>提出了模态混合攻击<br>分析了单模态下文本图像的攻击效果，以及单双流模型的鲁棒性]
 	  RGFE-stimator[RGFE-stimator]
 	  AttackVLM[AttackVLM（2023.05）<br>提出了针对Caption任务的攻击方法，通过对图像添加扰动来让VLM生成不匹配图像的描述]
 ```

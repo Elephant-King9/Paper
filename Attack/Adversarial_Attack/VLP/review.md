@@ -1,13 +1,41 @@
 ### **1. Towards Adversarial Attack on Vision-Language Pre-training Models**. Jiaming Zhang et.al. **arxiv**, **2022**, ([pdf](assets/pdfs/Towards_Adversarial_Attack_on_Vision-Language_Pre-training_Models.pdf))([link](http://arxiv.org/abs/2206.09391v2)).
 
 - **Co-Attack**
+
+- **作者: Jiaming Zhang、Qi Yi、Jitao Sang**
+
+- **Beijing Jiaotong University**
+
 - **ACMMM:2022**
+
+- **初版提交: 2022.06.19**
+
 - **Cite:115**
 
 - **现有问题：**目前研究只有针对单模态的攻击，没有将模态之间的信息进行结合
 
-- **创新点：==首次提出了面向VLP模型的跨模态协同攻击方法，统一优化图像与文本扰动，分别针对单流融合架构与双流对齐架构进行适配，避免了单独攻击时模态间扰动相互抵消的问题。==**
-- ![image-20250514113810762](assets/pics/review/image-20250514113810762.png)
+- **创新点：**
+
+  **==首次提出VLM混合攻击，避免了单独攻击时模态间扰动相互抵消的问题==**
+
+  **==1.对于图像模态，最大化原始图像和对抗图像在图像-文本空间中的KL散度，使用FGSM攻击==**
+
+  **==2.对于文本模态，最大化原始文本和对抗文本在图像-文本特征空间中的距离，使用BERT-Attack==**
+
+  **==3.通过观察得出结论==**
+
+  ​	**==对于单模态攻击==**
+
+  ​		**==图像模态攻击整图embeding的效果好于攻击CLS token==**
+
+  ​		**==文本模态攻击CLS token的效果好于攻击整文embeding==**
+
+  ​	**==单流双流架构的抗鲁棒性差不多==**
+
+  ​	**==视觉模态使用ViT的鲁棒性好于CNN的鲁棒性==**
+
+- ![image-20250703153047343](./assets/pics/review/image-20250703153047343.png)
+
 - [详细信息](./Towards Adversarial Attack on Vision-Language Pre-training Models.md)
 
 ### 2. On Evaluating Adversarial Robustness of Large Vision-Language Models
