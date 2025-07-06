@@ -118,7 +118,25 @@
 
 - [详细信息](./Universal and Transferable Adversarial Attacks on Aligned Language Models.md)
 
-### 4. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
+### 4. Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher
+
+- **CipherChat**
+- **作者: Youliang Yuan、Wenxiang Jiao、Wenxuan Wang、Jen-tse Huang、Pinjia He、Shuming Shi、Zhaopeng Tu**
+- **The Chinese University of Hong Kong、Tencent AI Lab**
+- **ICLR: 2024**
+- **初版提交: 2023.08.12**
+- **Cite: 284**
+- **背景**
+- **现有问题**
+- **创新点**
+
+  **==1.CipherChat：将普通语言转化为加密语言（如ASCII）然后让模型用加密语言回答危险问题再翻译回来==**
+
+  **==2.SelfCipher：让模型模拟一个未知的语言，但是还是用英文回答，但是模型会以为危险的英文言论是正常的加密语言，从而回答==**
+- ![image-20250706193926289](./assets/pics/review/image-20250706193926289.png)
+- [详细信息](./Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher.md)
+
+### 5. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
 
 - **FigStep**
 
