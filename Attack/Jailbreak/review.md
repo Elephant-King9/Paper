@@ -29,22 +29,9 @@
 
 - [详细信息](./AUTOPROMPT: Eliciting Knowledge from Language Models  with Automatically Generated Prompts.md)
 
-### 2. On Evaluating Adversarial Robustness of Large Vision-Language Models
-
-- AttackVLM
-- 作者: Yunqing Zhao、Tianyu Pang、Chao Du、Xiao Yang、Chongxuan Li、Ngai-Man Cheung、Min Lin
-- Singapore University of Technology and Design
-- NIPS: 2023
-- 初版提交: 2023.05.26
-- Cite: 270
-- 背景
-- 现有问题
-- 创新点
-- [详细信息](./On Evaluating Adversarial Robustness of Large Vision-Language Models.md)
-
 ### 2. Visual Adversarial Examples Jailbreak Aligned Large Language Models
 
-- VAE-JLLM
+- **VAE-JLLM**
 
 - **作者: Xiangyu Qi、Kaixuan Huang**
 
@@ -130,3 +117,45 @@
 - ![image-20250623180928007](./assets/pics/review/image-20250623180928007.png)
 
 - [详细信息](./Universal and Transferable Adversarial Attacks on Aligned Language Models.md)
+
+### 4. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
+
+- **FigStep**
+
+- **作者: Yichen Gong、Delong Ran、Jinyuan Liu、Conglei Wang、Tianshuo Cong、Anyu Wang、Sisi Duan、Xiaoyun Wang**
+
+- **Tsinghua University、Zhongguancun Laboratory、Carnegie Mellon University、National Financial Cryptography Research Center、Shandong Institute of Blockchain、Shandong University**
+
+- **AAAI: 2025 Oral**
+
+- **初版提交: 2023.11.09**
+
+- **Cite: 190**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==认为将文本转化为图像能更好的诱导LVLM出错==**
+
+  **==1.提出了三点直觉==**
+
+  ​	**==模型能看懂图像中的文字==**
+
+  ​	**==图像输入绕过了文字的安全限制==**
+
+  ​	**==让模型“慢慢答”可以进一步欺骗它==**
+
+  **==2.基于这三点直觉使用 改写危险文本=>将改写文本转化为图像，并标出序号=>设计无害的诱导文本让模型输出文字==**
+
+  **==3.创建了新的危险问题数据集SafeBench==**
+
+  **==4.改进版FigStep~adv~:使用扰动图像==**
+
+  **==5.改进版FigStep~hide~:使用图像背景颜色设为 #000010，来绕过OCR==**
+
+- ![image-20250706165516721](./assets/pics/review/image-20250706165516721.png)
+
+- [详细信息](./FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts.md)

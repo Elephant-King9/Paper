@@ -3,3 +3,12 @@
  Set-level Guidance Attack: Boosting Adversarial Transferability of Vision-Language Pre-training Models
 
 能不能在第二步根据扰动文本生成扰动图像集的时候添加初始文本，朝着离扰动文本和初始文本都远的情况下优化
+
+
+
+
+
+
+
+## 2. 陈述句会不会比疑问句更具有攻击效果？
+
