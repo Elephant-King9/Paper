@@ -53,6 +53,11 @@ pie title 单位
 ```mermaid
 flowchart BT
 	Jailbreak-->LLM
+	LLM-->GCG
+	LLM-->CipherChat
+	Milgram_experiment-->|灵感|DeepInception
+	
+	GCG-->|对比|DeepInception
 	Jailbreak-->VLM
 	VLM-->Text
 	VLM-->Image
@@ -63,10 +68,10 @@ flowchart BT
 	Image-->VAE-JLLM
 	VLM-->Mix
 	AutoPrompt-->|提供优化思路|GCG
-	LLM-->GCG
-	LLM-->CipherChat
 	
 	
+	DeepInception[DeepInception（2023.11）<br>引诱模型进行角色扮演，多轮对话诱导越狱]
+	Milgram_experiment[米尔格拉姆实验（Milgram experiment）<br>它旨在探讨普通人在权威命令下，是否愿意对他人施加痛苦]
 	AutoPrompt[AutoPrompt（2020.10）<br>提供了指导模型说出知识的方法]
 	GCG[GCG（2023.07）<br>文本+对抗文本=>文本<br>问题后插入对抗句子，引导模型生成Sure+问题]
 	VAE-JLLM[VAE-JLLM（2023.07）<br>文本+对抗图像=>文本<br>首次针对VLM的图像方面进行攻击<br>也测试了文本的攻击，效果不如图像好]

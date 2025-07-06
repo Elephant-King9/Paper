@@ -136,7 +136,33 @@
 - ![image-20250706193926289](./assets/pics/review/image-20250706193926289.png)
 - [详细信息](./Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher.md)
 
-### 5. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
+### 5. DeepInception: Hypnotize Large Language Model to Be Jailbreaker
+
+- **DeepInception**
+
+- **作者: Xuan Li、Zhanke Zhou、 Jianing Zhu、Jiangchao Yao、Tongliang Liu、Bo Han**
+
+- **Hong Kong Baptist University、Shanghai Jiao Tong University、Shanghai AI Laboratory、The University of Sydney**
+
+- **NIPS workshop: 2024**
+
+- **初版提交: 2023.11.06**
+
+- **Cite: 216**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.引诱大模型进行角色扮演，并通过多轮问答诱导越狱==**
+
+- ![image-20250706200917560](./assets/pics/review/image-20250706200917560.png)
+
+- [详细信息](DeepInception: Hypnotize Large Language Model to Be Jailbreaker.md)
+
+### 6. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
 
 - **FigStep**
 
