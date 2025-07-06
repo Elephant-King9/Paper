@@ -29,6 +29,36 @@
 
 - [详细信息](./AUTOPROMPT: Eliciting Knowledge from Language Models  with Automatically Generated Prompts.md)
 
+### 2. MasterKey: Automated Jailbreak Across Multiple Large Language Model Chatbots
+
+- **MasterKey**
+
+- **作者: Gelei Deng、Yi Liu、Yuekang Li、Kailong Wang、Ying Zhang、Zefeng Li、Haoyu Wang、Tianwei Zhang、Yang Liu**
+
+- **Nanyang Technological University、University of New South Wales、Huazhong University of Science and Technology、Virginia Tech**
+
+- **NDSS:2024**
+
+- **初版提交: 2023.07.16**
+
+- **Cite: 213**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.通过时间SQL注入的思想判断了目前黑盒模型是如何检测危险输出的==**
+
+  **==2.通过设计数据增强，将现有的LLM微调成生成越狱文本的LLM，并通过奖励机制优化==**
+
+- ![image-20250706212636244](./assets/pics/review/image-20250706212636244.png)
+
+- ![image-20250706212646384](./assets/pics/review/image-20250706212646384.png)
+
+- [详细信息](./MasterKey: Automated Jailbreak Across Multiple Large Language Model Chatbots.md)
+
 ### 2. Visual Adversarial Examples Jailbreak Aligned Large Language Models
 
 - **VAE-JLLM**

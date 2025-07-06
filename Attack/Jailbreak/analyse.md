@@ -8,6 +8,7 @@ timeline
     	2020 : Oct
     			 : AutoPrompt<br>University of California
     	2023 : Jul
+    			 : MasterKey<br>NDSS 2024<br>Nanyang Technological University
     			 : VAE-JLLM<br>AAAI 2024<br>Princeton University
     			 : GCG<br>Carnegie Mellon University
     			 : Aug
@@ -31,6 +32,7 @@ pie title 期刊类型
     "NIPS 1" : 1
     "ICLR 1" : 1
     "NIPS workshop 1" : 1
+    "NDSS 1" : 1
 ```
 
 ```mermaid
@@ -42,6 +44,7 @@ pie title 单位
     "Tsinghua University 1" : 1
     "The Chinese University of Hong Kong 1" : 1
     "Hong Kong Baptist University 1" : 1
+    "Nanyang Technological University 1" : 1
 ```
 
 
@@ -53,6 +56,7 @@ pie title 单位
 ```mermaid
 flowchart BT
 	Jailbreak-->LLM
+	LLM-->MasterKey
 	LLM-->GCG
 	LLM-->CipherChat
 	Milgram_experiment-->|灵感|DeepInception
@@ -70,6 +74,7 @@ flowchart BT
 	AutoPrompt-->|提供优化思路|GCG
 	
 	
+	MasterKey[MasterKey（2023.07）<br>探索了LLM是如何检测危险言论的<br>微调LLM让其能生成危险言论的问题]
 	DeepInception[DeepInception（2023.11）<br>引诱模型进行角色扮演，多轮对话诱导越狱]
 	Milgram_experiment[米尔格拉姆实验（Milgram experiment）<br>它旨在探讨普通人在权威命令下，是否愿意对他人施加痛苦]
 	AutoPrompt[AutoPrompt（2020.10）<br>提供了指导模型说出知识的方法]
@@ -86,10 +91,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [AutoPrompt,AttackVLM,VAE-JLLM,GCG,CipherChat,DeepInception,Fig-Step]
+    x-axis [AutoPrompt,MasterKey,AttackVLM,VAE-JLLM,GCG,CipherChat,DeepInception,Fig-Step]
     y-axis "Cite" 
-    bar [2157, 270,247, 1631,284,216,190]
-    line [2157, 270,247,1631,284,216,190]
+    bar [2157, 212,247, 1631,284,216,190]
+    line [2157, 212,247,1631,284,216,190]
 ```
 
 
