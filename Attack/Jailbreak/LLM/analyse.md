@@ -34,6 +34,7 @@ pie title 期刊类型
     "ICLR 3" : 3
     "NIPS workshop 1" : 1
     "NDSS 1" : 1
+    "arxiv 1" : 1
 ```
 
 ```mermaid
@@ -65,7 +66,7 @@ flowchart BT
 	LLM-->GCG
 	LLM-->CipherChat
 	LLM-->MultiLingual
-	GCG-->|对比|DeepInception
+	LLM-->DeepInception
 	AutoPrompt-->|优化方向一致|GCG
 	GCG-->|生成的更符合人类阅读|AutoDAN
 	DAN-->AutoDAN

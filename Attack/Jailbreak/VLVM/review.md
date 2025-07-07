@@ -74,3 +74,25 @@
 - ![image-20250707202112095](./assets/pics/review/image-20250707202112095.png)
 
 - [详细信息](./FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts.md)
+
+### 3. Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character
+
+- **VRP**
+
+- **作者: Siyuan Ma、Weidi Luo、Yu Wang、Xiaogeng Liu**
+
+- **University of Wisconsin–Madison、The Ohio State University、Peking University**
+
+- **初版提交: 2024.05.25**
+
+- **Cite: 35**
+
+- **创新点**
+
+  **==1.通过危险问题生成角色关键特征描述+生成角色图像+原始恶意问题拼接成一整张图进行攻击==**
+
+  **==2.设计算法找出通用的最强坏人角色，能够不加改变适应任何恶意问题==**
+
+- ![image-20250707211328486](./assets/pics/review/image-20250707211328486.png)
+
+- [详细信息](./Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character.md)
