@@ -43,10 +43,6 @@
 
 - **Cite: 213**
 
-- **背景**
-
-- **现有问题**
-
 - **创新点**
 
   **==1.通过时间SQL注入的思想判断了目前黑盒模型是如何检测危险输出的==**
@@ -59,7 +55,7 @@
 
 - [详细信息](./MasterKey: Automated Jailbreak Across Multiple Large Language Model Chatbots.md)
 
-### 2. Visual Adversarial Examples Jailbreak Aligned Large Language Models
+### 3. Visual Adversarial Examples Jailbreak Aligned Large Language Models
 
 - **VAE-JLLM**
 
@@ -72,8 +68,6 @@
 - **初版提交: 2023.07.22**
 
 - **Cite: 247**
-
-- **背景**
 
 - **现有问题**
 
@@ -100,7 +94,7 @@
 
 - [详细信息](Visual Adversarial Examples Jailbreak Aligned Large Language Models.md)
 
-### 3. Universal and Transferable Adversarial Attacks  on Aligned Language Models
+### 4. Universal and Transferable Adversarial Attacks  on Aligned Language Models
 
 - **GCG**
 
@@ -148,25 +142,31 @@
 
 - [详细信息](./Universal and Transferable Adversarial Attacks on Aligned Language Models.md)
 
-### 4. Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher
+### 5. Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher
 
 - **CipherChat**
+
 - **作者: Youliang Yuan、Wenxiang Jiao、Wenxuan Wang、Jen-tse Huang、Pinjia He、Shuming Shi、Zhaopeng Tu**
+
 - **The Chinese University of Hong Kong、Tencent AI Lab**
+
 - **ICLR: 2024**
+
 - **初版提交: 2023.08.12**
+
 - **Cite: 284**
-- **背景**
-- **现有问题**
+
 - **创新点**
 
   **==1.CipherChat：将普通语言转化为加密语言（如ASCII）然后让模型用加密语言回答危险问题再翻译回来==**
 
   **==2.SelfCipher：让模型模拟一个未知的语言，但是还是用英文回答，但是模型会以为危险的英文言论是正常的加密语言，从而回答==**
+  
 - ![image-20250706193926289](./assets/pics/review/image-20250706193926289.png)
+
 - [详细信息](./Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher.md)
 
-### 5. Autodan: Generating stealthy jailbreak prompts on aligned large language models
+### 6. Autodan: Generating stealthy jailbreak prompts on aligned large language models
 
 - **AutoDAN**
 
@@ -180,10 +180,6 @@
 
 - **Cite: 636**
 
-- **背景**
-
-- **现有问题**
-
 - **创新点**
 
   **==1.使用GCG的优化目标，使用遗传算法来生成越狱提示，相比于GCG生成的越狱提示更具有可读性==**
@@ -194,7 +190,31 @@
 
 - [详细信息](./Autodan: Generating stealthy jailbreak prompts on aligned large language models.md)
 
-### 5. DeepInception: Hypnotize Large Language Model to Be Jailbreaker
+### 7. Jailbreak and guard aligned language models with only few in-context demonstrations
+
+- **ICA/ICD**
+
+- **作者: Zeming Wei、Yifei Wang、Ang Li、Yichuan Mo、Yisen Wang**
+
+- **Peking University、MIT CSAIL**
+
+- **初版提交: 2023.10.10**
+
+- **Cite: 300**
+
+- **创新点**
+
+  **==1.提出了使用类似one-shot的方法，先给出一个回答危险问题的例子，然后问模型新的危险问题，模型根据one-shot的例子就会回答==**
+
+  **==2.对于防御部分，先给出模型拒绝回答危险问题的例子，然后让模型拒绝回答新的危险问题==**
+
+  **==3.分析了这种情况为什么会出现==**
+
+- ![image-20250707190748394](./assets/pics/review/image-20250707190748394.png)
+
+- [详细信息](./Jailbreak and guard aligned language models with only few in-context demonstrations.md)
+
+### 7. DeepInception: Hypnotize Large Language Model to Be Jailbreaker
 
 - **DeepInception**
 
@@ -208,10 +228,6 @@
 
 - **Cite: 216**
 
-- **背景**
-
-- **现有问题**
-
 - **创新点**
 
   **==1.引诱大模型进行角色扮演，并通过多轮问答诱导越狱==**
@@ -220,7 +236,7 @@
 
 - [详细信息](DeepInception: Hypnotize Large Language Model to Be Jailbreaker.md)
 
-### 6. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
+### 8. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
 
 - **FigStep**
 
@@ -233,10 +249,6 @@
 - **初版提交: 2023.11.09**
 
 - **Cite: 190**
-
-- **背景**
-
-- **现有问题**
 
 - **创新点**
 

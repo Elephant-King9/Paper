@@ -15,6 +15,7 @@ timeline
     			 : CipherChat<br>ICLR 2024<br>The Chinese University of Hong Kong
     			 : Oct
     			 : AutoDAN<br>ICLR 2024<br>University of Wisconsin–Madison
+    			 : ICA<br>arxiv<br>Peking University
     			 : Nov
     			 : DeepInception<br>NIPS workshop 2024<br>Hong Kong Baptist University
     			 : FigStep<br>AAAI 2025(Oral)<br>Tsinghua University
@@ -48,6 +49,7 @@ pie title 单位
     "Hong Kong Baptist University 1" : 1
     "Nanyang Technological University 1" : 1
     "University of Wisconsin–Madison 1" : 1
+    "Peking University 1" : 1
 ```
 
 
@@ -59,10 +61,11 @@ pie title 单位
 ```mermaid
 flowchart BT
 	Jailbreak-->LLM
+	Milgram_experiment-->|灵感|DeepInception
+	LLM-->ICA
 	LLM-->MasterKey
 	LLM-->GCG
 	LLM-->CipherChat
-	Milgram_experiment-->|灵感|DeepInception
 	
 	GCG-->|对比|DeepInception
 	Jailbreak-->VLM
@@ -91,6 +94,7 @@ flowchart BT
 	Genetic_Algorithms[遗传算法（Genetic Algorithms）]
 	AutoDAN[AutoDAN（2023.10）<br>使用遗传算法优化GCG<br>让生成的文本变得可读性更强]
 	DAN[DAN]
+	ICA[ICA（2023.10）<br>在询问危险问题前使用few-shot告诉模型几个回答危险问题的例子]
 ```
 
 # 4. 引用量
@@ -98,10 +102,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [AutoPrompt,MasterKey,VAE-JLLM,GCG,CipherChat,AutoDAN,DeepInception,Fig-Step]
+    x-axis [AutoPrompt,MasterKey,VAE-JLLM,GCG,CipherChat,AutoDAN,ICA,DeepInception,Fig-Step]
     y-axis "Cite" 
-    bar [2157, 213,247, 1631,284,636,216,190]
-    line [2157, 213,247,1631,284,636,216,190]
+    bar [2157, 213,247, 1631,284,636,300,216,190]
+    line [2157, 213,247,1631,284,636,300,216,190]
 ```
 
 
