@@ -214,6 +214,32 @@
 
 - [详细信息](./Jailbreak and guard aligned language models with only few in-context demonstrations.md)
 
+### 7. Multilingual Jailbreak Challenges in Large Language Models
+
+- **MultiLingual**
+
+- **作者: Yue Deng、Wenxuan Zhang、Sinno Jialin Pan、Lidong Bing**
+
+- **DAMO Academy、Nanyang Technological University、Hupan Lab、The Chinese University of Hong Kong**
+
+- **ICLR:2024**
+
+- **初版提交: 2023.10.10**
+
+- **Cite: 282**
+
+- **创新点**
+
+  **==1.探究了不同语言的相同文字的越狱结果==**
+
+  **==2.构建了数据集MultiJail，多语言的危险问题==**
+
+  **==3.构建了防御措施Self-Defence，通过安全语言+危险问题的不同语言微调大模型==**
+
+- ![image-20250707201154295](./assets/pics/review/image-20250707201154295.png)
+
+- [详细信息](./Multilingual Jailbreak Challenges in Large Language Models.md)
+
 ### 7. DeepInception: Hypnotize Large Language Model to Be Jailbreaker
 
 - **DeepInception**

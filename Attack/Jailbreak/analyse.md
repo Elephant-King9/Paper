@@ -16,6 +16,7 @@ timeline
     			 : Oct
     			 : AutoDAN<br>ICLR 2024<br>University of Wisconsin–Madison
     			 : ICA<br>arxiv<br>Peking University
+    			 : MultiLingual<br>ICLR 2024<br>DAMO Academy
     			 : Nov
     			 : DeepInception<br>NIPS workshop 2024<br>Hong Kong Baptist University
     			 : FigStep<br>AAAI 2025(Oral)<br>Tsinghua University
@@ -33,7 +34,7 @@ timeline
 pie title 期刊类型
     "AAAI 2" : 2
     "NIPS 1" : 1
-    "ICLR 2" : 2
+    "ICLR 3" : 3
     "NIPS workshop 1" : 1
     "NDSS 1" : 1
 ```
@@ -50,11 +51,14 @@ pie title 单位
     "Nanyang Technological University 1" : 1
     "University of Wisconsin–Madison 1" : 1
     "Peking University 1" : 1
+    "DAMO Academy 1" : 1
 ```
 
 
 
 # 3. 关联
+
+ Vicuna 这种没有微调过安全性的，轻松被突破。相比之下，Llama2 会更保守，SeaLLM-v2 在特定语言上做得最好。
 
 
 
@@ -66,7 +70,7 @@ flowchart BT
 	LLM-->MasterKey
 	LLM-->GCG
 	LLM-->CipherChat
-	
+	LLM-->MultiLingual
 	GCG-->|对比|DeepInception
 	Jailbreak-->VLM
 	VLM-->Text
@@ -95,6 +99,7 @@ flowchart BT
 	AutoDAN[AutoDAN（2023.10）<br>使用遗传算法优化GCG<br>让生成的文本变得可读性更强]
 	DAN[DAN]
 	ICA[ICA（2023.10）<br>在询问危险问题前使用few-shot告诉模型几个回答危险问题的例子]
+	MultiLingual[MultiLingual（2023.10）<br>多语言越狱]
 ```
 
 # 4. 引用量
@@ -102,10 +107,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [AutoPrompt,MasterKey,VAE-JLLM,GCG,CipherChat,AutoDAN,ICA,DeepInception,Fig-Step]
+    x-axis [AutoPrompt,MasterKey,VAE-JLLM,GCG,CipherChat,AutoDAN,ICA,MultiLingual,DeepInception,Fig-Step]
     y-axis "Cite" 
-    bar [2157, 213,247, 1631,284,636,300,216,190]
-    line [2157, 213,247,1631,284,636,300,216,190]
+    bar [2157, 213,247, 1631,284,636,300,282,216,190]
+    line [2157, 213,247,1631,284,636,300,282,216,190]
 ```
 
 
