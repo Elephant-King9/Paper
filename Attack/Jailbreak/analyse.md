@@ -13,6 +13,8 @@ timeline
     			 : GCG<br>Carnegie Mellon University
     			 : Aug
     			 : CipherChat<br>ICLR 2024<br>The Chinese University of Hong Kong
+    			 : Oct
+    			 : AutoDAN<br>ICLR 2024<br>University of Wisconsin–Madison
     			 : Nov
     			 : DeepInception<br>NIPS workshop 2024<br>Hong Kong Baptist University
     			 : FigStep<br>AAAI 2025(Oral)<br>Tsinghua University
@@ -30,7 +32,7 @@ timeline
 pie title 期刊类型
     "AAAI 2" : 2
     "NIPS 1" : 1
-    "ICLR 1" : 1
+    "ICLR 2" : 2
     "NIPS workshop 1" : 1
     "NDSS 1" : 1
 ```
@@ -45,6 +47,7 @@ pie title 单位
     "The Chinese University of Hong Kong 1" : 1
     "Hong Kong Baptist University 1" : 1
     "Nanyang Technological University 1" : 1
+    "University of Wisconsin–Madison 1" : 1
 ```
 
 
@@ -71,10 +74,12 @@ flowchart BT
 	Image-->FigStep
 	Image-->VAE-JLLM
 	VLM-->Mix
-	AutoPrompt-->|提供优化思路|GCG
+	AutoPrompt-->|优化方向一致|GCG
+	GCG-->|生成的更符合人类阅读|AutoDAN
+	DAN-->AutoDAN
+	Genetic_Algorithms-->|优化算法|AutoDAN
 	
-	
-	MasterKey[MasterKey（2023.07）<br>探索了LLM是如何检测危险言论的<br>微调LLM让其能生成危险言论的问题]
+	MasterKey[[MasterKey（2023.07）<br>探索了LLM是如何检测危险言论的<br>微调LLM让其能生成危险言论的问题]]
 	DeepInception[DeepInception（2023.11）<br>引诱模型进行角色扮演，多轮对话诱导越狱]
 	Milgram_experiment[米尔格拉姆实验（Milgram experiment）<br>它旨在探讨普通人在权威命令下，是否愿意对他人施加痛苦]
 	AutoPrompt[AutoPrompt（2020.10）<br>提供了指导模型说出知识的方法]
@@ -82,19 +87,21 @@ flowchart BT
 	VAE-JLLM[VAE-JLLM（2023.07）<br>文本+对抗图像=>文本<br>首次针对VLM的图像方面进行攻击<br>也测试了文本的攻击，效果不如图像好]
 	FigStep[FigStep（2023.11）<br>危险文本转图像=>文本<br>使用危险文本转图像+无害诱导文本诱导模型完成危险问题完形填空]
 	CipherChat[CipherChat（2023.08）<br>加密文本对话<br>模拟加密文本用正常语言对话]
+	
+	Genetic_Algorithms[遗传算法（Genetic Algorithms）]
+	AutoDAN[AutoDAN（2023.10）<br>使用遗传算法优化GCG<br>让生成的文本变得可读性更强]
+	DAN[DAN]
 ```
-
-
 
 # 4. 引用量
 
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [AutoPrompt,MasterKey,AttackVLM,VAE-JLLM,GCG,CipherChat,DeepInception,Fig-Step]
+    x-axis [AutoPrompt,MasterKey,VAE-JLLM,GCG,CipherChat,AutoDAN,DeepInception,Fig-Step]
     y-axis "Cite" 
-    bar [2157, 212,247, 1631,284,216,190]
-    line [2157, 212,247,1631,284,216,190]
+    bar [2157, 213,247, 1631,284,636,216,190]
+    line [2157, 213,247,1631,284,636,216,190]
 ```
 
 

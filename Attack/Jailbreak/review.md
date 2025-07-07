@@ -166,6 +166,34 @@
 - ![image-20250706193926289](./assets/pics/review/image-20250706193926289.png)
 - [详细信息](./Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher.md)
 
+### 5. Autodan: Generating stealthy jailbreak prompts on aligned large language models
+
+- **AutoDAN**
+
+- **作者: Xiaogeng Liu、Nan Xu、Muhao Chen、Chaowei Xiao**
+
+- **University of Wisconsin–Madison、USC、University of California**
+
+- **ICLR: 2024**
+
+- **初版提交: 2023.10.03**
+
+- **Cite: 636**
+
+- **背景**
+
+- **现有问题**
+
+- **创新点**
+
+  **==1.使用GCG的优化目标，使用遗传算法来生成越狱提示，相比于GCG生成的越狱提示更具有可读性==**
+
+- ![image-20250707183645215](./assets/pics/review/image-20250707183645215.png)
+
+- ![image-20250707183656366](./assets/pics/review/image-20250707183656366.png)
+
+- [详细信息](./Autodan: Generating stealthy jailbreak prompts on aligned large language models.md)
+
 ### 5. DeepInception: Hypnotize Large Language Model to Be Jailbreaker
 
 - **DeepInception**
