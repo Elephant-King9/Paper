@@ -7,7 +7,8 @@ timeline
     title CV_Adversarial_Attack
     2014 : Dec
     		 : FGSM<br>ICLR 2015<br>Google
-    
+    2017 : Jun
+    		 : PGD<br>ICLR 2018<br>MIT
 ```
 
 
@@ -18,12 +19,13 @@ timeline
 
 ```mermaid
 pie title 期刊类型
-	"ICLR 1" : 1
+	"ICLR 2" : 2
 ```
 
 ```mermaid
 pie title 单位
 	"Google 1" : 1
+	"MIT 1" : 1
 ```
 
 
@@ -37,10 +39,10 @@ pie title 单位
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [FGSM]
+    x-axis [FGSM,PGD]
     y-axis "Cite" 
-    bar [25973]
-    line [25973]
+    bar [25973,15714]
+    line [25973,15714]
 ```
 
 
