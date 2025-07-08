@@ -25,7 +25,7 @@
 
 - **创新点**
 
-  **==具体流程是使用扰动图片来完成文本的越狱，输入扰动图片和危险文字，通过扰动图片的影响来让VLM输出危险言论==**
+  **==具体流程是使用扰动图片朝着危险文本的方向来完成文本的越狱，输入扰动图片和危险文字，通过扰动图片的影响来让VLM输出危险言论==**
 
   **==1.首次尝试对于VLM进行攻击==**
 
@@ -36,6 +36,28 @@
 - ![image-20250707202158814](./assets/pics/review/image-20250707202158814.png)
 
 - [详细信息](Visual Adversarial Examples Jailbreak Aligned Large Language Models.md)
+
+## 2. Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models
+
+- **JP**
+
+- **作者: Erfan Shayegani、Yue Dong、Nael Abu-Ghazaleh**
+
+- **University of California**
+
+- **ICLR:2024**
+
+- **初版提交: 2023.07.26**
+
+- **Cite: 185**
+
+- **创新点**
+
+  **==1.提出了白盒图像编码器黑盒LLM的对抗攻击方法，让对抗图像靠近危险的四种信息来构造危险图像，输入对抗图像+中性的文本描述来达成攻击==**
+
+- ![image-20250708130747906](./assets/pics/review/image-20250708130747906.png)
+
+- [详细信息](./Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models.md)
 
 ### 2. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
 
@@ -122,3 +144,5 @@
 - ![image-20250707211328486](./assets/pics/review/image-20250707211328486.png)
 
 - [详细信息](./Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character.md)
+
+- 
