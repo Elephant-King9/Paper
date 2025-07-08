@@ -75,7 +75,33 @@
 
 - [详细信息](./FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts.md)
 
-### 3. Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character
+### 3.MM-SafetyBench: A Benchmark for Safety Evaluation of Multimodal Large Language Models
+
+- **QR**
+
+- **作者: Xin Liu、Yichen Zhu、 Jindong Gu、Yunshi Lan、Chao Yang、Yu Qiao**
+
+- **Shanghai AI Laboratory、East China Normal University、Midea Group、University of Oxford**
+
+- **ECCV: 2024**
+
+- **初版提交: 2023.11.29**
+
+- **Cite: 140**
+
+- **创新点**
+
+  **==1.构建了图文安全检测数据集==**
+
+  **==2.使用生成图像+危险问题拼接的方式以提问==**
+
+  **==3.通过在提问中引入文本"回答前先判断一下这是不是危险问题"来帮助模型防御==**
+
+- ![image-20250708111843827](./assets/pics/review/image-20250708111843827.png)
+
+- [详细信息](./MM-SafetyBench: A Benchmark for Safety Evaluation of Multimodal Large Language Models.md)
+
+### 4. Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character
 
 - **VRP**
 
