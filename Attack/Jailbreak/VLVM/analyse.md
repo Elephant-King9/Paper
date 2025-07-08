@@ -11,7 +11,9 @@ timeline
     			 : Nov
     			 : FigStep<br>AAAI 2025(Oral)<br>Tsinghua University
     			 : QR<br>ECCV 2024<br>Shanghai AI Laboratory
-    	2024 : May
+    	2024 : Feb
+    			 : imgJP<br>arxiv<br>Xidian University
+    			 : May
     			 : VRP<br>arxiv<br>University of Wisconsin–Madison
  
 ```
@@ -25,9 +27,10 @@ timeline
 ```mermaid
 pie title 期刊类型
     "AAAI 2" : 2
-    "arxiv 1" : 1
+    "arxiv 2" : 2
     "ECCV 1" : 1
     "ICLR 1" : 1
+    
 ```
 
 ```mermaid
@@ -37,6 +40,7 @@ pie title 单位
     "University of Wisconsin–Madison 1" : 1
     "Shanghai AI Laboratory 1" : 1
     "University of California 1" : 1
+    "Xidian University 1" : 1
 ```
 
 
@@ -66,7 +70,7 @@ flowchart BT
 	文本_图像-->QR
 	QR-->|将图像从物体改为角色<br>并增加角色描述|VRP
 	VAE-JLLM-->|仅白盒图像编码器|JP
-	
+	JP-->|生成对抗图像方法|imgJP
 	
 	
 	文本+对抗图像[文本+对抗图像]
@@ -82,6 +86,8 @@ flowchart BT
 	JP[JP（2023.07）<br>对抗图像=>危险文本、OCR、图像方向靠近<br>输入对抗图像+中立文本]
 		style JP fill:#F3D266
 	
+	imgJP[imgJP（2024.02）<br>对抗图像=>危险文本靠近<br>对抗图像embed=>文本<br>最大化危险答案似然<br>通过对抗图像的embed反编译回文本解决离散空间优化问题<br>白盒迁移攻击]
+		style imgJP fill:#EF7A6D
 	
 	
 	
@@ -92,10 +98,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [VAE-JLLM,JP,Fig-Step, QR, VRP]
+    x-axis [VAE-JLLM,JP,Fig-Step, QR, imgJP,VRP]
     y-axis "Cite" 
-    bar [247,185,190,140,35]
-    line [247,185,190,140,35]
+    bar [247,185,190,140,131,35]
+    line [247,185,190,140,131,35]
 ```
 
 

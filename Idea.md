@@ -12,7 +12,7 @@
 
 ## 2. 陈述句会不会比疑问句更具有攻击效果？
 
-
+不同的文本语气会不会对生成有影响
 
 
 
@@ -20,3 +20,18 @@
 
 
 
+
+
+
+
+### 4. 优化文本能不能修改，不用Sure那一套会不会更好？
+
+![image-20250708133846438](./assets/pics/Idea/image-20250708133846438.png)
+
+### 5. 图片反嵌入可以转文本，那能不能建立图像和文本之间的关联？通过输入文本和图像的组合进行拼接来攻击
+
+> **Jailbreaking Attack against Multimodal Large Language Model**
+
+### 6.imgJP生成对抗只根据文本图像对，能不能像JP一样扩展？
+
+>  Jailbreaking Attack against Multimodal Large Language Model

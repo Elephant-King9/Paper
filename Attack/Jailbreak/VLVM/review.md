@@ -37,7 +37,7 @@
 
 - [详细信息](Visual Adversarial Examples Jailbreak Aligned Large Language Models.md)
 
-## 2. Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models
+### 2. Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models
 
 - **JP**
 
@@ -59,7 +59,7 @@
 
 - [详细信息](./Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models.md)
 
-### 2. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
+### 3. FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts
 
 - **FigStep**
 
@@ -97,7 +97,7 @@
 
 - [详细信息](./FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts.md)
 
-### 3.MM-SafetyBench: A Benchmark for Safety Evaluation of Multimodal Large Language Models
+### 4.MM-SafetyBench: A Benchmark for Safety Evaluation of Multimodal Large Language Models
 
 - **QR**
 
@@ -123,13 +123,47 @@
 
 - [详细信息](./MM-SafetyBench: A Benchmark for Safety Evaluation of Multimodal Large Language Models.md)
 
-### 4. Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character
+### 5. Jailbreaking Attack against Multimodal Large Language Model
+
+- **imgJP**
+
+- **作者: Zhenxing Niu、Haodong Ren、Xinbo Gao、Gang Hua、Rong Jin**
+
+- **Xidian University、Wormpex AI Research、Meta**
+
+- **Arxiv**
+
+- **初版提交: 2024.02.04**
+
+- **Cite: 131**
+
+- **创新点**
+
+  **==1.通过VLVM根据文本-答案对生成对抗图像，然后保存对抗图像的特征空间嵌入，反编译回文本攻击LLM，以此来解决离散空间优化问题==**
+
+  **==2.提出了==**
+
+  ​	**==imgJP:生成对抗图像==**
+
+  ​	**==deltaJP:根据现有图像添加扰动，找到通用扰动==**
+
+  ​	**==textJP:根据对抗图像特征空间嵌入反编译回文本==**
+
+  **==3.白盒迁移攻击==**
+
+- ![image-20250708135709814](./assets/pics/review/image-20250708135709814.png)
+
+- [详细信息](./Jailbreaking Attack against Multimodal Large Language Model.md)
+
+### 6. Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character
 
 - **VRP**
 
 - **作者: Siyuan Ma、Weidi Luo、Yu Wang、Xiaogeng Liu**
 
 - **University of Wisconsin–Madison、The Ohio State University、Peking University**
+
+- **Arxiv**
 
 - **初版提交: 2024.05.25**
 
@@ -144,5 +178,3 @@
 - ![image-20250707211328486](./assets/pics/review/image-20250707211328486.png)
 
 - [详细信息](./Visual-roleplay: Universal jailbreak attack on multimodal large language models via role-playing image character.md)
-
-- 
