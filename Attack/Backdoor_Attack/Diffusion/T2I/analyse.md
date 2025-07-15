@@ -36,11 +36,11 @@ pie title 单位
 ```mermaid
 flowchart BT
 	9-->|图像特征转文本特征|EvilEdit
-	28-->|理论基础|EvilEdit
+	TIME-->|理论基础|EvilEdit
 
 
-
-	EvilEdit[EvilEdit（2024.07）<br>通过修改注意力矩阵达到无需训练就能植入后门的方法]
+	TIME[TIME（2023.03）<br>通过修改注意力矩阵消除Diffusion偏见]
+	EvilEdit[EvilEdit（2024.07）<br>通过修改注意力矩阵达到无需训练就能植入后门的方法<br>提供白名单防止原始数据污染]
 ```
 # 4. 引用量
 

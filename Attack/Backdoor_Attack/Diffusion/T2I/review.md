@@ -12,13 +12,25 @@
 ### 2. Editing implicit assumptions in text-to-image diffusion models
 
 - **TIME**
+
 - **作者: Hadas Orgad、Bahjat Kawar、Yonatan Belinkov**
+
 - **Technion**
+
 - **ICCV: 2023**
+
 - **初版提交: 2023.03.14**
+
 - **Cite: 116**
+
 - **创新点**
-- 
+
+  **==1.首个注意力权重编辑方法，通过对应初始token和目标token来为Diffusion消除偏见，让相同的token能够生成不同种类的图像（女医生）==**
+
+  **==2.提出TIMED数据集==**
+
+- ![image-20250715142857261](./assets/pics/review/image-20250715142857261.png)
+
 - [详细信息](./Editing implicit assumptions in text-to-image diffusion models.md)
 
 ### 3. EvilEdit: Backdooring Text-to-Image Diffusion Models in One Second
