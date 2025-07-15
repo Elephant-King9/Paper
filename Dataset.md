@@ -1,12 +1,14 @@
-# Diffusion
+# Dataset
 
-## 1. Lexica Dataset(prompt-图像)
+## Diffusion
+
+### 1. Lexica Dataset(prompt-图像)
 
 Lexica 拥有超过 500 万条 prompt 与其生成的图像
 
 > Prompt Stealing Attacks Against Text-to-Image Generation Models
 
-## 2. Diffusion DB(prompt-图像)
+### 2. Diffusion DB(prompt-图像)
 
 开源提示词-图像数据集
 
@@ -14,7 +16,18 @@ https://poloclub.github.io/diffusiondb/
 
 > Prompt Stealing Attacks Against Text-to-Image Generation Models
 
-# Dataset
+### 3. TIMED(优化Diffusion生成偏见)
+
+147个条目的文本到图像模型编制数据集，数据集中的每个条目都包含一对提示词（source 和 destination），用于模型的认知修改操作
+
+- 比如你想让模型以后把 “dog” 都画成绿色的，就需要一对类似于：
+  - source: "A dog"（当前模型会画出普通狗）
+  - destination: "A green dog"（你想让模型画出绿色狗）
+- 每个条目还包含 5 个正样本提示（我们希望模型编辑能泛化到这些上，比如“a puppy” 应该生成绿色的小狗），以及 5 个负样本提示（与源词语义接近，但**不应**被编辑影响，比如 “a cat” 不应该变绿）
+
+![image-20250715142411342](./assets/pics/Dataset/image-20250715142411342.png)
+
+> Editing implicit assumptions in text-to-image diffusion models
 
 ## LLM
 
