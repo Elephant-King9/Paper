@@ -1,20 +1,20 @@
-### 1.
+### 1. Period of a Discrete Cat Mapping
 
-- ARCM
+- **ARCM**
 
-- Freeman J. Dyson、Harold Falk
+- **Freeman J. Dyson、Harold Falk**
 
-- City University of New York
+- **City University of New York**
 
-- The American Mathematical Monthly 1992
+- **The American Mathematical Monthly 1992**
 
-- 初版提交: 1992
+- **初版提交: 1992**
 
-- Cite: 209
+- **Cite: 209**
 
-- 创新点
+- **创新点**
 
-  ==提出加密方法，对于二维图像上的点(x,y)进行线性变化==
+  **==提出加密方法，对于二维图像上的点(x,y)进行线性变化,x=x+y,y=x+2y==**
 
 ### 2. Partial Multimedia Encryption with Different  Security Levels
 
