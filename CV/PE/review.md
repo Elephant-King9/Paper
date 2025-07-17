@@ -42,7 +42,29 @@
 
 - [详细信息](./Partial Multimedia Encryption with Different  Security Levels.md)
 
-### 3.  A novel perceptual image encryption scheme using geometric objects based kernel
+### 3. Selective image encryption based on pixels of interest and singular value decomposition
+
+- **STSF**
+
+- **作者: Gaurav Bhatnagar、Q.M. Jonathan Wu**
+
+- **University of Windsor**
+
+- **Digital signal processing 2012**
+
+- **初版提交: 2012**
+
+- **Cite: 114**
+
+- **创新点**
+
+  **==1.将像素按照下图的方式重新排列==**
+
+- ![image-20250717181718290](./assets/pics/review/image-20250717181718290.png)
+
+- [详细信息](./Selective image encryption based on pixels of interest and singular value decomposition.md)
+
+### 4.  A novel perceptual image encryption scheme using geometric objects based kernel
 
 - **GOPE**
 

@@ -8,6 +8,7 @@ timeline
     1992 : ARCM<br>The American Mathematical Monthly<br>City University of New York
     2008 : May
     		 : GPGC<br>IEEE Conference on Technologies for Homeland Security<br>Tufts University
+    2012 : STSF<br>Digital signal processing<br>
     2013 : GOPE<br>International Journal of Computer Science & Information Technology<br>
     		 
     
@@ -24,6 +25,7 @@ pie title 期刊类型
 	"IEEE Conference on Technologies for Homeland Security 1" : 1
 	"The American Mathematical Monthly 1" : 1
 	"International Journal of Computer Science & Information Technology 1" : 1
+	"Digital signal processing 1" : 1
 ```
 
 ```mermaid
@@ -48,10 +50,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [ARCM,GPGC,GOPE]
+    x-axis [ARCM,GPGC,STSF,GOPE]
     y-axis "Cite" 
-    bar [209,14,7]
-    line [209,14,7]
+    bar [209,14,114,7]
+    line [209,14,114,7]
 ```
 
 
