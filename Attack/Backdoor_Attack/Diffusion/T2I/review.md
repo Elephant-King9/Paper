@@ -1,13 +1,13 @@
-### 1. How to Backdoor Diffusion Models?
+### 1. An image is worth one word: Personalizing text-to-image generation using textual inversion
 
-- **BadDiffusion**
-- **作者: Sheng-Yen Chou、Pin-Yu Chen、Tsung-Yi Ho**
-- **TsingHua University**
-- **CVPR: 2023**
-- **初版提交: 2022.12.11**
-- **Cite: 137**
-- **创新点**
-- [详细信息](./How to Backdoor Diffusion Models?.md)
+- Textual Inversions
+- 作者:Rinon Gal、Yuval Alaluf、Yuval Atzmon、Or Patashnik、Amit H. Bermano、Gal Chechik、Daniel Cohen-Or
+- Tel-Aviv University、NVIDIA
+- ICLR: 2023
+- 初版提交: 2022.08.02
+- Cite: 2114
+- 创新点
+- [详细信息](./An image is worth one word: Personalizing text-to-image generation using textual inversion.md)
 
 ### 2. Editing implicit assumptions in text-to-image diffusion models
 

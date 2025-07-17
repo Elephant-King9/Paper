@@ -18,7 +18,7 @@ timeline
     		: Mar
     		: LIDFormer<br>AAAI2024
     		: Jul
-    		: SRConvNet<br>IJCV2025
+    		: SRConvNet<br>IJCV2024
     		: Aug
     		: ASID<br>AAAI2025 
 ```

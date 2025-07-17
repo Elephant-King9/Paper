@@ -5,6 +5,8 @@
 ```mermaid
 timeline
     title Backdoor_Diffusion
+    2022 : Aug
+    		 : Textual Inversions<br>ICLR 2023<br>Tel-Aviv University
     2023 : Mar
     		 : TIME<br>ICCV 2023<br>Technion
     2024 : Jul
@@ -21,12 +23,14 @@ timeline
 pie title 期刊类型
 	"ACMMM 1" : 1
 	"ICCV 1" : 1
+	"ICLR 1" : 1
 ```
 
 ```mermaid
 pie title 单位
 	"CQU 1" : 1
 	"Technion 1" : 1
+	"Tel-Aviv University 1" : 1
 ```
 
 
@@ -47,10 +51,10 @@ flowchart BT
 ```mermaid
     xychart-beta
     title "Cite Num"
-    x-axis [TIME,EvilEdit]
+    x-axis [Textual Inversions,TIME,EvilEdit]
     y-axis "Cite" 
-    bar [116,20]
-    line [116,20]
+    bar [2118,116,20]
+    line [2118,116,20]
 ```
 
 
