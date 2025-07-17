@@ -41,3 +41,25 @@
   **==3.对二维数据的加密转化为对行和列的交换交换规则是将原始行号序列通过一维 GPGC加密得到的新序列进行代替==**
 
 - [详细信息](./Partial Multimedia Encryption with Different  Security Levels.md)
+
+### 3.  A novel perceptual image encryption scheme using geometric objects based kernel
+
+- **GOPE**
+
+- **作者: Prabhudev Jagadeesh、P. Nagabhushan、R. Pradeep Kumar**
+
+- **University of Mysore**
+
+- **International Journal of Computer Science & Information Technology 2013**
+
+- **初版提交: 2013**
+
+- **Cite: 7**
+
+- **创新点**
+
+  **==代码中使用的是正方形，n代表每隔n个单位取一个正方形，n越小加密程度越大，进行斜向交换=>水平方向交换=>对角翻转交换==**
+
+  **==1.核心是取一个集合形状(比如正方形)，然后按照不同的规则交换正方形边上的像素以达到加密的效果==**
+
+- [详细信息](./A novel perceptual image encryption scheme using geometric objects based kernel.md)
