@@ -95,3 +95,10 @@ https://poloclub.github.io/diffusiondb/
 
 > MM-Safetybench: A benchmark for safety evaluation of multimodal large language models
 
+## CV
+
+### 1.LAION
+
+LAION 数据集中就包含了一些意外泄露的病人医学图像 
+
+> Benj Edwards. Artist finds private medical record photos in popular AI training data set. https://arstechnica. com/information-technology/2022/09/ artist-finds-private-medical-record-photos-in-popula 2022.
